@@ -1,0 +1,68 @@
+body{
+    background-color: antiquewhite;
+}
+h1{
+    color: brown;
+    font-size: 30PX ;
+    font-family: monospace;
+    text-align: center;
+    border: 2px solid red;
+    padding: 10px;
+    margin: 120px;
+
+}
+p{
+    color: blue;
+    font-size: 20PX ;
+    font-family: courier ;
+    text-align: center;
+    border: 1px solid blue;
+    padding: 10px;
+    margin: 150px;
+}
+a{
+    color: blue;
+    font-size: 20PX ;
+    font-family: courier ;
+    text-align: center;
+    border: 1px solid blue;
+    padding: 10px;
+    margin: 150px;
+}
+/*a:link{
+    color: green; 
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited{
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active{
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}*/
+a:link,
+a:visited {
+  color: #1a73e8; /* ví dụ: màu dễ đọc hơn */
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* hover / active / focus */
+a:hover,
+a:active,
+a:focus {
+  text-decoration: underline;
+}
+
+/* tách màu hover/active nếu muốn khác nhau */
+a:hover { color: #d32f2f; } /* đỏ */
+a:active { color: #ff9800; } /* cam (tốt hơn yellow về tương phản) */

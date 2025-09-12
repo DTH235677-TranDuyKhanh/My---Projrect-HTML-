@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dang Ky Thanh Vien Document</title>
+    <style>
+        
+        table, th, td{
+            border: 1px solid black;
+            width : 30px;
+            height : 20px;
+            padding: 10px;
+            border-collapse: collapse ;
+        }
+        table{
+            text-align: center;
+        }
+        td{
+            text-align: left;
+        }
+        tr{
+            width: 1%;
+            height: 50%;
+        }
+    </style>
+</head>
+<body>
+    <table>
+    <form action="xulydangky.php" method="post" enctype="multipart/form-data">
+        <caption>
+            <h2>Đăng ký thành viên</h2>
+        </caption>
+        <tr>
+            <td>Họ và tên</td>
+            <td>
+                <input name="hoten">
+            </td>
+        </tr>
+        <tr>
+            <br/>
+            <td>Mặt khẩu</td>
+            <td>
+                <input type="password" name="matkhau"/>
+            </td>
+        </tr>
+        <tr>
+            <br/>
+            <td>Nghề Nghiệp</td>
+            <td>
+                <select name="nghenghiep">
+                    <option value="hssv">Học sinh sinh viên</option>
+                    <option value="gv">Giáo viên</option>
+                    <option value="bs">Bác sĩ</option>
+                    <option value="nd">Nông dân</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <br/>
+            <td>Giới tính</td>
+            <td>
+                <input type="radio" value="nam" name="gioitinh">Nam
+                <input type="radio" value="nu" name="gioitinh">Nữ
+            </td>
+        </tr>
+        <tr>
+            <br/>
+            <td>Ngoại ngữ</td>
+            <td>
+                <input type="checkbox" value="av" name="ngoaingu">Tiếng Anh
+                <input type="checkbox" value="p" name="ngoaingu"> Tiếng Pháp
+                <input type="checkbox" value="d" name="ngoaingu">Tiếng Đức 
+                <input type="checkbox" value="h" name="ngoaingu">Tiếng Hàn 
+                <input type="checkbox" value="t" name="ngoaingu">Tiếng Trung
+            </td>
+        </tr>
+        <tr>
+            <br/>
+            <td>Hình</td>
+            <td>
+                <input type="file" name="hinh"/>
+            </td>
+        </tr>
+        <tr>
+            <br/>
+            <td>Sở thích</td>
+            <td>
+                <textarea rows="5" cols="100"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="submit">Đăng Ký</button>
+                <button type="reset">Nhập lại</button>
+            </td>
+        </tr>
+    </form>
+    </table>
+</body>
+</html>
