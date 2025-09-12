@@ -1,0 +1,20 @@
+a:link{ /* Chưa truy cập lần nào  */
+    color: green; /* Màu chữ */
+    background-color: transparent; /* Màu nền */ 
+    text-decoration: none; /* Gạch chân */
+}
+a:visited{ /* Để bình thường */
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover{ /* Khi di chuyển chuột vào */
+    color: red;
+    background-color: transparent;
+    text-decoration: underline; 
+}
+a:active{ /* Khi nháy chuột vào */
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
