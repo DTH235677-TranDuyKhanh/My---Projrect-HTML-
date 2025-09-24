@@ -1,0 +1,6 @@
+body{
+        background-image:url('../imges/IMG_8658.JPG') ;/*Để thêm hình nền vào phần tử HTML, hãy sử dụng stylethuộc tính HTML và thuộc tính CSS background-image*/
+        background-repeat: no-repeat;/*Để tránh hình ảnh nền bị lặp lại, hãy đặt background-repeatthuộc tính thành no-repeat.*/
+        background-attachment: fixed; /* Để đảm bảo toàn bộ phần tử luôn được bao phủ, hãy đặt background-attachmentthuộc tính thànhfixed */
+        background-size: cover; /*muốn hình nền bao phủ toàn bộ phần tử, bạn có thể đặt thuộc background-sizetính thành cover.*/
+    }

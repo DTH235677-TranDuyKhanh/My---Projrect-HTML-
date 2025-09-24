@@ -1,0 +1,63 @@
+body1{
+table{
+    font-family: 'Times New Roman', Times, serif;/* chữ trong bảng dùng font Arial, nếu không có thì dùng sans-serif */
+    border-collapse: collapse;     /* gộp các đường viền lại (tránh bị viền đôi) */
+    width: 100%;                   /* bảng chiếm toàn bộ chiều ngang */
+}
+td{
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+th{
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: center;
+}
+}
+body2{
+    table{
+        font-family: Arial, Helvetica, sans-serif;
+        width:100%;
+    }
+    th{
+        text-align: center;
+        border: 10px solid #ddddff;
+        padding: 10px;
+        border-collapse:collapse;
+        border-style: solid;
+    }
+    td{
+        text-align: left;
+        border: 1px solid #ffddff;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    tr:nth-child(odd)
+    {
+        background-color: aquamarine;
+    }
+}
+body3{
+table{
+    font-family: 'Times New Roman', Times, serif;
+    border-collapse: collapse;                     
+}
+td{
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+th{
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: center;
+}
+}
+

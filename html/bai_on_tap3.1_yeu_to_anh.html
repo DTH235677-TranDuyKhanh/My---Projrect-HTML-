@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yếu tố hình ảnh</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--width=device-width → chiều rộng trang = chiều rộng màn hình thiết bị.-->
+                                                                        <!--initial-scale=1.0 → không phóng to/thu nhỏ ban đầu-->
+</head>
+<body>
+
+<h2>The picture Element</h2>
+
+<picture>
+  <source media="(min-width: 650px)" srcset="../imges/channels4_profile.jpg">
+  <source media="(min-width: 465px)" srcset="../imges/IMG_8657.JPG">
+  <img src="../imges/Noimage4.jpg" style="width:auto;">
+</picture>
+    <p>Phần tử HTML picture cung cấp cho các nhà phát triển web sự linh hoạt hơn trong việc chỉ định tài nguyên hình ảnh.
+        Phần picture tử chứa một hoặc nhiều source phần tử, mỗi phần tử tham chiếu đến các hình ảnh khác nhau thông qua srcset thuộc tính. Bằng cách này, trình duyệt có thể chọn hình ảnh phù hợp nhất với chế độ xem và/hoặc thiết bị hiện tại.
+        Mỗi source phần tử có một mediathuộc tính xác định thời điểm hình ảnh phù hợp nhất.</p>
+
+</body>
+</html>
