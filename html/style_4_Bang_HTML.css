@@ -60,4 +60,46 @@ th{
     text-align: center;
 }
 }
+body4{
+    table{
+        font-family: 'Times New Roman', Times, serif;
+        border-collapse: collapse;
+        border: 1px solid black;
+    }
+    th{
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+    td{
+        border: 1px solid black;
+        padding: 8px;
+        text-align:left;
+    }
+    th:nth-child(even),td:nth-child(odd){
+    background-color: rgba(155, 334, 111, 0.5);
+    }
+}
+body5{
+    table{
+        font-family: 'Times New Roman', Times, serif;
+        border-collapse: collapse;
+        border: 1px solid black;
+    }
+    th{
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+    td{
+        border: 1px solid black;
+        padding: 8px;
+        text-align:left;
+    }
+    tr:hover{
+        border-bottom: 10px solid #dddddd;
+        background-color: aqua;
+    }
+    
+}
 
