@@ -1,0 +1,56 @@
+#div1{
+    background-color: yellow;
+}
+#div2{
+    background-color: yellow;
+}
+#div3{
+    background-color: yellow;
+    width: 300px;
+    margin: auto;
+}
+.box1{
+    background-color:azure;
+}
+.box2{
+    background-color:aquamarine;
+}
+.box3{
+    background-color: aqua;
+}
+.html{
+    width: 100%;
+    overflow: auto;
+}
+.html div{
+    width: 33%;
+    float: left;
+}
+/*display: inline-block; là gì?
+Đây là một kiểu hiển thị của phần tử trong CSS.
+Nó kết hợp đặc điểm của inline và block:
+ Giống inline:
+Các phần tử inline-block sẽ nằm cùng hàng với nhau (giống chữ hoặc <span>).
+ Giống block:
+Vẫn có thể chỉnh được chiều rộng (width) và chiều cao (height).
+Vẫn có thể dùng margin và padding như block.
+
+hoặc có thể sử dụng .html {
+  width:30%;  
+  display:inline-block;
+}
+
+
+display: grid;
+Biến phần tử .grid-container thành Grid container.
+Các phần tử con bên trong nó sẽ trở thành Grid items (ô lưới).
+grid-template-columns: 33% 33% 33%;
+Chia lưới thành 3 cột, mỗi cột rộng 33% (tổng ~100%).
+Các div con sẽ tự động xếp vào từng cột từ trái sang phải.
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  hoặc
+  grid-template-columns: repeat(3, 1fr);
+}*/
