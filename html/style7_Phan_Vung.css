@@ -25,6 +25,9 @@
 .html div{
     width: 33%;
     float: left;
+    text-align: center;
+  box-sizing: border-box;
+
 }
 /*display: inline-block; là gì?
 Đây là một kiểu hiển thị của phần tử trong CSS.
@@ -53,4 +56,12 @@ Các div con sẽ tự động xếp vào từng cột từ trái sang phải.
   grid-template-columns: 33% 33% 33%;
   hoặc
   grid-template-columns: repeat(3, 1fr);
+
+
+.mycontainer {
+  display: flex;
+}
+.mycontainer > div {
+  width:33%;
+}
 }*/

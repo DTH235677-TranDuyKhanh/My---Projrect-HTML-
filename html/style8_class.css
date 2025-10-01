@@ -1,0 +1,20 @@
+.none{
+    background-color: antiquewhite;
+    color:blue;
+}
+.duy{
+    font-size: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: bisque;
+    border: 1px solid red;
+}
+.name{
+    background-color: blue;
+    text-align: center;
+    box-sizing: border-box;
+}
+.main{
+    background-color: antiquewhite;
+    color:blue;
+    
+}

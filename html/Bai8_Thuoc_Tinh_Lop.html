@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lớp trong HTML</title>
+    <link rel="stylesheet" href="../html/style8_class.css">
+</head>
+<body>
+    <h1 class = "none">Thuộc tính class</h1>
+    <p>Trần <span class="duy">Duy</span>Khánh</p>
+    <div class="name">London
+                London is the capital city of England.
+                London has over 9 million inhabitants. 
+    </div>
+    <div class="name main ">London
+                London is the capital city of England.
+                London has over 9 million inhabitants. 
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>Use of The class Attribute in JavaScript</h2>
+    <p>Click the button to hide all elements with class name "city":</p>
+    <button onclick="myName()">Hãy Click vào đây </button>
+    <h2 class="city">London</h2>
+    <p>London is the capital of England.</p>
+    <h2 class="city">Paris</h2>
+    <p>Paris is the capital of France.</p>
+    <h2 class="city">Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+    <script>
+        function myName(){
+        var x = document.getElementsByClassName("city");<!--Đây là cách lấy tất cả các phần tử HTML có class là city.
+                                                        Kết quả trả về là một HTMLCollection (giống như một mảng chứa các phần tử).-->
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

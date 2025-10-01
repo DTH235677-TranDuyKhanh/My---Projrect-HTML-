@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML và JavaScript</title>
+</head>
+<body>
+    <h2>Use JavaScript to Change Text</h2>
+    <p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+    <p id="demo">Xin Chào</p>
+    <button onclick="hienThi()"> Nhấp Vào Đây </button>
+    <script>
+        function hienThi(){
+        document.getElementById("demo").style.fontFamily="time new roman";
+        document.getElementById("demo").style.fontSize="50px";
+        document.getElementById("demo").style.border="1px solid red";
+        document.getElementById("demo").style.color="black";
+        document.getElementById("demo").style.textAlign="center";
+        }
+    </script> 
+
+    <h1>My First JavaScript</h1>
+    <p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+    <script>
+        function den(bd)
+        {
+            var pic;
+            if(bd==0)
+            {
+                pic = "../imges/đèn tắt.avif"
+            }else{
+                pic = "../imges/đèn sáng.jpg"
+            }
+            document.getElementById("myDen").src = pic;
+        }
+    </script>
+    <!--document.getElementById("myDen").src = pic;: tìm đến thẻ <img> có id "myDen"
+     và đổi thuộc tính src (đường dẫn hình ảnh) thành giá trị của pic.-->
+    <img id="myDen" src="../imges/đèn tắt.avif" width="200", height="180">
+    <!--Đây là hình ảnh mặc định (ban đầu là đèn tắt).
+    Có id="myDen" để JS dễ truy xuất và thay đổi hình.
+    Kích thước: rộng 200px, cao 180px.-->
+    <p>
+        <button type="button" onclick="den(1)">Light On</button>
+        <button type="button" onclick="den(0)">Light Off</button>
+    </p> 
+    <!--Thẻ <button type="button" ...>
+    Tạo ra một nút bấm trên giao diện.
+    Thuộc tính type="button" để chỉ định đây là nút bấm thường, không phải nút gửi form (submit).-->
+    <p id="deme"></p>
+    <script>
+    document.getElementById("deme").innerHTML = "Hello JavaScript!";
+    </script>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    <p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+</body>
+</html>
