@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!--Phần tử này <head>là nơi chứa siêu dữ liệu (dữ liệu về dữ liệu) và được đặt giữa <html>thẻ và <body>thẻ.
+Siêu dữ liệu HTML là dữ liệu về tài liệu HTML. Siêu dữ liệu không được hiển thị trên trang.
+Siêu dữ liệu thường xác định tiêu đề tài liệu, bộ ký tự, kiểu, tập lệnh và các thông tin siêu dữ liệu khác.-->
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="author" content="John Doe">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Phần tử này <meta>thường được sử dụng để chỉ định bộ ký tự, mô tả trang, từ khóa, tác giả của tài liệu và cài đặt khung nhìn.-->
+    <title>Đầu vào HTML</title><!--Phần tử này <title>xác định tiêu đề của tài liệu-->
+    <link rel="icon" type="imges/x-icon" href="../imges/đèn sáng.jpg">
+     <!--Phần tử này <link>xác định mối quan hệ giữa tài liệu hiện tại và tài nguyên bên ngoài.-->
+     <base href="/bai1_DuLich_VietNam.html" target="_blank">
+</head>
+<style>/*Phần tử này <style>được sử dụng để xác định thông tin kiểu cho một trang HTML duy nhất:*/
+    body{
+        background-color: aqua;
+        font-size: 50px;
+    }h1,p{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        border: 1px solid red;
+        display:inline-block;
+        box-sizing:border-box;
+        padding: 30px;}
+    
+</style>
+<body>
+    <h1>Đầu vào HTML</h1><br>
+    <p id="ten">Trần Duy Khánh</p>
+    <button type="button"; onclick="tenname()">Click chuột vào đây</button>
+    <script>
+        function tenname(){
+            document.getElementById("ten").innerHTML="Xin chào các bạn";
+        }
+    </script>
+    <br>
+</body>
+</html>
