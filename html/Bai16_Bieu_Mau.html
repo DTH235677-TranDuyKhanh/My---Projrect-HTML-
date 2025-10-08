@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biểu Mẫu Trong HTML </title>
+    <link rel="stylesheet" href="../CSS/style16_Bieu_Mau.css">
+</head>
+<body>
+<ol type="1">
+    <h1><li>HTML Forms</li></h1>
+    <form action=""><!--Phần tử HTML <form>được sử dụng để tạo biểu mẫu HTML để người dùng nhập liệu-->
+        <h2>Text and Submit</h2>
+        <label for="fname">First Name </label><br>
+        <input type="text" id="fname" name="fname" value="trần"><br>
+        <label for="lname">Last Name </label><br>
+        <input type="text" name="lname" id="lname" value="Khánh"><br><br>
+        <input type="submit" value="submit"><br><br>
+        <!--Một <input>phần tử có thể được hiển thị theo nhiều cách, tùy thuộc vào type thuộc tính.
+        - <input type="text">	Hiển thị trường nhập văn bản một dòng
+        - <input type="radio">	Hiển thị nút radio (để chọn một trong nhiều lựa chọn)
+        - <input type="checkbox">	Hiển thị hộp kiểm (để chọn không hoặc nhiều lựa chọn)
+        - <input type="submit">	Hiển thị nút gửi (để gửi biểu mẫu)
+        - <input type="button">	Hiển thị một nút có thể nhấp được-->
+     </form>
+        <h2><li>Radio</li></h2>
+        <h4>Lựa chọn radio</h4>
+        <form>
+        <input type="radio" id="css" name="luachon" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="html" name="luachon" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="jv" name="luachon" value="JavaScicet">
+        <label for="jv">JavaScicet</label>
+        </form>
+
+        <h2><li>Checkbox</li></h2>
+        <h4>Kiểm tra</h4>
+        <form action="">
+            <input type="checkbox" name="phuongtien" id="chaybo" value="chạy bộ ">
+            <label for="chaybo">Chạy bộ</label><br>
+            <input type="checkbox" name="phuongtien" id="xedap" value="xe đạp">
+            <label for="xedap">Xe Đạp</label><br>
+            <input type="checkbox" name="phuongtien" id="xemay" value="xe máy ">
+            <label for="xemay">Xe máy</label><br><br>
+            <input type="submit" value="submit">
+        </form>
+        
+        <h2><li>Select</li></h2>
+        <h4>chọn</h4>
+        <form action="">
+            <label for="xehoi">Các loại xe: </label>
+            <select name="xe" id="xehoi" size="3" multiple>
+                <!--mutiple thuộc tính này chọn phép người dùng chọn nhiều hơn một giá trị-->
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="audi" selected>Audi</option>
+                <!--Selected mục đầu tiên trong danh sách thả xuống sẽ được chọn.-->
+                <option value="fait">Fait</option>
+            </select><br><br>
+            <input type="submit" value="submit">
+        </form>
+
+        <h2><li>Textarea</li></h2>
+        <h4>Một vùng văn bản</h4>
+        <form action="">
+            <textarea name="message" id="nhantin" rows="10" cols="30">The cat was playing in the garden</textarea>
+        </form> 
+
+        <h2><li>Button</li></h2>
+        <h4>Nút </h4>
+        <button type="button" onclick="alert('Xin chào thế giới!')">Click Me</button>
+
+        <h2><li>Fieldset and Legend</li></h2>
+        <h4>Khung và ghi chú khung</h4>
+        <form action="">
+            <fieldset>
+                <legend>Thông tin: </legend>
+                <label for="hoten">Name: </label><br>
+                <input type="text" id="hoten" name="nhap" value="Trần Duy Khánh"><br>
+                <label for="mssv">Mã số sinh viên: </label><br>
+                <input type="text" id="mssv" name="nhap" value="DTH235677"><br>
+                <label for="lop">Lớp: </label><br>
+                <input type="text" id="lop" name="nhap" value="DH24TH2">
+            </fieldset>
+        </form>
+        <h2><li>Datalist</li></h2>
+        <h4>Chỉ định danh sách tùy chọn đã được xác định trước</h4>
+        <form action="">
+            <input list="luachon" name="lua">
+            <datalist id="luachon">
+            <option value="mssv">MSSV</option>
+            <option value="tuoi">Tuổi</option>
+            <option value="lop">Lớp</option>
+            <option value="hoten">Họ tên</option>
+            </datalist>
+        </form>
+        <br><br><br><br><br>
+</ol>
+</body>
+</html>

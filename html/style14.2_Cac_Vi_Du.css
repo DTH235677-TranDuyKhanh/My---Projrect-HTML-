@@ -1,0 +1,53 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    color: #aaaaaa;
+}
+.dau{
+    background-color: #e5e5e5;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+}
+.giua{
+    overflow: auto;
+}
+.menu{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+.menu a{
+    padding: 8px;
+    width: 100%;
+    background-color: #e5e5e5;
+    display: block;
+    color: black;
+    margin-top: 7px;
+}
+.main{
+    float: left;
+    padding:0 20px;
+    width: 60%;
+}
+.right{
+    background-color: #e5e5e5;
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 20%;
+    margin-top: 7px;
+}
+.cuoi{
+    background-color: #e5e5e5;
+    text-align: center;
+    padding: 10px;
+    margin-top: 7px;
+}
+    
+@media only screen and(Max-width:620px)
+{
+    .main.menu.right{
+        width:100%;
+    }
+}

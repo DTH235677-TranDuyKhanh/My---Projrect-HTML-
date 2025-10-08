@@ -1,0 +1,26 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+.dau{
+    background-color: chartreuse;
+    color: white;
+    float: left;
+    width: 100%;
+    padding: 8px;
+
+}
+.cuoi{
+    width: 100%;
+    overflow: auto;
+}
+.cuoi > div{
+    width: 33%;
+    float: left;
+    text-align:left;
+}
+@media only screen and (max-width:600px){
+    .cuoi,.giua{
+        width: 100%;
+    }
+}

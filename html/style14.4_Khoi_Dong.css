@@ -1,0 +1,26 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+.tieude{
+    background-color:mediumblue ;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 4px;
+    width: 100%;
+    float: left;
+}
+.row{
+    width:100%;  
+    display:inline-block;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+}
+.row > div{
+    width: 33%;
+    float: left;
+    text-align: left;
+    padding: 8px;
+}
