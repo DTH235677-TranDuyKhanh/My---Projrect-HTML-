@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biểu Mẫu Trong HTML </title>
-    <link rel="stylesheet" href="../CSS/style16_Bieu_Mau.css">
 </head>
 <body>
 <ol type="1">
@@ -96,6 +95,18 @@
             </datalist>
         </form>
         <br><br><br><br><br>
+        <h2><li>Output</li></h2>
+        <form action="/action_page.php"
+        oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            0
+        <input type="range"  id="a" name="a" value="50">
+            100 +
+        <input type="number" id="b" name="b" value="50">
+            =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+</form>
 </ol>
 </body>
 </html>

@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+input[type=text], input[type=password]{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+    border: none;
+    background-color: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus{
+    /*:focus → là pseudo-class (giả lớp), nghĩa là style
+     này chỉ áp dụng khi người dùng đang click hoặc nhập vào ô đó.
+     → Khi người dùng nhấp chuột hoặc tab vào ô nhập, CSS trong phần này sẽ được kích hoạt.*/
+    background-color: #f0f8ff;
+    outline: none;
+    /*outline: none;
+    Mặc định, khi bạn click vào input, trình duyệt hiển thị viền sáng (outline) 
+    xung quanh — thường là màu xanh hoặc cam.
+    outline: none; xóa bỏ viền mặc định đó*/
+}
+hr{
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+button{
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor:pointer;
+    width: 100%;
+    opacity: 0.8;
+}
+button:hover{
+    opacity: 1;
+}
+.cancebtn{
+    background-color: #f44336;
+    padding: 14px 20px;
+}
+.cancebtn,.signupbtn{
+    float: left;
+    width: 50%;
+}
+.signup{
+    padding: 16px;
+}
+/*.clearfix là class áp dụng cho một phần tử cha (container).
+::after là pseudo-element (phần tử giả)
+ — nó tạo ra một phần tử ảo nằm sau nội dung thật của phần tử đó.
+💡 Nghĩa là:
+Khi bạn gán class clearfix cho một thẻ (ví dụ <div>), thì CSS sẽ 
+tự động thêm vào cuối thẻ đó một phần tử ẩn, mà bạn không cần viết trong HTML.*/
+.clearfix::after{
+    content: "";
+    /*Cần thiết để tạo ra phần tử ảo — nếu không có dòng này, ::after không tồn tại.
+    Nội dung rỗng "" nghĩa là không hiển thị gì cả, chỉ có tác dụng kỹ thuật.*/
+    clear:both;
+    /*clear: both;
+    Đây là thuộc tính “dọn float” (clear float).
+    both nghĩa là dọn cả hai hướng: trái và phải.
+    ➡️ clear: both; giúp phần tử ảo này đẩy cha ra đúng chiều cao thật, khiến bố cục trở lại bình thường.*/
+    display: table;
+    /*Giúp phần tử ảo ::after hành xử như một phần tử khối (block).
+    display: table; là một cách an toàn, tương thích cao, thay vì display: block;.
+    💡 Mục tiêu: đảm bảo phần tử ảo hoạt động ổn định trên mọi trình duyệt.*/
+    }
+@media screen and (max-width: 300px) {
+  .cancebtn, .signupbtn {
+    width: 100%;
+  }
+}
+ 
+
+

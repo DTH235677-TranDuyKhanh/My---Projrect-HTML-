@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví dụ các biểu mẫu trong HTML </title>
+    <link rel="stylesheet" href="../CSS/style16.1_Bieu_Mau.css">
+</head>
+<body>
+    <h2>Login Form</h2>
+    <form action="" method="post">
+        <!--dùng phương thức POST, nghĩa là dữ liệu gửi đi ẩn, 
+        không hiện trên URL (bảo mật hơn GET).-->
+        <div class="hinhavatar">
+            <img src="/imges/avata nam" alt="Avatar" class="avatar">
+        </div>
+        <div class="formlogin">
+            <label for="username"><b>Usename</b></label><br>
+            <input type="text" placeholder="Enter Username" name="name" required><br>
+            <!--  + placeholder="Enter Username"
+            ➡️ Hiển thị văn bản gợi ý (màu xám nhạt) 
+            bên trong ô nhập khi ô còn trống.
+            Khi người dùng bắt đầu gõ, dòng gợi ý này biến mất.
+                  + required
+            ➡️ Thuộc tính bắt buộc nhập.-->
+
+            <label for="password"><b>Password</b></label><br>
+            <input type="password" name="password" placeholder="Enter Password" required><br>
+
+            <button type="submit">Login</button>
+
+            <label>
+                <input type="checkbox" checked="checked" name="remenber"> Remenber me
+            </label>
+            <!--checked="checked"
+            Thuộc tính này giúp checkbox được chọn sẵn mặc định khi trang vừa tải.
+            Nếu bạn bỏ thuộc tính này, checkbox ban đầu sẽ không được chọn.-->
+
+        </div>
+        <div class="formlogin" style="background-color: #f1f1f1;">
+            <button type="submit" class="cancebtn">Cancel</button>
+            <span class="password">Forgot <a href="#">Password</a></span>
+        </div>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biểu mẫu trong HTML (Ví dụ 2: biểu mẫu đăng nhập)</title>
+    <link rel="stylesheet" href="/CSS/style16.2_Vi_Du2.css">
+
+</head>
+<body>
+    <form action="">
+        <div class="signup">
+            <h1><b>Sign Up</b></h1>
+            <p>Please fill in this form to  create an account. </p>
+            <hr>
+
+            <label for="email">Email</label><br>
+            <input type="text" placeholder="Enter Email" name="email" required><br>
+
+            <label for="password">Password</label><br>
+            <input type="password" placeholder="Enter Password" name="password" required><br>
+
+            <label for="repeat-password">Repeat Pasword</label><br>
+            <input type="password" placeholder="Enter Repeat Password" name="repeat-password" required><br>
+
+            <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">Remember me
+            </label>
+
+            <p>By creating an account you agree to our <a href="#" style="color: dodgerblue;">Terms & Privacy</a></p>
+        </div>
+
+        <div class="clearfix">
+            <button type="button" class="cancebtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
+    </form>
+</body>
+</html>

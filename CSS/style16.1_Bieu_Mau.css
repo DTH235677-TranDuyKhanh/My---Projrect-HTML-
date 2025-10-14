@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+form{
+    border: 3px solid #f1f1f1;
+}
+input[type=text],input[type=password]{
+    width: 100%;
+    padding: 12px 20px;/* Khoảng trắng trên dưới, trái phải*/
+    margin: 8px 0;      /*Khoảng cách trên dưới, trái phải*/
+    display: inline-block; /*Cho phép input hoạt động như một block nhỏ nằm
+                        cùng dòng nhưng vẫn có thể đặt width, height, margin, padding*/
+    border: 1px solid #f1f1f1;
+}
+button{
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0px;
+    border: none;
+    width: 100%;
+    cursor: pointer; /*pointer sẽ biến con trỏ thành bàn tay 👆
+                     — giống như khi rê chuột vào một liên kết (<a>).*/
+}
+button:hover{
+    opacity: 0,8; /*opacity xác định mức độ trong suốt (độ mờ) của phần tử.
+                    Giá trị nằm trong khoảng từ 0 → 1*/
+}
+.cancebtn{
+    width:auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+.hinhavatar{
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+img.avatar{
+    width: 40%;
+    border-radius: 50%;
+    /*border-radius: 50%;
+    Bo tròn các góc của hình ảnh theo phần trăm.
+    50% nghĩa là bo tròn tối đa, tạo thành hình tròn hoàn hảo.*/
+}
+.formlogin{
+    padding: 16px;
+}
+span.password{
+    float: right;
+    padding-top: 16px;
+}
+@media screen and(max-width:300px)
+{
+    spab.password{
+        display: block;
+        /*Nghĩa là nó chiếm trọn một hàng riêng
+         → sẽ nằm xuống dưới các phần tử khác, chứ không nằm cùng hàng.*/
+        float: none;
+    }
+    .cancebtn{
+        width: 100%;
+    }
+
+}
