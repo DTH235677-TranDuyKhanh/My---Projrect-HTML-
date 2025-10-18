@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 17px;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.row{
+    display: -ms-flexbox; /*Giúp code tương thích trên IE10*/
+    display: flex; /*Kích hoạt Flexbox layout.*/
+    -ms-flex-wrap: wrap; /*Mặc định, các phần tử trong flex sẽ nằm trên 1 hàng duy nhất, và thu nhỏ lại nếu không đủ chỗ.*/ 
+    flex-wrap: wrap;/*Khi thêm flex-wrap: wrap;, các phần tử sẽ tự động xuống hàng nếu hàng trước đầy.*/
+    margin: 0 -16px; /*Khi đó, các cột con sẽ canh đều sát lề bên ngoài, không bị lệch.*/
+}
+.col-25{
+    -ms-flex: 25%;
+    flex: 25%; /* Chiếm 25% chiều ngang*/
+}
+.col-50{
+    -ms-flex: 50%;
+    flex: 50%;
+}
+.col-75{
+    -ms-flex: 75%;
+    flex: 75%;
+}
+.col-25,.col-50,.col-75{
+    padding: 0 16px;
+}
+.container{
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px; /*Khoảng cách bên trong: trên 5px, phải 20px, dưới 15px, trái 20px*/
+    border: 1px solid lightgrey;
+    border-radius: 3px; /*Bo nhẹ góc cho khung, trông mềm mại hơn*/
+}
+input[type=text]{
+    width: 100%;
+    margin-bottom: 20px; /*Cách dòng bên dưới một khoảng để không dính vào nhau*/
+    padding: 12px;
+    border:1px solid #ccc;
+    border-radius: 3px;
+}
+label{
+    border-bottom: 10px;
+     display: block; /*giúp label chiếm toàn dòng (xuống hàng riêng, không nằm chung với input)*/
+}
+.icon {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+.btn{
+    background-color: #04AA6D;
+    color: white;
+    border-radius: 3px;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width:100%;
+    cursor: pointer;
+    font-size: 17px;
+}
+.btn:hover{
+    background-color: #45a049;
+}
+a{
+    color: #2196F3;
+}
+hr{
+    border: 1px solid lightgrey;
+}
+span.price {
+  float: right;
+  color: grey;
+}
+@media screen and (max-width:800px){
+    .row{
+        flex-direction: column-reverse; /*Đổi thứ tự hiển thị cột: phần “cart” (giỏ hàng) lên trên, form thanh toán xuống dưới*/
+    }
+    .col-25{
+        margin-bottom: 20px;
+    }
+    
+}
