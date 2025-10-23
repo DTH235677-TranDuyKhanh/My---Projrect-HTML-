@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+input[type=text],select,textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize:vertical; /*Chỉ được kéo theo chiều dọc ✅ (thường dùng trong form)*/
+}
+input[type=submit]{
+    background-color: #04aa6d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor:pointer;
+    border-radius:3px;
+}
+input[type=submit]:hover{
+    background-color: #45a049;
+}
+.QuanHe{
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius:3px;
+    
+}
