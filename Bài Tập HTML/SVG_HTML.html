@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG trong HTML</title>
+</head>
+<body>
+    <h1>SVG (Đồ họa vectơ có thể mở rộng)</h1>
+    <ul>
+        <li>Vòng tròn SVG
+            <svg width="100px" height="100px">
+                <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"/>
+            </svg>
+        </li>
+        <li>Hình trữ nhật SVG
+            <svg width="250px" height="150px">
+                <rect x="10" y="10" width="200" height="100" stroke="red" stroke-width="6" fill="blue"></rect>
+            </svg>
+        </li>
+        <li>Hình vuông SVG
+            <svg width="300px" height="300px">
+                <rect x="10" y="10" rx="20" ry="20" width="250" height="250" style="stroke:black; fill:red; stroke-width:5px; opacity:0.5"></rect>
+            </svg>
+        </li>
+        <li>Ngôi sao SVG
+            <svg width="300px" height="200px">
+                <polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:lime;stroke:purple;stroke-width:5px;fill-rule:evenodd"></polygon>
+            </svg><!--/* fill-rule:evenodd; Quy tắc tô màu các vùng chồng nhau */-->
+        </li>
+        <li>SVG Gradient Ellipse và Văn bản
+            <svg width="500" height="130">
+                <defs><!--Khai báo các phần tử dùng để tái sử dụng-->
+                    <linearGradient id="grad1">
+                        <stop offset="0%" stop-color="yellow"></stop>
+                        <stop offset="100%" stop-color="red"></stop>
+                    </linearGradient>
+                </defs>
+                <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)"></ellipse>
+                <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+                Sorry, your browser does not support inline SVG.
+            </svg>
+        </li>
+
+    </ul>
+</body>
+</html>

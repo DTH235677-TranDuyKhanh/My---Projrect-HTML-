@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas trong HTML</title>
+</head>
+<body>
+    <h1>Phần tử HTML (canvas)</h1>
+    <p>Phần tử HTML (canvas) được sử dụng để vẽ đồ họa trên trang web. <br>
+        Phần tử HTML (canvas) được sử dụng để vẽ đồ họa một cách nhanh chóng thông qua JavaScript. <br>
+        Phần tử này (canvas) chỉ là một vùng chứa đồ họa. Bạn phải sử dụng JavaScript để vẽ đồ họa. <br>
+        Canvas có nhiều phương pháp để vẽ đường dẫn, hộp, hình tròn, văn bản và thêm hình ảnh. <br>
+        Canvas được hỗ trợ bởi tất cả các trình duyệt chính.
+    </p>
+    <ul>
+        <li> Vẽ hình vuông : 
+            <canvas id="mycanvas" width="200px"; height="200px"; style="border:1px solid black";>
+                Your browser does not support the HTML canvas tag.
+            </canvas>
+        </li>
+        <li> Hình chữ nHật thêm JavaScript. 
+            <canvas id="MyCanvas" width="200px" height="100px" style="border:1px solid black;">
+                Your browser does not support the HTML canvas tag.
+            </canvas>
+            <script>
+                var c = document.getElementById("MyCanvas");
+                var ctx = c.getContext("2d");
+                ctx.moveTo(0,0);
+                ctx.lineTo(200,100);
+                ctx.stroke();
+            </script>
+        </li>
+        <li>Hình tròn thêm JavaScript. 
+            <canvas id="TronCanvas" width="200px" height="100px" style="border: 1px solid black;">
+                Your browser does not support the HTML canvas tag.
+            </canvas>
+            <script>
+                var c = document.getElementById("TronCanvas");
+                var tcx = c.getContext("2d");
+                tcx.beginPath();
+                tcx.arc(95,50,40,0,2*Math.PI);
+                tcx.stroke();
+            </script>
+        </li>
+        <li> Vẽ một văn bảng.
+            <canvas id="MyCanva" width="300px" height="100px" style="border: 1px solid #d3d3d3;">
+                Your brwser does not support the HTML canvas tag.
+            </canvas>
+            <script>
+                var c = document.getElementById("MyCanva");
+                var ctx = c.getContext("2d");
+                ctx.font = "30px Arial";
+                ctx.fillText("Hello World", 10, 50);
+            </script>
+        </li>
+        <li> Vẽ văn bảng nét.
+            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+            Your browser does not support the HTML canvas tag.</canvas>
+
+            <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.font = "30px Arial";
+            ctx.strokeText("Hello World",10,50);
+        </script>
+        </li>
+        <li>Vẽ Gradient tuyến tính
+            <canvas id="TuyenTinh" width="200px" height="100px" style="border: 1px solid #f1f1f1;">
+                Your browser does not support the HTML canvas tag.
+            </canvas>
+            <script>
+                var c = document.getElementById("TuyenTinh");
+                var tdk = c.getContext("2d");
+                //Tạo ra một màu chuyển sắc tuyến tính
+                var grd = tdk.createLinearGradient(0,0,200,0);
+                grd.addColorStop(0,"black");
+                grd.addColorStop(1,"White");
+                //Gán màu tô (fill color) hiện tại của canvas là gradient
+                tdk.fillStyle = grd;
+                tdk.fillRect(10,10,150,80);
+            </script>
+        </li>
+        <li>Vẽ Gradient Tròn
+            <canvas id="Tron" width="200px" height="100px" style="border: 1px solid #f1f1f1;">
+                Your browser does not support the HTML canvas tag.
+            </canvas>
+            <script>
+                var c = document.getElementById("Tron");
+                var tdk = c.getContext("2d");
+                //Tạo một gradient hình tròn
+                var grd = tdk.createRadialGradient(75,50,5,90,60,100);
+                grd.addColorStop(0,"red");
+                grd.addColorStop(1,"White");
+                //Gán màu tô (fill color) hiện tại của canvas là gradient
+                tdk.fillStyle = grd;
+                tdk.fillRect(10,10,150,80);
+            </script>
+        </li>
+        <li>Vẽ hình ảnh.
+            <p>Image to use: </p>
+            <img id="hinh" src="../imges/đèn sáng.jpg" alt="Ngon den sang" width="200px" heigh="100px">
+            <p>Canvas to fill: </p>
+            <canvas id="HinhAnh" width="250px" height="150px" style="border: 1px solid black;">
+                Your browser does not support the HTML canvas tag.
+            </canvas>
+            <p><button onclick="HinhAnh()">Try it</button></p>
+            <script>
+                function HinhAnh()
+                {
+                    var c = document.getElementById("HinhAnh");
+                    var tdk = c.getContext("2d");
+                    var img = document.getElementById("hinh");
+                    tdk.drawImage(img,10,10,200,100);
+                }
+            </script>
+        </li>
+    </ul>
+</body>
+</html>
