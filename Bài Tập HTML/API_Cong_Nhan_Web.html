@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công nhân web trong HTML</title>
+</head>
+<body>
+    <ol type="1">
+        <h2><li>API Công nhân Web HTML</li></h2>
+    <h3>Web Worker là gì?</h3>
+    <ul>
+        <li>Khi thực thi các tập lệnh trong trang HTML, trang sẽ không phản hồi cho đến khi tập lệnh hoàn tất.</li>
+        <li>Web worker là một tệp JavaScript bên ngoài chạy nền, độc lập với các tập lệnh khác, mà không ảnh hưởng đến hiệu suất của trang. Bạn có thể tiếp tục làm bất cứ điều gì bạn muốn: nhấp chuột, chọn mục, v.v., trong khi web worker vẫn chạy nền.</li>
+        <li>Web worker hữu ích cho mã nặng không thể chạy trên luồng chính mà không gây ra các tác vụ dài khiến trang không phản hồi.</li>
+    </ul>
+    <p>Ví dụ về API Web Workers</p>
+    <h3>API Web Worker</h3>
+    <p>Đếm số: <output id="mykhanh"></output></p>
+    <button onclick="startWorker()">StartWorker</button>
+    <button onclick="stopWorker()">StopWorker</button>
+    <script>
+        let w; //Biến toàn cục w sẽ lưu đối tượng Web Worker.
+        function startWorker()
+        {
+            const m = document.getElementById("mykhanh");
+            if(typeof(Worker)!=="undefined")
+            {
+                if(typeof(w)=="undefined")
+                {
+                    w = new Worker("../Bài Tập JavaScript/demo_Dem_Worker.js"); //Tạo tệp Web Worker .js, Tạo một đối tượng Web Worker
+                }
+                w.onmessage = function(event){  //onmessage là sự kiện nhận dữ liệu từ worker.
+                    m.innerHTML = event.data;   //Mỗi khi worker gửi dữ liệu (qua postMessage() trong file demo_workers.js), → Hàm này được gọi và hiển thị dữ liệu đó vào <output>.
+                };
+            }else{
+                m.innerHTML = "Xin lỗi, không hôc trợ web Werker!";
+            }
+        }
+        function stopWorker(){
+            w.terminate(); //w.terminate() → dừng Worker ngay lập tức.
+            w = undefined; //w = undefined → xóa tham chiếu để có thể khởi động lại sau
+        }
+    </script>
+        <h2><li>Kiểm tra hỗ trợ API Web Worker</li></h2>
+        <div id="result"></div>
+        <script>
+            const x = document.getElementById("result");
+            if(typeof(Worker) !== "undefined")
+            {
+                x.innerHTML = "Trình duyệt của bạn đã hỗ trợ web Worker! ";
+            }else{
+                x.innerHTML = "Xin lỗi, trình duyệt của bạn không hỗ trợ web Worker!"
+;            }
+        </script>
+    </ol>
+</body>
+</html>

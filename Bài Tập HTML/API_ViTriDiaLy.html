@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API vị trí địa lý trong HTML </title>
+</head>
+<body>
+    <h1>Định vị trí địa lý trong HTML</h1>
+    <p>Nhắn nút để lấy tọa độ của bạn. </p>
+    <button onclick="mybutton()">Nhắn nút</button>
+    <p id="demo"></p>
+    <script>
+        const x = document.getElementById("demo");//Lấy phần tử HTML để hiển thị kết quả
+        function mybutton()
+        {
+            // Kiểm tra xem trình duyệt có hỗ trợ geolocation không
+    if (navigator.geolocation) {
+        // Nếu có: gọi hàm lấy vị trí
+        navigator.geolocation.getCurrentPosition(success, error);
+    } else { 
+        // Nếu không hỗ trợ
+        x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+
+    // Hàm chạy khi lấy được vị trí
+    function success(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude + 
+        "<br>Longitude: " + position.coords.longitude;
+    }
+
+    // Hàm chạy khi lỗi (người dùng từ chối, GPS lỗi, v.v.)
+    function error(error) {
+        switch(error.code){
+            case error.PERMISSION_DENIED:
+            X.innerHTML = "Người dùng chọn Không cho phép";
+            break;
+            case error.POSITION_UNAVAILABLE:
+            X.innerHTML = "GPS, mạng, hoặc API không trả về vị trí";
+            break;
+            case error.TIMEOUT:
+            x.innerHTML = "Quá thời gian chờ phản hồi (ví dụ mạng chậm)";
+            break;
+            case error.UNKNOWN_ERROR:
+            x.innerHTML = "Lỗi bất ngờ không thuộc 3 loại trên";
+            break;
+        }
+        }
+    </script>
+    <h2>Phương thức getCurrentPosition() - Trả về dữ liệu</h2>
+    <p>Phương thức này getCurrentPosition()trả về một đối tượng khi thành công. Các thuộc tính vĩ độ,
+         kinh độ và độ chính xác luôn được trả về. Các thuộc tính khác được trả về nếu có:</p>
+    <ul>
+        <li><p>coords.latitude: Vĩ độ dưới dạng số thập phân luôn được trả về.</p></li>
+        <li><p>coords.longitude: Kinh độ dưới dạng số thập phân luôn được trả về.</p></li>
+        <li><p>coords.accuracy: Độ chính xác của vị trí luôn được trả về. </p></li>
+        <li><p>coords.altitude: Độ cao được tính bằng mét so với mực nước biển trung bình trả về nếu có.</p></li>
+        <li><p>coords.altitudeAccuracy: Độ chính xác về độ cao của vị trí trả về nếu có.</p></li>
+        <li><p>coords.heading: Hướng theo chiều kim đồng hồ từ hướng bắc trả về nếu có.</p></li>
+        <li><p>coords.speed: Tốc độ được tính bằng mét trên giây trả về nếu có.</p></li>
+        <li><p>timestamp: Ngày giờ phản hồi trả lại nếu có.</p></li>
+    </ul>
+    <button onclick="khanh()">Try it</button>
+    <p id="thu"></p>
+    <script>
+        const k = document.getElementById("thu");
+        function khanh()
+        {
+            if(navigator.geolocation)
+            {//watchPosition()- Trả về vị trí hiện tại của người dùng và tiếp tục trả về vị
+            // trí cập nhật khi người dùng di chuyển (giống như GPS trên ô tô).
+                navigator.geolocation.watchPosition(success, error);
+            }else{
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+        // Hàm chạy khi lấy được vị trí
+    function success(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude + 
+        "<br>Longitude: " + position.coords.longitude;
+    }
+
+    // Hàm chạy khi lỗi (người dùng từ chối, GPS lỗi, v.v.)
+    function error(error) {
+        switch(error.code){
+            case error.PERMISSION_DENIED:
+            X.innerHTML = "Người dùng chọn Không cho phép";
+            break;
+            case error.POSITION_UNAVAILABLE:
+            X.innerHTML = "GPS, mạng, hoặc API không trả về vị trí";
+            break;
+            case error.TIMEOUT:
+            x.innerHTML = "Quá thời gian chờ phản hồi (ví dụ mạng chậm)";
+            break;
+            case error.UNKNOWN_ERROR:
+            x.innerHTML = "Lỗi bất ngờ không thuộc 3 loại trên";
+            break;
+        }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API kéo và thả trong HTML</title>
+</head>
+<style>
+    #div1{
+        width: 370px;
+        height: 70px;
+        padding: 10px;
+        border: 1px solid #aaaaaa;
+    }
+        #div2{
+        width: 370px;
+        height: 70px;
+        padding: 10px;
+        border: 1px solid #aaaaaa;
+    }
+     #div3,#div4{
+        width: 370px;
+        height: 80px;
+        float: left;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #aaaaaa;
+    }
+</style>
+<body>
+    <script>
+        function BatDauKeo(ev)                              //ev.dataTransfer: là đối tượng đặc biệt giúp truyền dữ liệu trong quá trình kéo–thả.
+        {                                                   //setData("text", ev.target.id): Lưu dữ liệu loại "text"
+                                                            //Với nội dung là ID của phần tử đang được kéo (ev.target.id)
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+        function KhiKeoQuaVungDich(ev)
+        {                                   //Mặc định, trình duyệt không cho phép thả phần tử vào vùng khác (nó ngăn sự kiện drop).
+            ev.preventDefault();            //Vì vậy, bạn phải gọi ev.preventDefault() để cho phép vùng đó nhận phần tử được thả.
+        }
+        function KhiThaVaoVungDich(ev)
+        {
+            ev.preventDefault();                            //ev.dataTransfer.getData("text"): Lấy lại dữ liệu mà ta đã “gửi” trong hàm BatDauKeo
+            const data = ev.dataTransfer.getData("text");   //Ở đây là ID của phần tử đang được kéo.
+            ev.target.appendChild(document.getElementById(data)); //Lấy phần tử có ID vừa thu được, và thêm nó vào phần tử đích (vùng thả)
+        }                                                       //Tức là chuyển phần tử đó sang vùng được thả.
+
+    </script>
+
+
+    <h1>API kéo và thả HTML</h1>
+    <p>Kéo thả hình vào ô trống.</p>                <!--draggable: Kích hoạt khả năng kéo-->
+    <div id="div1" ondrop="KhiThaVaoVungDich(event)" ondragover="KhiKeoQuaVungDich(event)"></div>   <!--ondragstart: Khi bắt đầu kéo-->
+    <br>                                            <!--ondragover: Khi kéo qua vùng đích-->
+    <img id="img1" src="/imges/channels4_profile.jpg" draggable="True" 
+    ondragstart="BatDauKeo(event)" width="336" height="69">              <!--ondrop: Khi thả vào vùng đích-->
+
+    <h2>Chú thích: </h2>
+    <ul>
+        <li>Tạo một phần tử có thể kéo được</li>
+        <p>rước hết: Để làm cho một phần tử có thể kéo được, hãy đặt draggablethuộc tính thành true:</p>
+        <!--ví dụ: <img id="img1" draggable="true"> hoặc <p id="p1" draggable="true">Draggable text</p>-->
+        <li>Cần kéo gì - ondragstart và setData()</li>
+        <p>Sau đó, chỉ định điều gì sẽ xảy ra khi phần tử được kéo.
+        Trong ví dụ trên, ondragstartthuộc tính của phần tử <img> gọi một hàm (BatDauKeo(ev)), hàm này chỉ định dữ liệu nào sẽ được kéo.
+        Phương pháp này dataTransfer.setData()thiết lập kiểu dữ liệu và giá trị của dữ liệu được kéo:
+        </p>
+        <!--function BatDauKeo(ev){ ev.dataTransfer.setData("text", ev.target.id);}-->
+        <li>Nơi để thả - ondragover</li>
+        <p>Thuộc ondragovertính của phần tử (div) gọi hàm (KhiKeoQuaVungDich(ev)), hàm này chỉ định nơi dữ liệu được kéo có thể được thả vào.
+        Theo mặc định, dữ liệu/phần tử không thể được thả vào các phần tử khác. Để cho phép thả, chúng ta phải ngăn chặn việc xử lý phần tử mặc định.</p>
+        <li>Thực hiện thả - ondrop</li>
+        <p>Khi dữ liệu được kéo bị thả, sự kiện thả sẽ xảy ra.
+        Trong ví dụ trên, thuộc tính ondrop của phần tử (div) gọi hàm KhiThaVaoVungDich(ev):</p>
+    </ul>
+
+    <script>
+        function starKeo(k)
+        {
+            k.dataTransfer.setData("text", k.target.id);
+        }
+        function QuaVung(k)
+        {
+            k.preventDefault();
+        }
+        function VaoVung(k)
+        {
+            k.preventDefault();
+            const kh = k.dataTransfer.getData("text");
+            k.target.appendChild(document.getElementById(kh));
+        }
+    </script>
+    <h1>API kéo thả chữ: </h1>
+    <div id="div2" ondrop="VaoVung(event)" ondragover="QuaVung(event)"></div>
+    <h1 id="p1" draggable="true" ondragstart="starKeo(event)">W3Schools.com</h1>
+
+
+    <h1>Kéo thả giữa 2 hình trong HTML</h1>
+    <script>
+        function start(v)
+        {
+            v.dataTransfer.setData("text",v.target.id);
+        }
+        function Qua(v)
+        {
+            v.preventDefault();
+        }
+        function Vao(v)
+        {
+            v.preventDefault();
+            const vy = v.dataTransfer.getData("text");
+            v.target.appendChild(document.getElementById(vy));
+        }
+    </script>
+    <div id="div3" ondrop="Vao(event)" ondragover="Qua(event)"></div>
+    <img id="hinh1" src="/imges/đèn sáng.jpg" draggable="true" ondragstart="start(event)" width="336" height="69">
+    <div id="div4" ondrop="Vao(event)" ondragover="Qua(event)"></div>
+</body>
+</html>

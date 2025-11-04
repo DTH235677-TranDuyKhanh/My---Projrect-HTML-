@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API lưu trữ web trong HTML</title>
+</head>
+<body>
+    <h1>API lưu trữ web trong HTML</h1>
+    <ol type="1">
+    <h2><li>HTML Web Storage là gì?</li></h2>
+    <ul>
+        <li>Với lưu trữ web, các ứng dụng có thể lưu trữ dữ liệu cục bộ trong trình duyệt của người dùng.</li>
+        <li>Trước HTML5, dữ liệu ứng dụng phải được lưu trữ trong cookie, được bao gồm trong mọi yêu cầu máy chủ. Lưu trữ web an toàn hơn và có thể lưu trữ cục bộ một lượng lớn dữ liệu mà không ảnh hưởng đến hiệu suất trang web.</li>
+        <li>Không giống như cookie, giới hạn lưu trữ lớn hơn nhiều (ít nhất 5MB) và thông tin không bao giờ được chuyển đến máy chủ.</li>
+        <li>Lưu trữ web được phân bổ theo nguồn gốc (theo tên miền và giao thức). Tất cả các trang, từ một nguồn gốc, có thể lưu trữ và truy cập cùng một dữ liệu.</li>
+    </ul>
+    <h2><li>Đối tượng API lưu trữ web</li></h2>
+    <p>Lưu trữ web cung cấp hai đối tượng để lưu trữ dữ liệu trong trình duyệt:</p>
+    <ul>
+        <li>window.localStorage- lưu trữ dữ liệu không có ngày hết hạn (dữ liệu không bị mất khi đóng tab trình duyệt)</li>
+        <li>window.sessionStorage- lưu trữ dữ liệu cho một phiên (dữ liệu sẽ bị mất khi đóng tab trình duyệt)</li>
+    </ul>
+    <h2><li>Kiểm tra hỗ trợ API lưu trữ web</li></h2>
+    <div id="result"></div>
+    <script>
+        const x = document.getElementById("result");                    //Đây là cách kiểm tra xem trình duyệt có hỗ trợ Web Storage API không.
+        if(typeof(Storage)!=="undefined"){                              //typeof(Storage) sẽ trả về "function" hoặc "object" nếu Web Storage có sẵn.
+            localStorage.setItem("name", "Khánh");                      //Nếu không có (ví dụ trình duyệt cũ), nó sẽ là "undefined".
+            localStorage.setItem("backgeound-color","yellow");          //Nếu trình duyệt hỗ trợ localStorage hoặc sessionStorage, thì điều kiện này là true.                 
+            x.innerHTML = "Xin chào, "+ localStorage.getItem("name");   //Sử dụng localStorage.setItem()phương pháp này để tạo cặp tên/giá trị
+            x.style.backgroundColor = localStorage.getItem("backgeound-color"); //Sử dụng localStorage.getItem()phương pháp để lấy các giá trị đã đặt
+        }else{                                                          //Lấy giá trị của "lastname" và chèn nó vào một phần tử có id="result"  
+            x.innerHTML = "Sorry, no Web storage support!";             //Lấy giá trị của "bgcolor" và chèn nó vào kiểu backgroundColor của phần tử có id="result"
+        }
+    </script>
+    <p>Cú pháp để xóa mục localStorage "lastname" như sau:</p>
+    <p>localStorage.removeItem("lastname");</p>
+
+    <h2><li>Đếm số lần nhấp chuột bằng localStorage</li></h2>
+    <script>
+        function clickConter()
+        {
+            const k = document.getElementById("resul");
+            if(typeof(Storage)!=="undefined")                   // Kiểm tra xem trình duyệt có hỗ trợ Web Storage không
+            { if(localStorage.clickcount)                       // Nếu đã có biến clickcount trong localStorage
+                {                                               //Vì giá trị trong localStorage luôn được lưu dưới dạng chuỗi, nên ta cần ép kiểu sang Number() để cộng được.
+                localStorage.clickcount = Number(localStorage.clickcount) + 1;//Tăng giá trị lên 1
+            }else{
+                localStorage.clickcount = 1;                    // Nếu chưa có, khởi tạo là 1
+            }
+            // Hiển thị số lần bấm lên màn hình
+            k.innerHTML = "Bạn đã bấm vào nút " + localStorage.clickcount +"time(s)!";
+        }else{
+            x.innerHTML = "Xin lỗi, không hỗ trợ lưu trữ web!";
+        }
+        }
+    </script>
+    <h3>localStorage</h3>
+    <button onclick="clickConter()" type="button"> Click me!</button> <!--có type="button": chỉ chạy lệnh clickConter()-->
+    <p id="resul"></p>
+    <p>Nhắn vào nút để xem bộ đếm tăng lên.</p>
+    <p>Đóng tab trình duyệt (hoặc cửa sổ) và thử lại bộ đếm sẽ tiếp tục đếm.</p>
+
+    <h2><li>Đối tượng sessionStorage</li></h2>
+    <script>
+            function clickCon() {
+    const x = document.getElementById("resu");
+    if (typeof(Storage) !== "undefined") {
+        if (sessionStorage.clickcount) {
+            sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+        } else {
+            sessionStorage.clickcount = 1;
+        }
+        x.innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s) in this session!";
+        } else {
+        x.innerHTML = "Sorry, no Web storage support!";
+        }
+    }
+    </script>
+    <h3>sessionStorage</h3> <!--Đối tượng này sessionStoragetương đương với localStorageđối tượng, ngoại trừ việc nó chỉ lưu trữ dữ liệu cho một phiên! Dữ liệu sẽ bị xóa khi người dùng đóng tab trình duyệt cụ thể.-->
+    <button onclick="clickCon()" type="button"> Click me!</button> <!--có type="button": chỉ chạy lệnh clickConter()-->
+    <p id="resu"></p>
+    <p>Nhắn vào nút để xem bộ đếm tăng lên.</p>
+    <p>Đóng tab trình duyệt (hoặc cửa sổ) và thử lại bộ đếm sẽ tiếp tục đếm.</p>
+    </ol>
+</body>
+</html>
