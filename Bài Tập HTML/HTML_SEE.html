@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API html see</title>
+</head>
+<body>
+    <h1>API sự kiện do máy chủ gửi HTML</h1>
+    <ol type="1">
+        <h2><li>Sự kiện do máy chủ gửi - Nhắn tin một chiều</li></h2>
+        <ul>
+            <li>Sự kiện do máy chủ gửi là khi một trang web tự động nhận được tin nhắn/cập nhật từ máy chủ.</li>
+            <li>Thông thường, một trang web phải yêu cầu dữ liệu từ máy chủ, nhưng với sự kiện do máy chủ gửi, các bản cập nhật sẽ được tự động đẩy.</li>
+            <li>Ví dụ: Cập nhật Facebook/Twitter, cập nhật thị trường chứng khoán, nguồn cấp tin tức, kết quả thể thao, v.v.</li>
+        </ul>
+        <h2><li>Nhận thông báo sự kiện do máy chủ gửi</li></h2>
+        <p>Đối EventSourcetượng được sử dụng để nhận thông báo sự kiện do máy chủ gửi:</p>
+        <ul>
+            <li>Tạo một EventSourceđối tượng mới và chỉ định URL của trang gửi các bản cập nhật (trong ví dụ này là "demo_sse.php")</li>
+            <li>Mỗi lần nhận được bản cập nhật, onmessagesự kiện sẽ xảy ra</li>
+            <li>Khi một onmessagesự kiện xảy ra, hãy đưa dữ liệu nhận được vào phần tử có id="result"</li>
+        </ul>
+        <h3>Nhận bản cập nhập máy chủ </h3>
+        <div id="result"></div>
+    
+
+ 
+
+        <script>
+        const x = document.getElementById("result");
+            if(typeof(EventSource) !== "undefined") {
+                var source = new EventSource("demo_sse.php");
+                source.onmessage = function(event) {
+                x.innerHTML += event.data + "<br>";
+                };
+            } else {
+                x.innerHTML = "Sorry, no support for server-sent events.";
+            }
+        </script>
+
+
+        <h2><li></li></h2>
+        <h2><li></li></h2>
+    </ol>
+</body>
+</html>
