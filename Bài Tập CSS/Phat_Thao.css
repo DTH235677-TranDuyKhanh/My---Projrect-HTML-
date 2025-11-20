@@ -1,0 +1,88 @@
+.outline{
+    border:2px solid black;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    outline: green solid 10px;
+    width: 700px;
+    background-color: #f1f1f1; 
+    outline-offset: -15px; /*Nằm âm lại vào trong*/
+}
+.tocky{
+    width: 500px;
+    outline: 5px solid red;
+    border: 2px solid blue;
+    background-color: yellow;
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+}
+
+p.khanh1{
+    outline-style: dotted;
+    outline-color: green;
+    padding: 5px;
+    outline-width: thick;
+}
+p.khanh2{
+    outline: dashed;
+    outline-color: green;
+    padding: 5px;
+    outline-width: medium;
+}
+p.khanh3{
+    outline: solid;
+    outline-color: green;
+    padding: 5px;
+    outline-width: thin;
+}
+p.khanh4{
+    outline: double;
+    outline-color: green;
+    padding: 5px;
+    outline-width: 8px;
+}
+p.khanh5{
+    outline: groove;
+    outline-color: green;
+    padding: 5px;
+}
+p.khanh6{
+    outline: ridge;
+    outline-color: green;
+    padding: 5px;
+}
+p.khanh7{
+    outline: inset;
+    outline-color: green;
+    padding: 5px;
+}
+p.khanh8{
+    outline: outset;
+    outline-color: green;
+    padding: 5px;
+}
+p {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+p.ex1 {
+  outline-style: solid;
+  outline-color: red;
+}
+
+p.ex2 {
+  outline-style: dotted;
+  outline-color: blue;
+}
+
+p.ex3 {
+  outline-style: outset;
+  outline-color: green;
+}
+
+p.ex4 {
+  outline-style: solid;
+  outline-color: invert;
+}

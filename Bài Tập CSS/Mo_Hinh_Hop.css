@@ -1,0 +1,14 @@
+.khung{
+    max-width: 300px;
+    background-color: #f1f1f1;
+    padding: 50px;
+    margin: 20px;
+    border: 15px solid green;
+}
+.hinhanh{
+    width: 320px;
+    height: 50px;
+    padding: 10px;
+    border: 5px solid #f1f1f1;
+    margin: 0;
+}
