@@ -1,0 +1,23 @@
+div{
+    border: 10px solid red;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+span{
+    padding-left: 10px ;
+    border-left: 5px solid blue;
+    margin: 100px 150px 100px 80px;/*Trên phải dưới trái*/
+    /*ví dụ: margin: 100px 50px 200px là trên (Trái phải) và dưới 
+             margin: 100px 50px là (Trên dưới) và (Trái phải)
+             margin: 100px là tất cả 4 cạnh đều căn lề là 100px*/
+}
+p{
+    width:500px;
+    border: 1px solid black;
+    margin: auto;
+}
+p.p1{
+    margin: inherit; /*thuộc tính để inheritcho phép lề được kế thừa từ phần tử cha.*/
+}

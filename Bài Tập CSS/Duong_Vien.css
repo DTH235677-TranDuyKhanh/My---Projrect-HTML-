@@ -1,0 +1,55 @@
+.khanh1{
+    border-style: dotted;
+    border-width: 5px 20px;
+}
+.khanh2{
+    border-style: dashed;
+    border-width: medium;
+}
+.khanh3{
+    border-style: solid;
+    border-width: thick;
+}
+.khanh4{
+    border-style: double;
+    border-width: 25px 10px 4px 25px;
+    border-color: red blue yellow green;
+}
+.khanh5{
+    border-style: groove;
+}
+.khanh6{
+    border-style: ridge;
+}
+.khanh7{
+    border-style: inset;
+}
+.khanh8{
+    border-style: outset;
+}
+.khanh9{
+    border-style: none;
+}
+.khanh10{
+    border-style: hidden;
+}
+.khanh11{
+    border-style: dotted dashed solid double;
+}
+.khanh12{
+    padding: 5px;
+    border-right-style: none;
+    border-left-style: solid ;
+    border-bottom-style: none;
+    border-top-style: none;
+    border-left-width: 5px;
+    border-left-color: red;
+}
+.khanh13{
+    padding-bottom: 10px;
+    border-bottom: 10px solid red;
+}
+.khanh14{
+    border: 5px solid black;
+    border-radius: 5px;
+}

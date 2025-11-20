@@ -1,0 +1,25 @@
+#so1{
+    background-color:#ff6347;
+}
+#so2{
+    background-color: hsl(9, 100%, 44%);/*hsl(Màu sắc, độ bảo hòa, nhẹ nhàng)*/
+}
+#so3{
+    background-color: rgba(255, 99, 71, 0.5);/*rgba(red, grenn, blue, alpha)*/
+}
+#so4{
+    background-color: hsla(9, 100%, 64%, 0.5);
+}
+#so5{
+    background-color: rgb(60, 60, 60);
+}
+#hello{
+    background-color: #f1f1f1;
+    color: red;
+    border: 1px solid yellow;
+}
+#noidung{
+    background-color: red;
+    color: black;
+    border: 1px solid blue;
+}

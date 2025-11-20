@@ -1,0 +1,22 @@
+body{
+    background-image: url("../imges/Noimage4.jpg");
+    background-repeat: no-repeat; /*Khong lap lai*/
+    /*background-repeat: repeat-x; là lặp lại theo chiều ngang
+    background-repeat: repeat-y; là lặp lại theo chiều dọc*/
+    background-position: right top; /*Vi tri bat dau cua hinh*/
+    background-attachment: fixed; /*hỉ định hình ảnh nền sẽ cuộn(scroll) hay cố định (fixed)*/
+}
+div{
+    background-color: none;
+}
+h1{
+    background-color: #87DDDD;
+}
+#so1{
+    background-color: #534789;
+    opacity: 1;
+}
+#so2{
+    background-color:#534789;
+    opacity: 0.7;
+}
