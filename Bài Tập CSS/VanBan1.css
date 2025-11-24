@@ -1,0 +1,126 @@
+.doi1{
+    text-transform: none;
+}
+.doi2{
+    text-transform: capitalize;
+}
+.doi3{
+    text-transform: uppercase;
+}
+.doi4{
+    text-transform: lowercase;
+}
+.cach1{
+    text-indent: 10px;
+}
+.cach2{
+    letter-spacing: 5px;
+}
+.cach3{
+    line-height: 50px;
+}
+.cach4{
+    word-spacing: 5px;
+}
+.cach5{
+    white-space: pre-line;/*normal, nowrap, pre, pre-line, pre-wrap. */
+}
+.do1{
+    text-shadow: 2px 2px;
+}
+.do2{
+    text-shadow: 2px 2px red;
+}
+.do3{
+    text-shadow: 2px 2px 5px red;
+}
+.do4{
+    color: yellow;
+    text-shadow: 2px 2px 5px red;
+}
+.do5{
+    color: black;
+    text-shadow: 0px 0px 5px blue;
+}
+.do6{
+    text-shaDOW: 2px 2px 5px #FF0000, 5px 5px 5px green;
+}
+.do7{
+    color: black;
+    text-shadow: 2px 2px 5px black, 0px 0px 10px blue, 0px 0px 15px red; 
+}
+.chu1{
+    font-family: 'Times New Roman', Times, serif;
+}
+.chu2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.chu3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.toan1{
+    font-family: Arial;
+}
+.toan2{
+    font-family: Verdana;
+}
+.toan3{
+    font-family: Tahoma;
+}
+.toan4{
+    font-family: Trebuchet 'Trebuchet MS';
+}
+.toan5{
+    font-family: 'Times New Roman';
+}
+.toan6{
+    font-family: Georgia;
+}
+.toan7{
+    font-family: Garamond;
+}
+.toan8{
+    font-family: Courier; 
+}
+.toan9{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.kieu1{
+    font-style: normal;
+}
+.kieu2{
+    font-style: italic;
+}
+.kieu3{
+    font-style: oblique;
+}
+.dam1{
+    font-weight: normal ;
+}
+.dam2{
+    font-weight: bold;
+}
+.dam3{
+    font-weight: bolder;
+}
+.dam4{
+    font-weight: lighter;
+}
+.dam5{
+    font-weight: 900;
+}
+.the1{
+    font-variant: normal;
+}
+.the2{
+    font-variant: small-caps;
+}
+.thuoc1{
+    font-size: 16px
+}
+.thuoc2{
+    font-size: 1rem;
+}
+.thuoc3{
+    font-size: 3vw;
+}

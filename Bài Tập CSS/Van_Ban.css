@@ -1,0 +1,113 @@
+div{
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    padding: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 600px;
+    margin: auto;
+}
+span{
+    background-color: yellow;
+}
+h2{
+
+    text-align: center;
+    color: green;
+    text-transform: uppercase; /*Dùng để chuyển toàn bộ chữ trong văn bản thành chữ in hoa*/
+}
+p{
+    text-indent: 50px; /*Dùng để thụt đầu dòng (lùi đầu dòng) cho dòng đầu tiên của một đoạn văn.*/
+    text-align: justify; /*Canh đều hai bên lề */
+    letter-spacing: 3px; /*Tăng khoảng cách giữa các ký tự trong văn bản.*/
+}
+a{
+    text-decoration: none;
+    /*là thuộc tính điều khiển các kiểu trang trí văn bản như:
+    none → không trang trí gì
+    underline → gạch chân
+    overline → gạch phía trên
+    line-through → gạch giữa
+    blink → nhấp nháy (hiếm dùng)*/
+    color: red;
+}
+.khanh1{
+    text-align: left;
+}
+.khanh2{
+    text-align: center;
+}
+.khanh3{
+    text-align: justify;
+}
+.khanh4{
+    text-align: right;
+}
+.vy1{
+    text-align-last: auto; 
+}
+.vy2{
+    text-align-last: left;
+}
+.vy3{
+    text-align-last: right;
+}
+.vy4{
+    text-align-last: center;
+}
+.vy5{
+    text-align-last: justify;
+}
+.vy6{
+    text-align-last: start;
+}
+.vy7{
+    text-align-last: end;
+}
+#s1{
+    vertical-align: baseline;
+}
+#s2{
+    vertical-align:text-top;
+}
+#s3{
+    vertical-align: text-bottom;
+}
+#s4{
+    vertical-align: sub;
+}
+#s8{
+    vertical-align: middle;
+}
+#s7{
+    vertical-align: super;
+}
+#s9{
+    vertical-align: bottom;
+}
+p.ex1{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+.trang1{
+    text-decoration-line: line-through;
+    text-decoration-color: red;
+    text-decoration-style: solid;
+}
+.trang10{
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+}
+.trang3{
+    text-decoration-line: overline underline;
+    text-decoration-color: #fd674d;
+    text-decoration-style: double;
+}
+.trang4{
+    text-decoration-line: overline;
+    text-decoration-color: yellow;
+    text-decoration-style: dotted; 
+}
+#kh{
+    text-decoration: underline solid red 5px;
+}
+

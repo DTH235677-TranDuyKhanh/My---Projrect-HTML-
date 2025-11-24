@@ -1,0 +1,76 @@
+.demo1{
+    color: blue;
+    background-color: yellow;
+    font-weight: bold;
+}
+/*:link- một liên kết bình thường, chưa được truy cập
+:visited- một liên kết người dùng đã truy cập
+:hover- một liên kết khi người dùng di chuột qua nó
+:active- một liên kết ngay khi được nhấp vào*/
+.demo2:link{
+   color: red;
+}
+.demo2:visited{
+    color: green;
+}
+.demo2:hover{
+    color: hotpink;
+}
+.demo2:active{
+    color:blue;
+}
+.demo3:link{
+    text-decoration: none;
+}
+.demo3:visited{
+    text-decoration: none;
+}
+.demo3:hover{
+    text-decoration: underline;
+}
+.demo3:active{
+    text-decoration: underline;
+}
+.demo4{
+    text-decoration: none;
+}
+.demo4:link{
+    background-color: #f1f1f1;
+}
+.demo4:visited{
+    background-color: green;
+}
+.demo4:hover{
+    background-color: yellow;
+}
+.demo4:active{
+    background-color: red;
+}
+.demo5:link,.demo5:visited{
+    color: white;
+    text-align: center;
+    border: none;
+    background-color: red;
+    margin:10px;
+    padding:10px;
+    text-decoration: none;
+}
+.demo5:hover,demo5:active{
+    background-color: yellow;
+    color: red;
+}
+.demo6:link,.demo6:visited{
+    color: black;
+    text-align: center;
+    border: 2px solid green;
+    background-color: white;
+    margin:10px;
+    padding:10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.demo6:hover,.demo6:active{
+    background-color: yellow;
+    color: red;
+    border-radius: 5px;
+}
