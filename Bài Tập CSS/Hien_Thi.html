@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị trong CSS</title>
+    <link rel="stylesheet" href="./Hien_Thi.css">
+</head>
+<body>
+    <h1>Hiển thị trong CSS</h1>
+    <ul>
+        <h3><li>Các phần tử cấp khối</li></h3>
+        <ul>
+            <li>"div"</li>
+            <li>"h1 - h6"</li>
+            <li>"p"</li>
+            <li>"form"</li>
+            <li>"header"</li>
+            <li>"footer"</li>
+            <li>"section"</li>
+        </ul>
+        <h3><li>Các phần tử nội tuyến</li></h3>
+        <ul>
+            <li>"span"</li>
+            <li>"a"</li>
+            <li>"img"</li>
+        </ul>
+        <h3><li>Giá trị hiển thị chung</li></h3>
+            <table>
+                <tr>
+                    <th>Value</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>inline</td>
+                    <td>Hiển thị phần tử như một phần tử nội tuyến (inline).
+                    → Không xuống dòng, không thể đặt chiều rộng và chiều cao.</td>
+                </tr>
+                <tr>
+                    <td>block</td>
+                    <td>Hiển thị phần tử như một phần tử khối (block).
+                    → Chiếm toàn bộ chiều ngang, tự xuống dòng, có thể đặt width/height.</td>
+                </tr>
+                <tr>
+                    <td>contents</td>
+                    <td>Làm cho phần tử biến mất về mặt bố cục,
+                    khiến các phần tử con của nó trở thành con của phần tử ở cấp DOM cao hơn.
+                    → Phần tử cha không tạo box, nhưng vẫn tồn tại trong DOM.</td>
+                </tr>
+                <tr>
+                    <td>flex</td>
+                    <td>Hiển thị phần tử dưới dạng flex container ở cấp block.
+                    → Dùng cho bố cục linh hoạt 1 chiều (ngang hoặc dọc).</td>
+                </tr>
+                <tr>
+                    <td>grid</td>
+                    <td>Hiển thị phần tử như một grid container ở cấp block.
+                    → Dùng cho bố cục dạng lưới 2 chiều (hàng + cột).</td>
+                </tr>
+                <tr>
+                    <td>inline-block</td>
+                    <td>Hiển thị phần tử như một phần tử nội tuyến nhưng là khối nhỏ (inline-level block).
+                    → Không xuống dòng như inline, nhưng có thể đặt width/height, padding, margin.</td>
+                </tr>
+                <tr>
+                    <td>none</td>
+                    <td>Phần tử bị ẩn hoàn toàn khỏi dòng tài liệu (document flow).
+                    → Không hiển thị và không chiếm không gian.</td>
+                </tr>
+            </table>
+            <h3><li>Hiển thị CSS: none </li></h3>
+            <p class="click" onclick="myFunction()">Hãy click vào đây! </p>
+            <div id="panel">
+                <p>This panel contains a div element, which is hidden by default (display: none).</p>
+                <p>We use JavaScript to show it (display: block).</p>
+                <p>How it works: When the user clicks on the p element, a function called myFunction() is executed, which changes the style of the div with id="panel" from display:none (hidden) to display:block (visible).</p>
+                <p>You will learn more about JavaScript in our JavaScript Tutorial.</p>
+            </div>
+            <script>
+                function myFunction(){
+                    var x = document.getElementById("panel");
+                    if (x.style.display === "none")
+                    {
+                        x.style.display = "block";
+                    }else
+                    {
+                        x.style.display = "none";
+                    }
+                }
+            </script>
+            <h3><li>Ghi đè giá trị hiển thị mặc định: inline</li></h3>
+            <p>Hiển thị danh sách liên kết các dạng menu ngang: </p>
+            <ul class="khanh">
+                <li class="i"><a href="#home">Home</a></li>
+                <li class="i"><a href="Tintuc">Tin tức</a></li>
+                <li class="i"><a href="Contract">Liên hệ</a></li>
+                <li class="i"><a href="About">Giới thiệu</a></li>
+            </ul>
+            <h3><li>Dưới dạng các phần tử khối: display: block; </li></h3>
+            <span class="he">A display property with</span> <span class="he">a value of "block" results in</span> 
+            <span class="he">a line break between each span elements.</span>
+            <a class="y" href="./Van_Ban_CSS.html" target="_blank">HTML</a>
+            <a class="y" href="./Bang.html" target="_blank">CSS</a>
+            <a class="y" href="./Hien_Thi.html" target="_blank">JavaScript</a>
+    </ul>
+            <h2>display: none:</h2>
+            <p class="ex1">
+            <span>Text 1</span>
+            <span>Text 2</span>
+            <span>Text 3</span>
+            </p>
+
+            <h2>display: inline:</h2>
+            <p class="ex2">
+            <span>Text 1</span>
+            <span>Text 2</span>
+            <span>Text 3</span>
+            </p>
+
+            <h2>display: block:</h2>
+            <p class="ex3">
+            <span>Text 1</span>
+            <span>Text 2</span>
+            <span>Text 3</span>
+            </p>
+
+            <h2>display: inline-block:</h2>
+            <p class="ex4">
+            <span>Text 1</span>
+            <span>Text 2</span>
+            <span>Text 3</span>
+            </p>
+
+            <h2>display: flex:</h2>
+            <p class="ex5">
+            <span>Text 1</span>
+            <span>Text 2</span>
+            <span>Text 3</span>
+            </p>
+
+            <h2>display: grid:</h2>
+            <p class="ex6">
+            <span>Text 1</span>
+            <span>Text 2</span>
+            <span>Text 3</span>
+            </p>
+</body>
+</html>
