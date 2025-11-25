@@ -1,0 +1,59 @@
+.a{
+    list-style-type: circle;
+}
+.b{
+    list-style-type: disc;
+}
+.c{
+    list-style-type: square;
+}
+.d{
+    list-style-type: upper-roman;
+}
+.e{
+    list-style-type: lower-roman;
+}
+.f{
+    list-style-type: lower-alpha; 
+}
+.r{
+    list-style-type: decimal;
+}
+.kh{
+    list-style-image: url('../imges/Noimage4.jpg');
+    list-style-type: square;
+}
+.khanh{
+    list-style-position: inside;
+}
+.khanhduy{
+    list-style-position: outside;
+}
+.khanhduytran{
+    list-style-type: none;
+}
+.vy{
+    list-style: square inside url('../imges/đèn\ tắt.avif');
+}
+ol.nuoc{
+    background-color: #F3d365;
+    padding: 20px;
+    color: white;
+}
+ol.nuoc li{
+    text-shadow: 3px 3px 10px blue;
+    background-color: green;
+    color: white;
+    margin-left: 10px;
+    padding:10px;
+}
+ul.uong{
+    background-color: #d5f0f8;
+    padding: 20px;
+}
+ul.uong li{
+    text-shadow: 2px 2px 5px red;
+    background-color: yellow;
+    margin: 10px;
+    padding: 10px;
+}

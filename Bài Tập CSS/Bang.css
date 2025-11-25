@@ -1,0 +1,60 @@
+/*.vy, tr, td, th{
+    border: 1px solid red;
+    border-collapse: separate;
+    padding: 10px;
+    border-spacing: 5px;
+/*Thuộc tính này có thể có một trong các giá trị sau:
+
+separate- Giá trị mặc định. Đường viền được tách biệt; mỗi ô sẽ hiển thị đường viền riêng
+collapse- Các đường viền được thu gọn thành một đường viền duy nhất khi có thể
+
+}*/
+.khanh{
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td{
+    border: 1px solid #f1f1f1;
+    padding: 8px;
+    width: auto;
+    height: auto;
+
+}
+th{
+    color: white;
+    background-color: green;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+tr:nth-child(even)
+{
+    background-color: #f2f2f2;
+}
+tr:hover{
+    background-color: #f1f1f1;
+}
+.mau1{
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+}
+.t:hover{
+    background-color: coral;
+}
+.t:nth-child(even)/* chẳn : even
+                     lẻ : odd*/
+{
+    background-color:  #f1f1f1;
+}
+.a9{
+    background-color: green;
+}
+.khung{
+    overflow-x: auto;
+    /*Bảng phản hồi sẽ hiển thị thanh cuộn ngang nếu màn hình quá nhỏ để hiển thị toàn bộ nội dung.*/
+}
