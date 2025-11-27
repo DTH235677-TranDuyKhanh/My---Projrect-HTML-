@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vị trí trong CSS ( Position )</title>
+    <link rel="stylesheet" href="./Vi_Tri.css">
+</head>
+<body>
+    <h1>Vị trí trong CSS</h1>
+    <ul>
+        <h2><li>Thuộc tính vị trí CSS</li></h2>
+        <ul>
+            <li>static - đây là mặc định</li>
+            <li>relative</li>
+            <li>fixed</li>
+            <li>absolute</li>
+            <li>sticky</li>
+        </ul>
+        <h2><li>Vị trí CSS: Static (tĩnh)</li></h2>
+        <p>luôn được định vị theo luồng thông thường của trang:</p>
+        <div class="khanh">Trần Duy Khánh. </div>
+        <h2><li>Vị trí CSS: Relative (tương đối)</li></h2>
+        <p>Việc thiết lập các thuộc tính trên cùng, phải, dưới cùng và trái sẽ khiến phần tử bị lệch khỏi vị trí bình thường. Nội dung khác sẽ không được điều chỉnh để vừa với bất kỳ khoảng trống nào do phần tử để lại.</p>
+        <div class="tran">Trần Duy Khánh. </div>
+        <h2><li>Vị trí CSS: fixed (cố định)</li></h2>
+        <p>Một phần tử được position: fixed;định vị tương đối so với khung nhìn, nghĩa là nó luôn giữ nguyên vị trí ngay cả khi cuộn trang. Các thuộc tính top, right, bottom và left được sử dụng để thiết lập vị trí cuối cùng của phần tử.</p>
+        <div class="duy">Trần Duy Khánh. </div>
+        <h2><li>Vị trí CSS: Absolute (tuyệt đối)</li></h2>
+        <p>Một phần tử có position: absolute;vị trí tương đối so với phần tử tổ tiên có vị trí gần nhất (với vị trí khác với vị trí tĩnh).
+        Tuy nhiên; nếu một phần tử được định vị tuyệt đối không có phần tử tổ tiên được định vị, nó sẽ sử dụng phần thân tài liệu và di chuyển cùng với thao tác cuộn trang.</p>
+        <div class="do"> Phần tử div có vị trí: relative;
+            <div class="thanh"> Phần tử div có vị trí: position: absolute; </div>
+        </div>
+        <h2><li>Vị trí CSS: sticky (cố định)</li></h2>
+        <p>Một phần tử có position: sticky;nz   út chuyển đổi giữa a relativevà fixed position, tùy thuộc vào vị trí cuộn.
+        Một phần tử cố định được định vị tương đối cho đến khi đạt đến một vị trí cuộn nhất định - sau đó nó sẽ "dính" vào vị trí đó (giống như position:fixed).</p>
+        <div class="huyen"> I have position sticky! </div>
+        <div>
+        <p>Scroll back up to remove the stickyness!</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        </div>
+        <h2><li>Vị trí văn bản trên hình ảnh</li></h2>
+        <p>ví dụ: </p>
+        <div class="hinh">
+            <img src="../imges/Noimage4.jpg" alt="Vịnh Hạ Long"/>
+            <div class="chu">
+               <p> Vịnh Hạ Long </p>
+            </div>
+        </div>
+    </ul>
+</body>
+</html>

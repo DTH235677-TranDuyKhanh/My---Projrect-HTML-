@@ -1,0 +1,43 @@
+img{
+    position: absolute;
+    width: 100%;
+    top: 110px;
+    left: 10px;
+    z-index: -1;
+    opacity: 0.5;
+    height: 200PX;
+}
+.relative{
+    position: relative;
+}
+.black-box{
+    border: 2px solid black;
+    width: 500px;
+    height: 200px;
+    z-index: 1;
+    margin: 30px;
+    position: relative;
+    background-color: rgb(142, 123, 123)
+}
+.green-box{
+    border: 2px solid green;
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    left: 50px; 
+    background-color: rgb(144, 223, 144);
+    z-index: 3;
+}
+.gray-box{
+    border: 2px solid gray;
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    bottom: 10px;
+    left: 250px;
+    background-color: rgb(236, 201, 201);
+    z-index: 2;
+}
+
+

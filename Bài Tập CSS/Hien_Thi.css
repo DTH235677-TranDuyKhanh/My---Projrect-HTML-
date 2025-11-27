@@ -67,3 +67,24 @@ span{
     background-color: red;
     padding: 10px;
 }
+.imbox{
+    float: left;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    width: 120px;
+    border: 2px solid gray;
+}
+button{
+    width: 100%;
+}
+.ex10{
+    width: 600px;
+    border: 2px solid green;
+    margin: auto;
+}
+.ex11{
+    max-width: 600px;
+    border: 2px solid green;
+    margin: auto;
+}

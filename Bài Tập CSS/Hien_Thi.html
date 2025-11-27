@@ -144,5 +144,46 @@
             <span>Text 2</span>
             <span>Text 3</span>
             </p>
+        
+            <h2>Difference between display:none and visiblity: hidden</h2>
+            <p><strong>visibility:hidden</strong> hides the element, but it still takes up space in the layout.</p>
+            <p><strong>display:none</strong> removes the element from the document. It does not take up any space.</p>
+            <div class="imbox" id="imbox1">
+                Box1 <br>
+                <img src="../imges/Noimage4.jpg" alt="Cocacola" style="width:100%"/>
+                <button onclick="removeElement()">Remove</button>
+            </div>
+            <div class="imbox" id="imbox2">
+                Box2 <br>
+                <img src="../imges/ảnh logo/Amazon.jpg" alt="Amazom" style="width:100%" />
+                <button onclick="changeVisibility()">Hide</button>
+            </div>
+            <div class="imbox">
+                Box3 <br>
+                <img src="../imges/ảnh logo/Lego.jpg" alt="Lego" style="width:100%" />
+                <button onclick="reset()">Reset All</button>
+            </div>
+            <script>
+                function removeElement()
+                {
+                    document.getElementById("imbox1").style.display = "none";
+                }
+                function changeVisibility()
+                {
+                    document.getElementById("imbox2").style.visibility = "hidden";
+                }
+                function reset()
+                {
+                    document.getElementById("imbox1").style.display = "block";
+                    document.getElementById("imbox2").style.visibility = "visible";
+                }
+            </script>
+            <br>
+            <div class="ex10">
+                <p>Tràn Duy Khánh, công nghệ thông tin, Đỗ Thanh Vy, bảo vệ thực vật.</p>
+            </div>
+            <div class="ex11">
+                <p>Tràn Duy Khánh, công nghệ thông tin, Đỗ Thanh Vy, bảo vệ thực vật.</p>
+            </div>
 </body>
 </html>
