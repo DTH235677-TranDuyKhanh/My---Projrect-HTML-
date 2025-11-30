@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+.float1{
+    float: right;
+    margin-left: 15px; 
+    width: 300px;
+    height: 200px;
+}
+.right{
+    border: 2px solid black;
+    padding: 10px;
+}
+.float2{
+    float: left;
+    margin-right: 15px;
+    width: 300px;
+    height: 200px;
+}
+.left{
+    border: 2px solid red;
+    padding: 10px;
+}
+.float3{
+    float: none;
+    margin: auto;
+    width: 300px;
+    height: 200px;
+}
+.none{
+    border: 2px solid #625151;
+    padding: 10px;
+}
+.k1{
+  float: right;
+  padding: 10px;
+  border: 3px solid green;
+}
+.k2{
+    float: right;
+    padding: 10px;
+    border: 3px solid red;
+    width: 200px;
+    height: 50px;
+    clear: right;
+}
+.k3{
+    float: left;
+    padding: 10px;
+    border: 3px solid green;
+}
+.k4{
+    clear: left;
+    padding: 10px;
+    border: 3px solid red;
+    width: 200px;
+    height: 50px;
+}
+.khanh12{
+    padding: 10px;
+    border: 3px solid green;
+}
+.khanh123{
+    padding: 10px;
+    border: 3px solid green;
+}
+.khanh1{
+    float: right;
+}
+.khanh2{
+    float: right;
+}
+.khanh123::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+    /*.khanh123::after - Nhắm mục tiêu vào một phần tử giả được tạo sau nội dung của bất kỳ phần tử nào có class="clearfix"
+    Content: "" - Đảm bảo phần tử giả được hiển thị, ngay cả khi nó không có nội dung hiển thị
+    clear: both - Điều này xóa cả phần tử nổi bên trái và bên phải, đẩy bất kỳ nội dung nào theo sau xuống bên dưới các phần tử nổi và buộc vùng chứa chính phải mở rộng để bao gồm chúng
+    display: table - Điều này tạo ra một ngữ cảnh định dạng khối mới, giúp chứa các số thực*/
+.hopchung::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.hop{
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+}
+.img{
+    width: 33,3%;
+    float: left;
+    padding: 5px;
+}
+.img-container{
+    content: "";
+    clear: both;
+    display: table;
+}
+.mau11{
+    padding: 5px;
+    margin: auto;
+    float: left;
+    height: 300px;
+    width: 50%;
+}
+.mau1::after{
+    content: "";
+    clear: both;
+    display: table;
+}
