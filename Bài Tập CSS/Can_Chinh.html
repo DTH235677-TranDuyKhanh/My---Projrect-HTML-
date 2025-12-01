@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Căn chỉnh trong CSS</title>
+    <link rel="stylesheet" href="./Can_Chinh.css">
+</head>
+<body>
+    <h1>Căn chỉnh theo chiều ngang và chiều dọc CSS</h1>
+    <ul>
+        <h2><li>Căn giữa các phần tử khối và Căn giữa văn bản</li></h2>
+        <p>Sử dụng margin: auto;, để căn giữa theo chiều ngang một phần tử cấp khối (như div).
+        Ngoài ra, hãy chỉ định a widthcho phần tử để ngăn không cho nó kéo dài ra đến các cạnh của vùng chứa nó.
+        Lưu ý: Căn giữa không có tác dụng với các phần tử ở cấp khối nếu widththuộc tính không được đặt (hoặc được đặt thành 100%).
+        Bên dưới, phần tử div được căn giữa và có chiều rộng là 50% (và không gian còn lại sẽ được chia đều giữa lề trái và lề phải)</p>
+        <div class="center1">
+            <p>I am centered!</p>
+        </div><br>
+        <h2><li>Căn giữa hình ảnh</li></h2>
+        <img src="./images/Danh-lam-thang-canh.png" alt="Danh lam tắng cảnh" width="300" height=" 200">
+        <h2><li>Căn giữa với Flexbox</li></h2>
+        <div class="center2">
+        <p>I am vertically and horizontally centered.</p>
+        </div>
+        <h2><li>Căn giữa với lưới: grid</li></h2>
+        <div class="center3">
+        <p>I am vertically and horizontally centered.</p>
+        </div>
+        <h2><li>Căn trái và phải - Sử dụng vị trí</li></h2>
+        <div class="right">
+        <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+        </div>
+        <br>
+    </ul>
+</body>
+</html>

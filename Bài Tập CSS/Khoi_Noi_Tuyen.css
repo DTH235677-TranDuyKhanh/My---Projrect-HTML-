@@ -1,0 +1,41 @@
+.a{
+    display: line;
+    border: 1px solid red;
+    background-color: yellow;
+    padding: 5px;
+    /*không chỉnh được kích thước*/
+}
+.b{
+    displaY: inline-block;
+    border: 1px solid red;
+    background-color: yellow;
+    padding: 5px;
+    height: 50px;
+    width: 70px
+}
+.c{
+    displaY: block;
+    border: 1px solid red;
+    background-color: yellow;
+    height: 50px;
+    width: 70px;
+    padding: 5px;
+}
+.duy{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #7b6565;
+}
+.duy .khanh{
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px;
+    width: 20%;
+    text-align: center;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}

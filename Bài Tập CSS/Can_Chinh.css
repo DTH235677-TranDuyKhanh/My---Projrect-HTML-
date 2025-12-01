@@ -1,0 +1,54 @@
+.center1{
+    border: 3px solid green;
+    width: 50%;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    background-color: yellow;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.center2{
+    margin: auto;
+    border: 3px solid green;
+    width: 70%;
+    height: 200px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    /*Dùng để căn chỉnh các phần tử con theo TRỤC CHÍNH (main axis).
+    Với Flexbox mặc định (flex-direction: row), trục chính là trục ngang.*/
+    align-items: center;
+    /*Căn chỉnh phần tử con theo TRỤC PHỤ (cross axis).
+    Với flex-direction: row, trục phụ là trục dọc.*/
+}
+.center3{
+    border: 3px solid green;
+    width: 70%;
+    height: 200px;
+    background-color: yellow;
+    margin: auto;
+    display: grid;
+    /*Thuộc tính này biến phần tử thành một Grid Container, cho phép bạn sắp xếp các phần tử con theo hàng và cột.
+    Grid là một hệ thống layout mạnh mẽ giúp:
+    Chia bố cục theo lưới
+    Căn chỉnh theo hàng/cột
+    Kiểm soát bố cục 2 chiều (flex chỉ mạnh một chiều)*/
+    place-items: center;
+    /*place-items là viết tắt của hai thuộc tính:
+        align-items
+        justify-items*/
+}
+.right{
+    position: absolute;
+    border: 3px solid green;
+    background-color: yellow;
+    width: 50%;
+    height:100px;
+    right: 0px;
+    padding: 10px;
+    margin: 10px;
+}
