@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các lớp giả trong CSS</title>
+    <link rel="stylesheet" href="./Cac_Lop_Gia.css">
+</head>
+<body>
+    <h1>Các lớp giả trong CSS</h1>
+    <ol type="1">
+        <h2><li>Các lớp giả CSS</li></h2>
+        <p>Lớp giả CSS là một từ khóa có thể được thêm vào bộ chọn để xác định kiểu cho trạng thái đặc biệt của một phần tử.</p>
+        <p>Một số cách sử dụng phổ biến cho lớp giả:</p>
+        <ul>
+            <li>Tạo kiểu cho một phần tử khi người dùng di chuyển chuột qua nó</li>
+            <li>Kiểu liên kết đã truy cập và chưa truy cập khác nhau</li>
+            <li>Tạo kiểu cho một phần tử khi nó được chú ý</li>
+            <li>Kiểu các thành phần biểu mẫu hợp lệ/không hợp lệ/bắt buộc/tùy chọn</li>
+            <li>Định kiểu cho một phần tử là phần tử con đầu tiên của phần tử cha của nó</li>
+        </ul>
+        <h2><li>Các lớp giả được sử dụng trên các liên kết</li></h2>
+        <p>Đối với các liên kết HTML, người ta thường sử dụng các lớp giả sau:</p>
+        <ul>
+            <li>:link- Kiểu liên kết chưa được truy cập</li>
+            <li>:visited- Kiểu liên kết đã truy cập</li>
+            <li>:hover- Định dạng liên kết khi di chuột qua</li>
+            <li>:active- Định dạng một liên kết được kích hoạt</li>
+        </ul>
+        <p>Vis dụ: Di chuyển chuột qua tôi</p>
+        <div class="vidu1">Di chuyển chuột qua tôi</div>
+        <h2><li>:tập trung vào đầu vào</li></h2>
+        <p>Sau đây là ví dụ về việc sử dụng lớp giả để định dạng trường nhập liệu khi trường này được lấy nét: :focus</p>
+        <div class="chung">
+        <form action="">
+            First Name: <input type="text" name="fname"><br><br>
+            Last Name: <input type="text" name="lname"><br><br>
+            <input type="submit" value="submit">
+        </form>
+        </div>
+        <h2><li>Di chuột vào Tooltip đơn giản</li></h2>
+        <div class="hienthi">Di chuyển chuột qua tôi hiển thị phần tử P.
+            <p class="dichuyen">Tada! tôi đây. </p>
+        </div>
+        <h2><li>CSS :first-child Pseudo-class</li></h2>
+        <p>Lớp :first-childgiả khớp với một phần tử cụ thể là phần tử con đầu tiên của một phần tử khác.</p>
+        <p>Kiểu tất cả các phần tử con p đầu tiên</p>
+        <p>Trong ví dụ sau, bộ chọn sẽ khớp với tất cả các phần tử <p> là phần tử con đầu tiên của bất kỳ phần tử nào:</p>
+        <div>
+        <p class="khanh1">This is some text.</p>
+        <p class="khanh1">This is some text.</p>
+        <div>
+            <p class="khanh1">This is some text.</p>
+            <p class="khanh1">This is some text.</p>
+        </div>
+        </div>
+
+        <div>
+        <p class="khanh1">This is some text.</p>
+        <p class="khanh1">This is some text.</p>
+        </div>
+        <h2><li>Lớp giả CSS :lang()</li></h2>
+        <p>Pseudo :lang()-class được sử dụng để chọn các phần tử có thuộc tính lang với giá trị được chỉ định.</p>
+        <p>In this example, :lang defines the quotation marks for q elements with lang="no":</p>
+
+        <p>Some text <q lang="no">A quote in a paragraph</q> Some text.</p>
+    </ol>
+</body>
+</html>

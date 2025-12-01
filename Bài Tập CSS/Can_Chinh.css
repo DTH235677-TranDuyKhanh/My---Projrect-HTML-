@@ -52,3 +52,27 @@ img{
     padding: 10px;
     margin: 10px;
 }
+.left{
+    border: 3px solid green;
+    background-color: yellow;
+    width: 70%;
+    float: left;
+    padding: 30px;
+    text-align: center;
+}
+.container{
+    border: 3px solid green;
+    height: 200px;
+    position: relative;
+    background-color: yellow;
+}
+.container .contai{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    /*Dịch phần tử .contai ngược lại 50% chiều rộng và 50% chiều cao của chính nó.
+    Nhờ đó, tâm của .contai sẽ đúng vào tâm của .container.
+    👉 Kết quả: phần tử con nằm chính giữa hoàn toàn (cả ngang và dọc).*/
+}

@@ -1,0 +1,54 @@
+.vidu1{
+    border: none;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    background-color: green;
+    color: white;
+    margin: auto;
+}
+.vidu1:link{
+    background-color: rgb(176, 222, 176);
+}
+.vidu1:visited{
+    background-color: yellow;
+}
+.vidu1:hover{
+    background-color: rgb(115, 115, 205);
+    font-size: 30px;
+}
+.vidu1:active{
+    background-color: red;
+}
+.chung{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    border: 3px solid green;
+    height: 100px;
+    width: 300px;
+    padding: 20px;
+}
+input:focus{
+    background-color: yellow;
+}
+.dichuyen {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+.hienthi:hover .dichuyen {
+  display: block;
+}
+.khanh1:first-child{
+    color: blue;
+}
+q:lang(no) {
+  quotes: "~" "~";
+  color: red;
+  background-color: yellow;
+}

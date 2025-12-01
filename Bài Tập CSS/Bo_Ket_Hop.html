@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bộ kết hợp trong CSS</title>
+    <link rel="stylesheet" href="./Bo_Ket_Hop.css">
+</head>
+<body>
+    <h1>Bộ kết hợp CSS</h1>
+    <ul>
+        <h2><li>Bộ kết hợp CSS</li></h2>
+        <p>Bộ kết hợp là thứ xác định mối quan hệ giữa hai hoặc nhiều bộ chọn.</p>
+        <p>Một bộ chọn CSS có thể chứa nhiều hơn một bộ chọn. Giữa các bộ chọn, chúng ta có thể thêm một bộ kết hợp để tạo ra một lựa chọn cụ thể hơn.</p>
+        <p>Có bốn bộ kết hợp khác nhau trong CSS:</p>
+        <ul>
+            <li>Bộ kết hợp hậu duệ (khoảng cách)</li>
+            <li>Bộ kết hợp con (>)z</li>
+            <li>Bộ kết hợp anh chị em tiếp theo (+)</li>
+            <li>Bộ kết hợp anh chị em tiếp theo (~)</li>
+        </ul>
+        <h2><li>Descendant Combinator (khoảng cách)</li></h2>
+        <div class="so1">
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <section><p>Paragraph 3 in the div.</p></section>
+        </div>
+
+        <p>Paragraph 4. Not in a div.</p>
+        <p>Paragraph 5. Not in a div.</p>
+        <h2><li>Bộ kết hợp anh chị em tiếp theo (+)</li></h2>
+        <div class="so2">
+        <p class="so3">Paragraph 1 in the div.</p>
+        <p class="so3">Paragraph 2 in the div.</p>
+        </div>
+
+        <p class="so3">Paragraph 3. After a div.</p>
+        <p class="so3">Paragraph 4. After a div.</p>
+
+        <div class="so2">
+        <p class="so3">Paragraph 5 in the div.</p>
+        <p class="so3">Paragraph 6 in the div.</p>
+        </div>
+
+        <p class="so3">Paragraph 7. After a div.</p>
+        <p class="so3">Paragraph 8. After a div.</p>
+        <h2><li>Combinator anh em tiếp theo (~)</li></h2>
+        <p class="so5">Paragraph 1.</p>
+
+        <div class="so4">
+        <p class="so5">Paragraph 2.</p>
+        </div>
+
+        <p class="so5">Paragraph 3.</p>
+        <code>Some code.</code>
+        <p class="so5">Paragraph 4.</p>
+
+
+    </ul>
+</body>
+</html>
