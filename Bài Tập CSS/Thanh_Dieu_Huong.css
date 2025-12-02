@@ -1,0 +1,49 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.doc1{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+.doc2 .doc3{
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.doc2:hover .doc3:hover{
+    background-color: #555555;
+    color: white;
+}
+.doc2:active .doc3:active{
+    background-color: lightgreen;
+    color: white;
+}
+.ngang1{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    overflow: hidden;
+}
+.ngang1 .ngang2{
+    float: left;
+}
+.ngang1 .ngang2 .ngang3{
+    display: block;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+.ngang1 .ngang2 .ngang3:hover{
+    background-color: #111111;
+}

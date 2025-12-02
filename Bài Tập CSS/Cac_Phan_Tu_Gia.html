@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các phân tử giả trong CSS</title>
+    <link rel="stylesheet" href="./Cac_Phan_Tu_Gia.css">
+</head>
+<body>
+    <h1>Các phần tử giả CSS</h1>
+    <ol type="1">
+        <h2><li>Các phần tử giả CSS: </li></h2>
+        <p>Phần tử giả CSS là một từ khóa có thể được thêm vào bộ chọn để định kiểu cho một phần cụ thể của phần tử.</p>
+        <p>Một số cách sử dụng phổ biến cho phần tử giả:</p>
+        <ul>
+            <li>Định dạng chữ cái đầu tiên hoặc dòng đầu tiên của một phần tử</li>
+            <li>Chèn nội dung trước hoặc sau một phần tử</li>
+            <li>Định dạng các điểm đánh dấu của các mục danh sách</li>
+            <li>Định dạng phần do người dùng chọn của một phần tử</li>
+            <li>Định dạng hộp xem phía sau hộp thoại</li>
+        </ul>
+        <h2><li>Phần tử giả CSS ::first-line</li></h2>
+        <p>Phần ::first-linetử giả được sử dụng để thêm kiểu đặc biệt vào dòng đầu tiên của văn bản.</p>
+        <p>Lưu ý: Phần ::first-linetử giả chỉ có thể được áp dụng cho các phần tử cấp khối.</p>
+        <p class="first-line">Trong tin học, các tập tin định kiểu theo tầng – dịch từ tiếng Anh là Cascading Style Sheets (CSS) – được dùng để miêu tả cách trình bày các tài liệu viết bằng ngôn ngữ HTML và XHTML.[1] Ngoài ra ngôn ngữ định kiểu theo tầng cũng có thể dùng cho XML, SVG, XUL. Các đặc điểm kỹ thuật của CSS được duy trì bởi World Wide Web Consortium. Thay vì đặt các thẻ quy định kiểu dáng cho văn bản HTML (hoặc XHTML) ngay trong nội dung của nó, bạn nên sử dụng CSS.</p>
+        <h2><li>Phần tử giả CSS ::first-letter</li></h2>
+        <p class="first-letter">Bạn có thể sử dụng phần tử giả first-letter để thêm ký tự đặt biệt vào văm bảng. </p>
+        <h2><li>Phần tử giả CSS ::before</li></h2>
+        <h3>Đây là một tiêu đề. </h3>
+        <p>Phần tử giả before chèn nội dung trước nội dung của phần tử.</p>
+        <h2><li>Phần tử giả CSS ::after</li></h2>
+        <p>Phần ::aftertử giả được sử dụng để chèn một số nội dung sau nội dung của một phần tử được chỉ định.</p>
+        <p>Sử dụng contentthuộc tính này để chỉ định nội dung cần chèn. </p>
+        <h4>Đây là tiêu đề. </h4>
+        <p>Phần tử giả after chèn nội dung sau nội dung của phần tử. </p>
+        <h2><li>Phần tử giả CSS ::marker</li></h2>
+        <p>Phần ::markertử giả được sử dụng để định dạng các đánh dấu mục danh sách.</p>
+        <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        </ul>
+
+        <ol>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+        </ol>
+        <h2><li>Phần tử giả CSS ::selection</li></h2>
+        <p>Phần ::selectiontử giả được sử dụng để định dạng phần văn bản được người dùng chọn.</p>
+        <h2><li>Phần tử giả CSS ::backdrop</li></h2>
+        <p>Phần ::backdroptử giả được sử dụng để định dạng hộp xem phía sau hộp thoại hoặc phần tử bật lên.</p>
+        <p>Click the button to show a dialog box. </p>
+        <button id="dialogBtn">Show dialog</button>
+        <dialog id="myDialog">
+            <form method="dialog">
+                <p>The background  behind  this dialog, is a backdrop. </p>
+                <button>Close Dialog </button>
+            </form>
+        </dialog>
+        <script>
+            const dialogBtn = document.getElementById('dialogBtn');
+            const myDialog = document.getElementById('myDialog');
+            dialogBtn.addEventListener('click', () => myDialog.showModal())
+        </script>
+    </ol>
+</body>
+</html>

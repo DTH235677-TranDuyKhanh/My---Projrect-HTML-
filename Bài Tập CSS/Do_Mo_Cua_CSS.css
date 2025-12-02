@@ -1,0 +1,50 @@
+img{
+    opacity: 0.5;
+    width: 20%;
+}
+.mo1{
+    opacity: 0.5;
+}
+.mo1:hover{
+    opacity: 1;
+}
+.mo2{
+    opacity: 0.5;
+}
+.mo2:hover{
+    opacity: 1;
+}
+.mo3{
+    opacity: 0.5;
+}
+.mo3:hover{
+    opacity: 1;
+}
+div{
+    background-color: lightgreen;
+    padding: 10px
+}
+.hop1{
+    opacity: 0.1;
+}
+.hop2{
+    opacity: 0.3;
+}
+.hop3{
+    opacity: 0.6;
+}
+.background{
+    background: url('./images/hình\ hoa.jpg');
+    border: 1px solid black;
+}
+.transbox{
+    margin: 30px;
+    text-align: center;
+    background-color: rgba(225,225,225,0.6);
+    border: 1px solid black;
+}
+.transbox p{
+    margin: 5%;
+    font-weight: bold;
+    color: black;
+}
