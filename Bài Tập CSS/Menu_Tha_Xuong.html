@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu thả xuống trong CSS</title>
+    <link rel="stylesheet" href="./Menu_Tha_Xuong.css">
+</head>
+<body>
+    <h1>Menu thả xuống trong CSS</h1>
+    <ol type="1">
+        <h2><li>Hộp thả xuống CSS có văn bản</li></h2>
+        <div class="dropdown">Mouse over me!
+            <div class="content-dropdown">Hello world! </div>
+        </div><br><br>
+        <h2><li>Menu thả xuống CSS</li></h2>
+        <div class="tongquat">
+            <button class="btnButtton">
+                Click vào đây ! 
+            </button>
+            <div class="lienket">
+                <a href="#home">Home</a>
+                <a href="#contact">Contact</a>
+                <a href="#news">News</a>
+                <a href="#about">About</a>
+            </div><br><br><br><br><br><br><br><br><br>
+        </div>
+        <h2><li>CSS Dropdown căn phải</li></h2>
+        <div class="chung" style="float:left ">
+            <button class="left">Left</button>
+            <div class="link" style="left: 0">
+                <a href="#lienket1">Liên kết 1</a>
+                <a href="#lienket2">Liên kết 2</a>
+                <a href="#lienket3">Liên kết 3</a>
+                <a href="#lienket4">Liên kết 4</a>
+            </div>
+        </div>
+        <div class="chung" style="float:right ">
+            <button class="left">Right</button>
+            <div class="link">
+                <a href="#lienketa">Liên kết a</a>
+                <a href="#lienketb">Liên kết b</a>
+                <a href="#lienketc">Liên kết c</a>
+                <a href="#lienketd">Liên kết d</a>
+            </div>
+        </div><br><br><br><br><br><br><br><br><br>
+        <h2><li>Hình ảnh thả xuống CSS</li></h2>
+        <div class="tatca">
+            <img src="./images/Danh-lam-thang-canh.png" alt="Danh lam thắng cảnh" width="100" hright="50">
+            <div class="hinhanh">
+                <img src="./images/Danh-lam-thang-canh.png" alt="Danh lam thắng cảnh" width="300" height="200">
+                <div class="alt">Danh Lam Thắng Cảnh</div>
+            </div>
+        </div><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h2><li>Thanh điều hướng thả xuống CSS</li></h2>
+        <ul>
+            <li><a href="#home">Trang chủ</a></li>
+            <li><a href="#news">News</a></li>
+            <li class="dropdown123">
+                <a href="#dropdown" class="dropdown">Dropdown</a>
+                <div class="content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    <a href="#">Link 4</a>
+                </div>
+            </li>
+        </ul>
+    </ol>
+</body>
+</html>

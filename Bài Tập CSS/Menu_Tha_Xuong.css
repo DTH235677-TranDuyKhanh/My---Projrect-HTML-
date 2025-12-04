@@ -1,0 +1,153 @@
+.dropdown{
+    position: relative;
+}
+.content-dropdown{
+    display: none;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+    min-width: 200px;
+    padding: 10px 16px;
+    position: absolute;
+}
+.dropdown:hover .content-dropdown{
+    display: block;
+}
+.btnButtton{
+    border: none;
+    background-color: green;
+    padding: 15px;
+    font-size: 17px;
+    text-align: center;
+    color: white;
+    width: 150px;
+}
+.tongquat{
+    position: relative;
+}
+.lienket {
+    position: absolute;
+    display: none;
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+    padding: 15px;
+    min-width: 120px;
+}
+.lienket a{
+    display: block;
+    color: black;
+    padding: 0px 5px 10px 0px;
+    text-decoration: none;
+
+}
+.lienket a:hover{
+    background-color:#f1f1f1;
+}
+.tongquat:hover .lienket{
+    display: block;
+}
+.tongquat:hover .btnButtton{
+    background-color:#3e8e41;
+}
+.chung{
+    position: relative;
+    display: inline-block;
+}
+.left{
+    background-color: green;
+    border: none;
+    padding: 15px;
+    font-size: 17px;
+    color: white;
+    min-width: 150px;
+}
+.link {
+    position: absolute;
+    right: 0px;
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2);
+    padding: 0px 5px 10px 0px;
+    min-width: 145px;
+    background-color: #f9f9f9;
+    display: none;
+}
+.link a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 0px 5px 10px 0px;
+    text-align: center;
+}
+.link a:hover{
+    background-color: #f1f1f1;
+}
+.chung:hover .link{
+    display: block;
+}
+.chung:hover .left{
+    background-color: rgb(148, 227, 148);
+    color: black;
+}
+.tatca{
+    position: relative;
+}
+.hinhanh{
+    position: absolute;
+    display: none;
+    border: none;
+    min-width: 300px;
+    background-color: #f9f9f9;
+}
+.alt{
+    background-color: rgb(121, 205, 121);
+    text-align: center;
+    color: white;
+}
+.tatca:hover .hinhanh{
+    display: block;
+}
+.hinhanh .alt:hover{
+    background-color: rgb(190, 230, 190);
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #38444d;
+    display: flex;
+    justify-content: flex-start;
+}
+li a, .dropdown{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+   padding: 14px 16px;
+}
+li a:hover, .dropdown123:hover .dropdown {
+  background-color: red;
+}
+li.dropdown123 {
+  display: inline-block;
+}
+.content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.content a:hover{
+    background-color: #f1f1f1;
+}
+.dropdown123:hover .content{
+    display: block;
+}
+

@@ -47,3 +47,21 @@ a{
 .ngang1 .ngang2 .ngang3:hover{
     background-color: #111111;
 }
+.ngang3{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.ngang3 .ngang4{
+    color: white;
+    padding: 8px;
+    display: block;
+}
+.ngang3 .ngang4:hover{
+    background-color: #111111;
+}
