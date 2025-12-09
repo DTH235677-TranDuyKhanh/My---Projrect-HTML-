@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư viện ảnh trong CSS</title>
+    <link rel="stylesheet" href="./Thu_Vien_Anh.css">
+</head>
+<body>
+    <h1>Thư viện ảnh trong CSS</h1>
+    <ol ntype="1">
+        <h2><li>Thư viện hình ảnh CSS</li></h2>
+        <p>Thư viện ảnh CSS là tập hợp các hình ảnh được hiển thị theo cách có tổ chức và thường có khả năng phản hồi trên trang web.</p>
+        <p>Ở đây chúng ta sử dụng CSS để tạo thư viện ảnh:</p>       
+        <div class="chung">
+            <div class="hinhanh">
+                <a href="./images/Danh-lam-thang-canh.png" target="_blank">
+                    <img src="./images/Danh-lam-thang-canh.png" alt="Danh lam thắng cảnh" wifth="600" height="400">
+                </a>
+                <div class="content">
+                    Hình 1: Danh lam thắng cảnh.
+                </div>
+            </div>
+            <div class="hinhanh">
+                <a href="./images/Noimage4.jpg" target="_blank">
+                    <img src="./images/Noimage4.jpg" alt="Vịnh Hạ Long" width="600" height="400">
+                </a>
+                <div class="content">
+                    Hình 2: Vịnh Hạ Long.
+                </div>
+            </div>
+            <div class="hinhanh">
+                <a href="./images/Chùa một cột.jpg" target="_blank">
+                    <img src="./images/Chùa một cột.jpg" alt="Chùa một cột" width="600" height="400">
+                </a>
+                <div class="content">
+                    Hình 3: Chùa Một Cột.
+                </div>
+            </div>
+            
+        </div>
+        <p>Cấu trúc HTML cho một thư viện hình ảnh là:</p>
+        <ul>
+            <li>Một phần tử chứa để bao bọc toàn bộ thư viện ảnh (giống như <div> với class="gallery").</li>
+            <li>Một phần tử chứa khác cho mỗi hình ảnh (như div có class="gallery-item"), chứa thẻ img và có thể có phần mô tả.</li>
+        </ul>
+        <h2><li>Thư viện ảnh đáp ứng CSS</li></h2>
+        <p>Ở đây chúng tôi sử dụng truy vấn phương tiện CSS để sắp xếp lại hình ảnh trên các kích thước màn hình khác nhau:</p>
+        <ul>
+            <li>Nếu màn hình rộng hơn 768px - hiển thị bốn hình ảnh cạnh nhau</li>
+            <li>Nếu màn hình nhỏ hơn 768px - hiển thị hai hình ảnh cạnh nhau</li>
+            <li>Nếu màn hình nhỏ hơn 480px - xếp chồng hình ảnh theo chiều dọc (chiều rộng: 100%)</li>
+        </ul>
+        <div class="tatca">
+            <div class="hinh">
+                <a href="./images/Danh-lam-thang-canh.png" target="_blank">
+                    <img src="./images/Danh-lam-thang-canh.png" alt="Danh lam thắng cảnh" width="600" height="400">
+                </a>
+                <div class="noidung">
+                    Hình 1: Danh lam thắng cảnh.
+                </div>
+            </div>
+            <div class="hinh">
+                <a href="./images/Chùa một cột.jpg" target="_blank">
+                    <img src="./images/Chùa một cột.jpg" alt="Chùa một cột" width="600" height="400">
+                </a>
+                <div class="noidung">
+                    Hình 2: Chùa Một Cột.
+                </div>
+            </div>
+            <div class="hinh">
+                <a href="./images/Cầu rồng.jpg" target="_blank">
+                    <img src="./images/Cầu rồng.jpg" alt="Cầu rồng" width="600" height="400">
+                </a>
+                <div class="noidung">
+                    Hình 3: Cầu Rồng
+                </div>
+            </div>
+            <div class="hinh">
+                <a href="./images/Noimage4.jpg" target="_blank">
+                    <img src="./images/Noimage4.jpg" alt="Vịnh hạ long" width="600" height="400">
+                </a>
+                <div class="noidung">
+                    Hình 4: Vịnh Hạ Long. 
+                </div>
+            </div>
+        </div>
+    </ol>
+</body>
+</html>

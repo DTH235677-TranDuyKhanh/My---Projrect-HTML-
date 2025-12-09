@@ -1,0 +1,47 @@
+.dem1{
+    counter-reset: section;
+}
+.dem1 > h2::before {
+  counter-increment: section;
+  content: "Section " counter(section) ": ";
+}
+.dem2{
+    counter-reset: section;
+}
+.dem2 > h2::before {
+  counter-increment: section -1;
+  content: "Section " counter(section) ": ";
+}
+.dem3{
+    counter-reset: section;
+}
+.dem3 > h2::before {
+  counter-increment: section 2;
+  content: "Section " counter(section) ": ";
+}
+.dem4 {
+  counter-reset: section;
+}
+
+.dem4 > h1 {
+  counter-reset: subsection;
+}
+
+.dem4 > h1::before {
+  counter-increment: section;
+  content: "Section " counter(section) ". ";
+}
+
+.dem4 > h2::before {
+  counter-increment: subsection;
+  content: counter(section) "." counter(subsection) " ";
+}
+.dem5 > ol {
+  counter-reset: section;
+  list-style-type: none;
+}
+
+.dem5 > li::before {
+  counter-increment: section;
+  content: counters(section,".") " ";
+}

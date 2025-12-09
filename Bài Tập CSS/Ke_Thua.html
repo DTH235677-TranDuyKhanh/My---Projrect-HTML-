@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kế thừa trong CSS</title>
+    <link rel="stylesheet" href="./Ke_Thua.css">
+</head>
+<body>
+    <h1>Kế thừa CSS</h1>
+    <p>Kế thừa CSS là về những gì xảy ra nếu không có giá trị nào được chỉ định cho thuộc tính trên một phần tử.</p>
+    <p>Nếu không có giá trị nào được chỉ định cho một thuộc tính, giá trị đó có thể được kế thừa từ phần tử cha hoặc được đặt thành giá trị ban đầu (mặc định) của phần tử đó.</p>
+    <p>Đối với kế thừa CSS, các thuộc tính được phân loại thành hai loại:</p>
+    <ul>
+        <strong><li>tài sản thừa kế</li></strong>
+        <strong><li>các thuộc tính không được thừa kế</li></strong>
+    </ul>
+    <ol type="1">
+        <h2><li>Thuộc tính được thừa kế</li></h2>
+        <p>Theo mặc định, các thuộc tính được kế thừa sẽ được đặt thành giá trị tính toán của phần tử cha.</p>
+        <p>Các thuộc tính liên quan đến văn bản, chẳng hạn như , , , , và , thường được kế thừa. Điều này đảm bảo kiểu dáng văn bản nhất quán trong toàn bộ tài liệu. color font-family font-size line-height text-align</p>
+        <p>Trong ví dụ sau, văn bản bên trong phần tử strong sẽ xuất hiện ở kích thước 20px và màu xanh lam, vì phần tử strong thừa hưởng giá trị màu sắc và kích thước phông chữ từ phần tử cha (p).</p>
+        <div class="thua1">
+            <p>This is a paragraph with some <strong>important</strong> text.</p>
+        </div>
+        <h2><li>Thuộc tính không được thừa kế</li></h2>
+        <p>Nếu không đặt giá trị cho thuộc tính không được thừa kế, giá trị sẽ được đặt thành giá trị ban đầu (mặc định) của thuộc tính đó.</p>
+        <p>Các thuộc tính liên quan đến mô hình hộp hoặc bố cục, như , , , , , và , thường không được kế thừa. border background margin padding width height</p>
+        <p>Trong ví dụ sau, phần tử strong bên trong phần tử p sẽ không có đường viền bổ sung (vì giá trị ban đầu là none). border-style</p>
+        <div class="thua2">
+            <p>This is a paragraph with some <strong>important</strong> text.</p>
+        </div>
+        <h2><li>Từ khóa kế thừa</li></h2>
+        <p>Từ khóa này inheritđược sử dụng để chỉ định rõ ràng tính kế thừa. Nó hoạt động trên cả thuộc tính được kế thừa và không được kế thừa.</p>
+        <p>Trong ví dụ sau, phần tử strong bên trong phần tử p sẽ có thêm đường viền vì chúng ta đã sử dụng inherit từ khóa để chỉ định rõ ràng rằng giá trị đường viền sẽ là inherit.</p>
+        <div class="thua3">
+            <p>This is a paragraph with some <strong>important</strong> text.</p>
+        </div>
+    </ol>
+</body>
+</html>

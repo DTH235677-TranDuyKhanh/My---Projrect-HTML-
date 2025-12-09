@@ -1,0 +1,179 @@
+.input1{
+    width: 100%;
+}
+.input2{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+}
+.input3{
+    width: 100%;
+    box-sizing: border-box;
+    padding:12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 2px solid red;
+}
+.input4{
+    width: 100%;
+    box-sizing: border-box;
+    padding:12px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid red;
+}
+.input5{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: rgb(114, 198, 114); 
+    border: none;
+    color: white;
+}
+.input6{
+    width: 100%;
+    box-sizing: border-box;
+    padding:12px;
+    margin: 10px 0;
+    border: 2px solid black;
+}
+.input6:focus{
+    background-color: lightgreen;
+}
+.input7{
+    width: 100%;
+    box-sizing: border-box;
+    padding:12px;
+    margin: 10px 0;
+    border: 2px solid black;
+}
+.input7:focus{
+    border: none;
+    border: 5px solid red;
+}
+.input8{
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    padding: 12px 20px 12px 45px;/* 👉 padding-left 45px để chừa chỗ cho icon */
+    border-radius: 5px;
+
+    background-color: white;
+    background-image: url('./images/Biểu\ tượng\ tìm\ kiếm.png');
+    background-position: 10px center; /* 👉 icon nằm bên trái, căn giữa theo chiều dọc */
+    background-repeat: no-repeat; 
+    background-size: 20px;  /* 👉 nếu icon quá to, chỉnh kích thước */
+}
+.input9{
+    width: 20%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    padding: 12px 20px 12px 45px;/* 👉 padding-left 45px để chừa chỗ cho icon */
+    border-radius: 5px;
+
+    background-color: white;
+    background-image: url('./images/Biểu\ tượng\ tìm\ kiếm.png');
+    background-position: 10px center; /* 👉 icon nằm bên trái, căn giữa theo chiều dọc */
+    background-repeat: no-repeat; 
+    background-size: 20px;  /* 👉 nếu icon quá to, chỉnh kích thước */
+    transition: width 1s ease-in-out; 
+    /*Giải thích từng phần trong transition: width 0.4s ease-in-out
+        width: Tức là: khi chiều rộng (width) thay đổi → sẽ chạy animation mượt.
+        0.4s: Thời gian chạy hiệu ứng. 1s = 1 giây = 1000 mili giây
+        ease-in-out: Đây là timing function (đường cong tốc độ). 
+            ease-in-out có nghĩa:
+                Bắt đầu chậm
+                Sau đó nhanh
+                Kết thúc lại chậm
+                → Tạo cảm giác tự nhiên, mềm mại.*/
+}
+.input9:focus{
+    width: 100%;
+}
+#ghichu{
+    width: 100%;
+    height: 130px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+    /*Mặc định, thẻ <textarea> có thể được người dùng kéo giãn bằng chuột để thay đổi kích thước.
+    resize: none;
+    → Người dùng không thể kéo giãn chiều rộng hoặc chiều cao của textarea nữa.*/
+}
+#combobox{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    border: none;
+}
+.input10, .input11, .input12{
+    border: none;
+    padding: 12px;
+    width: 20%;
+    margin: 4px 2px;
+    background-color: #04AA6D;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+*{
+    box-sizing: border-box;
+}
+.form-chung{
+    max-width: 600px;
+    width: 100%;
+    border: 2px solid #04AA6D;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f2f2f2; 
+}
+.chung{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*      Thuộc tính	                        Chức năng
+    display: flex	                    Kích hoạt Flexbox
+    flex-wrap: wrap	                    Cho phép xuống hàng khi hết chỗ
+    justify-content: space-between	    Căn đều khoảng cách giữa các item*/
+#label{
+    min-width: 48%;
+    margin-bottom: 10px;
+}
+.chung > input[type=text], .chung > select{
+    min-width: 45%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+.chung > textarea{
+    min-width: 45%;
+    height: 150px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+}
+.chung > input[type=submit]{
+    width: 100%;
+    border: none;
+    padding: 12px;
+    margin-bottom: 8px 0;
+    background-color: #04AA6D;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}

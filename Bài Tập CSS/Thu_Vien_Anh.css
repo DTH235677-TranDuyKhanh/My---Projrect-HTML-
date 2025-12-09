@@ -1,0 +1,70 @@
+.chung{
+    display: flex;
+    flex-wrap:wrap; 
+    /*Cho phép các phần tử con được xuống hàng nếu không đủ không gian.
+    Nếu container hẹp → các item tự động nhảy xuống dòng tiếp theo.*/
+    justify-content: flex-start;
+}
+.hinhanh{
+    margin: 5px; 
+    border: 1px solid #ccc;
+    width: 180px; 
+}
+.hinhanh:hover{
+    border: 1px solid #777;
+}
+.hinhanh img{
+    width: 100%;
+    height: auto;
+}
+.hinhanh .content{
+    text-align: center;
+    padding: 15px;
+}
+.tatca{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.hinh{
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+.hinh img{
+    width: 100%;
+    height: auto;
+}
+.hinh:hover{
+    border: 1px solid #777;
+}
+.hinh .noidung{
+    text-align: center;
+    padding: 15px;
+}
+@media only screen and(max-width: 768px)
+/*MEDIA QUERY 1: Màn hình ≤ 768px (tablet, iPad)
+    Khi màn hình nhỏ hơn hoặc bằng 768px
+    Mỗi .gallery-item sẽ có chiều rộng = 50% - 20px
+    | [item][item] |
+    | [item][item] |
+    Lý do - 20px:
+→ Để trừ đi khoảng cách (margin/gap) giữa các item, giúp chúng không chạm nhau.*/
+{
+    div.hinh{
+        width: calc(50% - 20px);
+    }
+}
+@media only screen and(max-width: 480px)
+/*MEDIA QUERY 2: Màn hình ≤ 480px (điện thoại)
+    Khi màn hình nhỏ hơn hoặc bằng 480px (smartphone)
+    Mỗi .gallery-item chiếm 100% chiều rộng, trừ đi 20px để không sát mép.
+    Hiển thị 1 item trên mỗi hàng (dạng dọc)
+        | [item] |
+        | [item] |
+        | [item] |*/
+{
+    div.hinh{
+        width: calc(100% - 20px);
+    }
+}

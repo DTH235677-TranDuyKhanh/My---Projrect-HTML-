@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bộ đếm trong CSS</title>
+    <link rel="stylesheet" href="./Bo_Dem.css">
+</head>
+<body>
+    <h1>Bộ đếm CSS</h1>
+    <p>Với bộ đếm CSS, bạn có thể tạo số động cho các phần tử (như tiêu đề, phần hoặc mục danh sách) mà không cần sử dụng JavaScript.
+    Bộ đếm CSS là "biến" được CSS duy trì và giá trị của chúng có thể tăng (hoặc giảm) theo các quy tắc CSS.</p>
+    <ol type="1">
+        <h2><li>Đánh số tự động CSS với bộ đếm</li></h2>
+        <p>Bộ đếm CSS giống như "biến". Giá trị của biến có thể được tăng (hoặc giảm) bằng các quy tắc CSS.</p>
+        <p>Để làm việc với bộ đếm CSS, chúng ta sẽ sử dụng các thuộc tính sau:</p>
+        <ul>
+            <li>counter-reset- Tạo hoặc đặt lại bộ đếm</li>
+            <li>counter-increment- Tăng hoặc giảm bộ đếm</li>
+            <li>content- Chèn nội dung đã tạo (sử dụng bên trong ::beforevà , để chèn nội dung đã tạo) ::after</li>
+            <li>counter()và counters()chức năng - Thêm giá trị của bộ đếm vào một phần tử</li>
+            <p>Để sử dụng bộ đếm CSS, trước tiên bạn phải tạo bộ đếm bằng thuộc tính này. counter-reset</p>
+        </ul>
+        <h2><li>Bộ đếm tăng và giảm CSS</li></h2>
+        <p>Ví dụ sau đây tạo một bộ đếm cho trang (trong bộ chọn phần thân), sau đó tăng giá trị bộ đếm lên 1 cho mỗi phần tử h2 và thêm văn bản "Mục + giá trị bộ đếm :" vào đầu mỗi phần tử <h2></h2></p>
+        <div class="dem1">
+            <h1>Using CSS Counters</h1>
+
+            <h2>HTML Tutorial</h2>
+            <p>Some description here...</p>
+
+            <h2>CSS Tutorial</h2>
+            <p>Some description here...</p>
+
+            <h2>JavaScript Tutorial</h2>
+            <p>Some description here...</p>
+
+            <h2>Python Tutorial</h2>
+            <p>Some description here...</p>
+
+            <h2>SQL Tutorial</h2>
+            <p>Some description here...</p>
+        </div>
+        <p>Thuộc tính này counter-increment có tham số thứ hai. Giá trị mặc định của tham số này là 1 (tăng bộ đếm lên một). Để giảm giá trị bộ đếm, bạn có thể đặt thành -1.</p>
+        <p>Ví dụ sau đây giống như trên, nhưng ở đây chúng ta giảm giá trị bộ đếm cho mỗi phần tử h2 và thêm văn bản "Phần + giá trị bộ đếm :" vào đầu mỗi phần tử h2:</p>
+        <div class="dem2">
+            <h1>Using CSS Counters</h1>
+
+            <h2>HTML Tutorial</h2>
+            <p>Some description here...</p>
+
+            <h2>CSS Tutorial</h2>
+            <p>Some description here...</p>
+
+            <h2>JavaScript Tutorial</h2>
+            <p>Some description here...</p>
+
+            <h2>Python Tutorial</h2>
+            <p>Some description here...</p>
+
+            <h2>SQL Tutorial</h2>
+            <p>Some description here...</p>
+        </div>
+        <p>Ví dụ sau đây giống như trên, nhưng ở đây chúng ta tăng giá trị bộ đếm lên 2 cho mỗi phần tử h2 và thêm văn bản "Phần + giá trị bộ đếm :" vào đầu mỗi phần tử h2:</p>
+        <div class="dem3">
+            <h1>Using CSS Counters</h1>
+
+            <h2>HTML Tutorial</h2>
+            <p>Some description here...</p>
+
+            <h2>CSS Tutorial</h2>
+            <p>Some description here...</p>
+
+            <h2>JavaScript Tutorial</h2>
+            <p>Some description here...</p>
+
+            <h2>Python Tutorial</h2>
+            <p>Some description here...</p>
+
+            <h2>SQL Tutorial</h2>
+            <p>Some description here...</p>
+        </div>
+        <h2><li>CSS sử dụng hai bộ đếm</li></h2>
+        <p>Ví dụ sau đây tạo một bộ đếm cho trang (tên là "section") và một bộ đếm cho mỗi phần tử h1 (tên là "subsection"). Bộ đếm "section" sẽ được tính cho mỗi phần tử h1 với "Section +  sectioncounter >.", và bộ đếm "subsection" sẽ được tính cho mỗi phần tử h2 với " sectioncounter . subsectioncounter ":</p>
+        <div class="dem4">
+            <h1>HTML/CSS Tutorials</h1>
+            <h2>HTML</h2>
+            <h2>CSS</h2>
+            <h2>Bootstrap</h2>
+            <h2>W3.CSS</h2>
+
+            <h1>Scripting Tutorials</h1>
+            <h2>JavaScript</h2>
+            <h2>jQuery</h2>
+            <h2>React</h2>
+
+            <h1>Programming Tutorials</h1>
+            <h2>Python</h2>
+            <h2>Java</h2>
+            <h2>C++</h2>
+        </div>
+        <h2><li>Hàm counters() của CSS</li></h2>
+        <p>Hàm này counters() trả về giá trị hiện tại của các bộ đếm được đặt tên và lồng nhau dưới dạng chuỗi.</p>
+        <p>Ở đây chúng ta sử dụng counters()hàm để chèn một chuỗi giữa các cấp độ khác nhau của bộ đếm lồng nhau:</p>
+        <div class="dem5">
+            <h2>Using CSS Counters in Nested List</h2>
+
+            <p>List 1:</p>
+            <ol>
+            <li>item</li>
+            <li>item</li>  
+            <ol>
+                <li>item</li>
+                <li>item</li>
+                <li>item
+                <ol>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                </ol>
+                </li>
+                <li>item</li>
+            </ol>
+            </li>
+            <li>item</li>
+            <li>item</li>
+            </ol>
+
+            <p>List 2:</p>
+            <ol>
+            <li>item</li>
+            <li>item</li>
+            <ol>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+            </ol>
+            </li>
+            <li>item</li>
+            <li>item</li>
+            </ol>
+        </div>
+    </ol>
+
+
+
+</body>
+</html>

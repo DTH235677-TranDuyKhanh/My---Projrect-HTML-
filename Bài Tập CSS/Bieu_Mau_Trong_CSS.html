@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biểu nẫu trong CSS</title>
+    <link rel="stylesheet" href="./Bieu_Mau_Trong_CSS.css">
+</head>
+<body>
+    <h1>Biểu mẫu trong CSS</h1>
+    <ol type="1">
+        <h2><li>Kiểu dáng của các trường nhập biểu mẫu</li></h2>
+        <p>Với CSS, bạn có thể định dạng hầu hết các kiểu nhập liệu khác nhau, chẳng hạn như trường văn bản, trường mật khẩu, hộp kiểm, nút radio và đầu vào tệp. Bạn cũng có thể định dạng nhãn nhập liệu và nút biểu mẫu.</p>
+        <p>Một số thuộc tính CSS thường được sử dụng để định kiểu cho các trường nhập liệu là:</p>
+        <ul>
+            <li>width</li>
+            <li>padding</li>
+            <li>margin </li>
+            <li>border </li>
+            <li>border-radius </li>
+            <li>background-color </li>
+            <li>color </li>
+            <li>font-size </li>
+        </ul>
+        <h2><li>Chiều rộng đầu vào kiểu</li></h2>
+        <p>Thuộc tính này widthđược sử dụng để thiết lập chiều rộng của trường nhập liệu.</p>
+        <p>Mẹo: Chiều rộng mặc định của trường văn bản nhập HTML là 20 ký tự.</p>
+        <p>Ở đây chúng ta đặt chiều rộng là 100%:</p>
+        <form action="" class="form1">
+            <label for="fname">First Name: </label>
+            <input class="input1" type="text" name="fname" id="fname">
+        </form>
+        <p>Ví dụ trên áp dụng cho tất cả các phần tử input. Nếu bạn chỉ muốn định dạng một kiểu đầu vào cụ thể, bạn có thể sử dụng bộ chọn thuộc tính :</p>
+        <ul>
+            <li>input[type=text]- chỉ chọn các trường văn bản</li>
+            <li>input[type=password]- chỉ chọn các trường mật khẩu</li>
+            <li>input[type=number]- chỉ chọn các trường số</li>
+            <li>vân vân..</li>
+        </ul>
+        <h2><li>Kiểu đệm đầu vào</li></h2>
+        <p>Thuộc tính này paddingđược sử dụng để thêm một số khoảng trống bên trong trường văn bản.</p>
+        <p>Mẹo: Khi bạn có nhiều trường nhập liệu liên tiếp nhau, bạn cũng có thể muốn thêm một số dấu margin, để tăng thêm khoảng trống xung quanh chúng:</p>
+        <form action="" class="form2">
+            <label for="ho">Họ: </label><br>
+            <input class="input2" type="text" id="ho" name="ho"><br>
+            <label for="ten">Tên: </label><br>
+            <input class="input2" type="text" id="ten" name="ten">
+        </form>
+        <h2><li>Đường viền đầu vào kiểu</li></h2>
+        <form action="" class="form3">
+            <label for="fname">First Name: </label>
+            <input class="input3" type="text" name="fname" id="fname">
+        </form>
+        <p>Nếu bạn chỉ muốn có đường viền phía dưới, hãy sử dụng thuộc tính: border-bottom</p>
+        <form action="" class="form4">
+            <label for="fname">First Name: </label>
+            <input class="input4" type="text" name="fname" id="fname">
+        </form>
+        <h2><li>Kiểu đầu vào Màu nền và Màu sắc</li></h2>
+        <form action="" class="form5">
+            <label for="ten">Họ và tên: </label>
+            <input class="input5" type="text" id="ten" name="ten" value="Trần Duy Khánh">
+        </form>
+        <h2><li>Kiểu nhập với tiêu điểm</li></h2>
+        <p>Theo mặc định, một số trình duyệt sẽ thêm đường viền màu xanh lam xung quanh đầu vào khi nó được chọn (nhấp vào). Bạn có thể loại bỏ hiện tượng này bằng cách thêm vào đầu vào. outline: none;</p>
+        <p>Sử dụng :focusbộ chọn để thực hiện thao tác nào đó với trường nhập liệu khi trường này được chọn:</p>
+        <form action="" class="form6">
+            <label for="ten">Họ và tên: </label>
+            <input class="input6" type="text" id="ten" name="ten" value="Trần Duy Khánh">
+        </form>
+        <form action="" class="form7">
+            <label for="ten">Họ và tên: </label>
+            <input class="input7" type="text" id="ten" name="ten" value="Trần Duy Khánh">
+        </form>
+        <h2><li>Kiểu đầu vào với biểu tượng/hình ảnh</li></h2>
+        <p>Nếu bạn muốn có một biểu tượng bên trong đầu vào, hãy sử dụng thuộc tính và định vị nó bằng thuộc tính đó. Cũng lưu ý rằng chúng ta thêm một khoảng đệm lớn bên trái để giữ chỗ cho biểu tượng: background-image background-position</p>
+        <form action="" class="form8">
+            <input type="text" class="input8" name="search" placeholder="Search...">
+        </form>
+        <h2><li>Đầu vào tìm kiếm động</li></h2>
+        <p>Trong ví dụ này, chúng ta sử dụng thuộc tính CSS để tạo hiệu ứng động cho chiều rộng của ô nhập tìm kiếm khi nó được chọn. Bạn sẽ tìm hiểu thêm về thuộc tính này sau, trong chương Chuyển tiếp CSS của chúng tôi . transition transition</p>
+        <form action="" class="form9">
+            <input type="text" class="input9" name="search" placeholder="Search...">
+        </form>
+        <h2><li>Kiểu Textarea</li></h2>
+        <form action="" class="form10">
+            <textarea name="ghichu" id="ghichu">Một số văn bản ghi chú...</textarea>
+        </form>
+        <h2><li>Tạo kiểu cho Menu thả xuống (Combobox)</li></h2>
+        <form action="" class="form11">
+            <label for="ten">Họ và tên: </label>
+            <select name="combobox" id="combobox">
+                <option value="Trần Duy Khánh">Trần Duy Khánh</option>
+                <option value="Đỗ Thanh Vy">Đỗ Thanh Vy</option>
+                <option value="Trần Thị Huyền Trân">Trần Thị Huyền Trân</option>
+                <option value="Đặng Thị Hường">Đặng Thị Hường</option>
+                <option value="TRần Thanh Cường">Trần Thanh Cường</option>
+            </select>
+        </form>
+        <h2><li>Nút biểu mẫu kiểu</li></h2>
+        <p>Các nút biểu mẫu kiểu "button", "submit" và "reset" cũng có thể được định dạng bằng CSS:</p>
+        <form action="" class="form12">
+            <input type="button" class="input10" value="Button">
+            <input type="reset" class="input11" value="Rest">
+            <input type="submit" class="input12" value="Submit">
+        </form>
+        <h2><li>Biểu mẫu phản hồi CSS</li></h2>
+        <p>Ví dụ sau sử dụng truy vấn phương tiện CSS để tạo biểu mẫu phản hồi. Bạn sẽ tìm hiểu thêm về truy vấn phương tiện trong chương sau.
+        Khi màn hình rộng dưới 600px, chúng ta sẽ xếp các nhãn và trường nhập liệu lên trên nhau thay vì xếp cạnh nhau.
+        Thay đổi kích thước màn hình để xem sự thay đổi bố cục biểu mẫu!</p>
+        <div class="form-chung">
+            <form action="" class="chung">
+
+                    <label id="label" for="ten">Tên:</label>
+                    <input type="text" id="tên" name="ten" placeholder=" Duy Khánh"><br>
+
+                    <label  id="label" for="ho">Họ: </label>
+                    <input type="text" id="ho" name="ho" placeholder=" Trần"><br>
+
+                    <label id="label" for="quocgia">Quốc gia: </label>
+                    <select name="quocgia" id="quocgia">
+                        <option value="VN">Việt Nam</option>
+                        <option value="NB">Nhật Bản</option>
+                        <option value="TQ">Trung Quốc</option>
+                        <option value="M">Mĩ</option>
+                    </select><br>
+
+                    <label id="label" for="tinnhan">Tin nhắn: </label>
+                    <textarea name="tinnhan" id="tinnhan">Write somethink...</textarea><br>
+
+                    <input type="submit" value="Submit">
+            </form>
+        </div>
+    </ol>
+</body>
+</html>
