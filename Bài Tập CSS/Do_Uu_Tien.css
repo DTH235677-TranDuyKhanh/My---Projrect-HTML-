@@ -1,0 +1,43 @@
+.chung > p{
+    color: red;
+}
+.chung > .vd2{
+    color: green;
+}
+.chung > #vd3{
+    color: blue;
+}
+.chung > .vd4{
+    color: red;
+}
+.chung > #vd4{
+    color: yellow;
+}
+h4{
+    background-color: lightgreen;
+}
+h4{
+    background-color: lightgray;
+}
+div[id=mydiv]{
+    color: red;
+    background-color: yellow;
+}
+#mydiv{
+    color: white;
+    background-color: lightseagreen;
+}
+h5{
+    color: red;
+    background-color: yellow;
+}
+.h5{
+    color: yellow;
+    background-color: lightseagreen;
+}
+*{
+    background-color: #f1f1f1;
+}
+h1{
+    background-color: #ccc;
+}

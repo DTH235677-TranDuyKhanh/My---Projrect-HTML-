@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Độ ưu tiên trong CSS</title>
+    <link rel="stylesheet" href="./Do_Uu_Tien.css">
+</head>
+<body>
+    <h1>Độ ưu tiên trong CSS</h1>
+    <ol type="1">
+        <h2><li>Độ ưu tiên CSS</li></h2>
+        <p>Độ ưu tiên CSS là một thuật toán xác định khai báo kiểu nào cuối cùng sẽ được áp dụng cho một phần tử.</p>
+        <p>Nếu hai hoặc nhiều quy tắc CSS trỏ đến cùng một phần tử, khai báo có độ cụ thể cao nhất sẽ "chiến thắng" và kiểu đó sẽ được áp dụng cho phần tử HTML.</p>
+        <p>Hãy xem các ví dụ sau:</p>
+        <ul>
+            <li>Ví dụ 1: </li>
+            <div class="chung">
+            <p class="vd1">Hello word</p>
+            </div>
+            <li>Ví dụ 2: </li>
+            <div class="chung">
+            <p class="vd2">Hello word</p>
+            </div>
+            <li>Ví dụ 3: </li>
+            <div class="chung">
+            <p id="vd3">Hello word</p>
+            </div>
+            <li>Ví dụ 4: </li>
+            <div class="chung">
+            <p id="vd4" class="vd4" style="color: violet">Hello word</p>
+            </div>
+            <li>Ví dụ 5: </li>
+            <div class="chung">
+                <h4>Tiêu đề</h4>
+            </div>
+            <li>Ví dụ 6: </li><br>
+            <div class="chung">
+                <div id="mydiv">Khối hộp block box</div>
+            </div><br>
+            <li>Ví dụ 7: </li>
+            <h5 class="h5">Tiêu đề H5</h5>
+        </ul>
+    </ol>
+</body>
+</html>

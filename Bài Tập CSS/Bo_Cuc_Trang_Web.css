@@ -1,0 +1,66 @@
+header{
+    text-align: center;
+    padding: 10px;
+    font-size: 26px;
+    background-color: #f1f1f1;
+    margin: auto;
+}
+nav{
+    display: flex;
+    background-color: #111;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+nav a:hover{
+    color: black;
+    background-color: #dddddd;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    /*Khi dùng flex-direction: row
+        Các item sẽ:
+            Nằm cạnh nhau theo chiều ngang
+            Bị đẩy xuống hàng mới nếu kết hợp cùng flex-wrap: wrap (nếu khai báo)
+            Có thể căn chỉnh bằng các thuộc tính bổ sung như:
+            justify-content (theo chiều ngang)
+            align-items (theo chiều dọc)*/
+    align-items: center;
+    justify-content: center;
+}
+.flex-container > div{
+    padding: 10px;
+}
+@media screen and (max-width: 600px)
+{
+    div.flex-container{
+        flex-direction: column; 
+    }
+}
+/*Hành vi khi dùng column
+    Khi áp dụng flex-direction: column;:
+        Các item được sắp xếp trên → dưới.
+        Thuộc tính justify-content sẽ căn chỉnh item theo chiều dọc (vertical).
+        Thuộc tính align-items sẽ căn chỉnh item theo chiều ngang (horizontal).
+        Các item có thể co giãn theo chiều dọc nếu dùng thêm các thuộc tính như:
+            flex-grow
+            flex-basis
+            flex*/
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    font-size: 26px;
+    text-align: center;
+    background-color: #f1f1f1;
+    z-index: 1000;
+}

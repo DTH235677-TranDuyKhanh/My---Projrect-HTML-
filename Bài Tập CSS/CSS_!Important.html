@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ! Important (Quan trọng)</title>
+    <link rel="stylesheet" href="./CSS_!Important.css">
+</head>
+<body>
+    <h1>CSS ! Important (Quan trọng). </h1>
+    <ol type="1">
+        <h2><li>Quy tắc CSS !important</li></h2>
+        <p>Quy tắc này !importantđược sử dụng để ưu tiên cao nhất cho giá trị của một thuộc tính cụ thể.</p>
+        <p>Quy tắc này !importantsẽ ghi đè lên TẤT CẢ các quy tắc định kiểu trước đó cho thuộc tính cụ thể đó trên phần tử đó!</p>
+        <p>Từ !importantkhóa được thêm vào cuối phần khai báo CSS, trước dấu chấm phẩy.</p>
+        <p>Cú pháp</p>
+        <p>selector {property: value !important;}</p>
+        <h2><li>Ví dụ về quy tắc CSS !important</li></h2>
+        <p>Trong ví dụ sau, cả ba đoạn văn sẽ có màu nền vàng, mặc dù kiểu nội tuyến, bộ chọn id và bộ chọn class có độ ưu tiên cao hơn . !importantQuy tắc này ghi đè lên TẤT CẢ các quy tắc định kiểu cho thuộc tính cụ thể đó trên phần tử đó!</p>
+        <div class="chung1">
+            <p style="background-color: orange">This is a paragraph. </p>
+            <p id="doan1">This is a paragraph. </p>
+            <p class="doan1">This is a paragraph. </p>
+        </div>
+        <h2><li>Hãy sử dụng !important một cách tiết kiệm.</li></h2>
+        <p>Cách duy nhất để ghi đè lên một !important quy tắc là thêm một !important quy tắc khác vào phần khai báo với cùng (hoặc cao hơn) độ ưu tiên trong mã nguồn - và vấn đề bắt đầu từ đây!</p>
+        <p>Mã CSS sẽ rất khó hiểu và việc gỡ lỗi sẽ khó khăn! Đặc biệt là nếu bạn có một bảng định kiểu lớn!</p>
+        <p>Trong ví dụ sau, không rõ màu nào được coi là quan trọng nhất:</p>
+        <div class="chung2">
+            <p style="background-color: orange">This is a paragraph. </p>
+            <p id="doan1">This is a paragraph. </p>
+            <p class="doan1">This is a paragraph. </p>
+        </div>
+        <h2><li>Một vài trường hợp sử dụng hợp lý của !important</li></h2>
+        <p>Quy tắc này !importantcó thể hữu ích trong một số trường hợp, ví dụ như:</p>
+        <ul>
+            <li>1. Để ghi đè lên một kiểu định dạng không thể ghi đè bằng bất kỳ cách nào khác. Điều này có thể xảy ra nếu bạn đang làm việc trong một Hệ thống Quản lý Nội dung (CMS) và không thể chỉnh sửa mã CSS. Khi đó, bạn có thể thiết lập một số kiểu định dạng tùy chỉnh để ghi đè lên một số kiểu định dạng của CMS.</li>
+            <li>2. Tôn trọng sở thích người dùng. Một số người dùng nhạy cảm với chuyển động và thích các trang web có ít hiệu ứng động hơn. CSS có một tính năng cho phép bạn kiểm tra xem người dùng có yêu cầu giảm chuyển động, chẳng hạn như hoạt ảnh hoặc chuyển tiếp hay không. Bạn có thể sử dụng tính năng này để tắt hoặc giảm độ mạnh của hoạt ảnh và chuyển tiếp cho những người dùng đã kích hoạt cài đặt này trên máy tính của họ: @mediaprefers-reduced-motion!important</li>
+        </ul><br>
+        <div class="hop"></div>
+    
+    </ol>
+</body>
+</html>

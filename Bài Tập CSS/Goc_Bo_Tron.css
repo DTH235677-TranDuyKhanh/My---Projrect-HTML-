@@ -1,0 +1,23 @@
+.goc1{
+    width: 30%;
+    background-color: lightgreen;
+    height: 70px;
+    border-radius: 10px;
+    padding: 10px; 
+}
+.goc2{
+    width: 30%;
+    height: 70px;
+    padding: 10px;
+    border: 2px solid lightgreen;
+    border-radius: 10px;
+}
+.goc3{
+    width: 30%;
+    height: 70px;
+    padding: 10px;
+    background-image: url('./images/hình hoa.jpg');
+    background-size: 100%;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+}
