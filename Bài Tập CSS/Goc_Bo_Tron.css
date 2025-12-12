@@ -21,3 +21,51 @@
     border-radius: 10px;
     background-repeat: no-repeat;
 }
+.tron1{
+    width: 30%;
+    height: 70px;
+    background-color: lightgreen;
+    border-radius: 15px 50px 30px 5px;
+}
+.tron2{
+    width: 30%;
+    height: 70px;
+    background-color: lightgreen;
+    border-radius: 15px 50px 30px; 
+}
+.tron3{
+    width: 30%;
+    height: 70px;
+    background-color: lightgreen;
+    border-radius: 15px 50px; 
+}
+.tron4{
+    width: 30%;
+    height: 70px;
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+#div1{
+    width: 200px;
+    height: 150px;
+    background-color: lightgreen;
+    border-radius: 70px/30px;
+}
+#div2{
+    width: 200px;
+    height: 150px;
+    background-color: lightgreen;
+    border-radius: 15px/50px;
+}
+#div3{
+    width: 200px;
+    height: 150px;
+    background-color: lightgreen;
+    border-radius: 50% ;
+}
+#div4{
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    border-radius: 50%;
+}

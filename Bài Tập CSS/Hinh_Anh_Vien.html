@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hình ảnh viền trong CSS</title>
+    <link rel="stylesheet" href="./Hinh_Anh_Vien.css">
+</head>
+<body>
+    <h1>Hình ảnh viền CSS</h1>
+    <ol type="1">
+        <h2><li>Thuộc tính border-image của CSS</li></h2>
+        <p>Thuộc tính này border-imagecho phép bạn định nghĩa một hình ảnh được sử dụng làm đường viền xung quanh một phần tử, thay vì đường viền thông thường.</p>
+        <p>Thuộc tính này lấy một hình ảnh và chia nó thành chín phần, giống như bàn cờ caro. Sau đó, nó đặt các góc ở các vị trí khác nhau, và các phần ở giữa được lặp lại hoặc kéo giãn theo chỉ định của bạn.</p>
+        <p>Thuộc tính này border-imagelà cách viết tắt cho các thuộc tính sau:</p>
+        <ul>
+            <li>border-image-source - Xác định đường dẫn đến hình ảnh</li>
+            <li>border-image-slice - xác định cách cắt hình ảnh</li>
+            <li>border-image-width - xác định chiều rộng của hình ảnh</li>
+            <li>border-image-outset Xác định mức độ mà vùng hình ảnh viền mở rộng ra ngoài khung viền.</li>
+            <li>border-image-repeat - xác định cách lặp lại hình ảnh</li>
+        </ul>
+        <p><b>Lưu ý:</b> Để border-imagehoạt động, phần tử cũng cần được borderthiết lập thuộc tính!</p>
+        <h2><li>Ví dụ về thuộc tính border-image trong CSS</li></h2>
+        <p id="border1"> Border-image: url(..//.././) 30 round</p>
+        <p>Hình ảnh thực tế: <img src="./images/đèn sáng.jpg" alt="" class="anh1" width="50"></p>
+        <p>Trong ví dụ sau, url(border.png) chỉ định hình ảnh nguồn, số 30 cắt hình ảnh 30 pixel từ mỗi cạnh, và giá roundtrị chỉ định rằng phần giữa của hình ảnh được lát (lặp lại) để lấp đầy khu vực (và được điều chỉnh kích thước cho phù hợp nếu cần):</p>
+        <p>Ở đây, stretchgiá trị này chỉ định rằng phần giữa của hình ảnh được kéo giãn để lấp đầy khu vực:</p>
+        <p id="border2"> Border-image: url(.././/..) 30 stretch</p>
+        <p>Hinh anh thuc te: <img src="./images/đèn sáng.jpg" alt="" class="anh1" width="50"></p>
+    </ol>
+</body>
+</html>

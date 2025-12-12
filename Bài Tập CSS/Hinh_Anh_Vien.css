@@ -1,0 +1,10 @@
+.border1{
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url('./images/đèn\ sáng.jpg') 30 round;
+}
+.border2{
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(./images/đèn\ sáng.jpg) 30 stretch;
+}

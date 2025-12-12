@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mau nen trong CSS</title>
+    <link rel="stylesheet" href="./Mau_Nen.css">
+</head>
+<body>
+    <h1>Mau nen trong CSS</h1>
+    <ol type="1">
+        <h2><li>Nhiều hình nền CSS</li></h2>
+        <p>CSS cho phép bạn thêm nhiều hình nền cho một phần tử thông qua background-imagethuộc tính `background`.</p>
+        <p>Các hình nền khác nhau được phân tách bằng dấu phẩy, và chúng được xếp chồng lên nhau, trong đó hình ảnh đầu tiên nằm gần người xem nhất.</p>
+        <p>Ví dụ sau đây có hai hình nền, hình nền đầu tiên là một bông hoa (căn chỉnh ở góc dưới bên phải) và hình nền thứ hai là hình nền giống như giấy (căn chỉnh ở góc trên bên trái):</p>
+    
+    <p></p><b>Vi du 1:</b>Hoa huong duong. </p>
+    <div id="nen1">
+        <h4>Hoa Huong Duong</h4>
+        <p>Hoa hướng dương hay hoa mặt trời với tên khoa học là Helianthus annuus có nguồn gốc từ Bắc Mỹ và ngày nay hoa hướng dương đã có mặt khắp mọi nơi trên thế giới. Còn ở Việt Nam bạn có thể chiêm ngưỡng được những sắc vàng của hoa hướng dương ở Lâm Đồng, Lào Cai, Nghệ An,...</p>
+    </div>
+    <h2><li>Thuộc tính background-size của CSS</li></h2>
+    <p>Thuộc tính này cho phép bạn chỉ định kích thước của ảnh nền. background-size</p>
+    <p>Kích thước nền có thể được chỉ định bằng độ dài, tỷ lệ phần trăm hoặc bằng cách sử dụng một trong các từ khóa: auto, contain, hoặc cover.</p>
+    <p>Ví dụ sau đây thay đổi kích thước ảnh nền thành nhỏ hơn nhiều so với ảnh gốc (sử dụng pixel):</p>
+    <div class="nen2">
+    <h4>Hoa Huong Duong</h4>
+    <p>Hoa hướng dương hay hoa mặt trời với tên khoa học là Helianthus annuus có nguồn gốc từ Bắc Mỹ và ngày nay hoa hướng dương đã có mặt khắp mọi nơi trên thế giới. Còn ở Việt Nam bạn có thể chiêm ngưỡng được những sắc vàng của hoa hướng dương ở Lâm Đồng, Lào Cai, Nghệ An,...</p>
+   </div>
+   <h2><li>background-size - auto, contain and cover</li></h2>
+   <p>Các giá trị từ khóa cho là , và . background-sizeautocontaincover</p>
+   <p>Giá trị này autolà giá trị mặc định, hiển thị hình nền với kích thước gốc.</p>
+   <p>Giá trị này containphóng to hoặc thu nhỏ hình ảnh để phù hợp với khu vực nội dung.</p>
+   <p>Giá trị này coverđiều chỉnh kích thước hình ảnh sao cho lớn nhất có thể, giúp toàn bộ vùng nội dung được bao phủ bởi hình nền (chiều rộng và chiều cao của hình nền sẽ bằng hoặc lớn hơn vùng nội dung).</p>
+   <ul>
+    <li>vi du: background-size: contain;</li>
+    <div class="nen3">
+        <h4>Hoa Huong Duong</h4>
+        <p>Hoa hướng dương hay hoa mặt trời với tên khoa học là Helianthus annuus có nguồn gốc từ Bắc Mỹ và ngày nay hoa hướng dương đã có mặt khắp mọi nơi trên thế giới. Còn ở Việt Nam bạn có thể chiêm ngưỡng được những sắc vàng của hoa hướng dương ở Lâm Đồng, Lào Cai, Nghệ An,...</p>
+    </div>
+    <li>vi du: background-size: cover;</li>
+    <div class="nen4">
+        <h4>Hoa Huong Duong</h4>
+        <p>Hoa hướng dương hay hoa mặt trời với tên khoa học là Helianthus annuus có nguồn gốc từ Bắc Mỹ và ngày nay hoa hướng dương đã có mặt khắp mọi nơi trên thế giới. Còn ở Việt Nam bạn có thể chiêm ngưỡng được những sắc vàng của hoa hướng dương ở Lâm Đồng, Lào Cai, Nghệ An,...</p>
+    </div>
+    <li>vi du: background-size: auto;</li>
+    <div class="nen5">
+        <h4>Hoa Huong Duong</h4>
+        <p>Hoa hướng dương hay hoa mặt trời với tên khoa học là Helianthus annuus có nguồn gốc từ Bắc Mỹ và ngày nay hoa hướng dương đã có mặt khắp mọi nơi trên thế giới. Còn ở Việt Nam bạn có thể chiêm ngưỡng được những sắc vàng của hoa hướng dương ở Lâm Đồng, Lào Cai, Nghệ An,...</p>
+    </div>
+    </ul>
+    <h2><li>Thuộc tính CSS background-origin</li></h2>
+    <p>Thuộc tính CSS này chỉ định vị trí của hình nền. background-origin</p>
+    <p>Thuộc tính này có thể có một trong các giá trị sau:</p>
+    <ul>
+        <li>padding-box- Hình nền bắt đầu từ góc trên bên trái của cạnh vùng đệm. Đây là cài đặt mặc định.</li>
+        <li>border-box- Hình nền bắt đầu từ góc trên bên trái của cạnh viền.</li>
+        <li>content-box- Hình nền bắt đầu từ góc trên bên trái của cạnh nội dung./li>
+    </ul>
+   <p><b>Lưu ý:</b>Thuộc tính này không có tác dụng nếu thuộc tính được đặt là "cố định". background-attachment</p>
+    <p>Ví dụ sau minh background-originhọa tính chất này:</p>
+    <ul>
+        <li>Ví dụ 1: background-origin: padding-box;</li>
+        <div id="div1">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <li>Ví dụ 2: background-origin: border-box;</li>
+        <div id="div2">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <li>Ví dụ 3: background-origin: content-box;</li>
+        <div id="div3">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </ul>
+    <h2><li>Thuộc tính background-clip của CSS</li></h2>
+    <p>Thuộc tính CSS này xác định phạm vi mà nền (màu sắc, hình ảnh hoặc hiệu ứng chuyển màu) sẽ mở rộng bên trong một phần tử. background-clip</p>
+    <p>Thuộc tính này có thể có một trong các giá trị sau:</p>
+    <ul>
+        <li>border-box- Phần nền kéo dài ra phía sau đường viền. Đây là cài đặt mặc định.</li>
+        <li>padding-box- Phần nền kéo dài đến tận mép trong của đường viền.</li>
+        <li>content-box- Hình nền kéo dài đến tận mép của khung nội dung</li>
+    </ul>
+    <ul>
+        <li>Ví dụ 4: background-origin: padding-box;</li>
+        <div class="div1">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <li>Ví dụ 5: background-origin: border-box;</li>
+        <div class="div2">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <li>Ví dụ 6: background-origin: content-box;</li>
+        <div class="div3">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </ul>
+</ol>
+</body>
+</html>

@@ -1,0 +1,83 @@
+#nen1{
+    width: 100%;
+    height: 200px;
+    background-image: url(./images/hình\ hoa.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding: 10px;
+}
+.nen2{
+    background-image: url(./images/hình\ hoa.jpg);
+    width: 700px;
+    height: 200px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: 700px 200px;
+}
+.nen3{
+    background-image: url(./images/hình\ hoa.jpg);
+    width: 700px;
+    height: 200px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nen4{
+    background-image: url(./images/hình\ hoa.jpg);
+    width: 700px;
+    height: 200px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nen5{
+    background-image: url(./images/hình\ hoa.jpg);
+    width: 700px;
+    height: 200px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+#div1{
+    border: 2px solid black;
+    padding: 35px;
+    background: url(./images/Hoa\ nen\ trang.jpg) no-repeat;
+    background-size: 200px;
+    background-origin: padding-box;
+}
+#div2{
+    border: 1px solid black;
+    padding: 35px;
+    background: url(./images/Hoa\ nen\ trang.jpg) no-repeat;
+    background-size: 200px;
+    background-origin: border-box;
+}
+#div3{
+    border: 1px solid black;
+    padding: 35px;
+    background: url(./images/Hoa\ nen\ trang.jpg) no-repeat;
+    background-size: 200px;
+    background-origin: content-box;
+}
+.div1{
+    border: 5px dotted black;
+    padding: 35px;
+    background-color: lightblue;
+    background-size: cover;
+    background-clip: padding-box;
+}
+.div2{
+    border: 5px dotted black;
+    padding: 35px;
+    background-color: lightblue;
+    background-size: cover;
+    background-clip: border-box;
+}
+.div3{
+    border: 5px dotted black;
+    padding: 35px;
+    background-color: lightblue;
+    background-size: cover;
+    background-clip: content-box;
+}
