@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Màu sắc trong CSS</title>
+    <link rel="stylesheet" href="./Mau_Sac_Ngay_15_12_2025.css">
+</head>
+<body>
+        <h1>Màu sắc trong CSS</h1>
+    <ol type="1">
+        <h2><li>Màu sắc CSS</li></h2>
+        <ul>
+            <h3><li>Màu RGBA</li></h3>
+            <p>Giá trị màu RGBA là phần mở rộng của màu RGB với kênh alpha - xác định độ mờ đục của màu sắc.</p>
+            <p>Giá trị màu RGBA được xác định bằng:</p>
+            <p><b>rgba( đỏ, xanh lá cây , xanh dương, alpha )</b></p>
+            <p> Tham số alpha là một số nằm giữa 0,0 (hoàn toàn trong suốt) và 1,0 (hoàn toàn mờ đục).</p>
+            <p>Ví dụ sau đây định nghĩa các màu RGBA khác nhau:</p>
+            <div class="mau1">rgba(225, 0, 0.2); </div>
+            <div class="mau2">rgba(225, 0, 0.4); </div>
+            <div class="mau3">rgba(225, 0, 0.6); </div>
+            <div class="mau4">rgba(225, 0, 0.8); </div>
+            <h3><li>Màu HSLA</li></h3>
+            <p>Giá trị màu HSLA là phần mở rộng của màu HSL với kênh alpha - dùng để xác định độ mờ đục của màu sắc.</p>
+            <p>Giá trị màu HSLA được xác định bằng:</p>
+            <p><b>hsla( màu sắc, độ bão hòa , độ sáng, alpha )</b></p>
+            <p>Tham số alpha là một số nằm giữa 0,0 (hoàn toàn trong suốt) và 1,0 (hoàn toàn mờ đục):</p>
+            <p>Ví dụ sau đây định nghĩa các màu HSLA khác nhau:</p>
+            <div id="mau1">hsla(0, 100%, 30%, 0.3); </div>
+            <div id="mau2">hsla(0, 100%; 50%, 0.3); </div>
+            <div id="mau3">hsla(0, 100%, 70%, 0.3); </div>
+            <div id="mau4">hsla(0, 100%, 90%, 0.3); </div>
+            <h3><li>Thuộc tính opacity của CSS</li></h3>
+            <p>Thuộc tính này opacitythiết lập độ mờ cho toàn bộ phần tử (cả màu nền và văn bản sẽ mờ/trong suốt).</p>
+            <p>Giá opacitytrị thuộc tính phải là một số nằm giữa 0,0 (hoàn toàn trong suốt) và 1,0 (hoàn toàn mờ đục).</p>
+            <p><b>Hãy lưu ý: </b> rằng văn bản bên trong phần tử cũng sẽ trong suốt/mờ đục!Ví dụ sau đây minh họa các thành phần khác nhau với độ mờ đục:</p>
+            <p>Ví dụ sau đây minh họa các thành phần khác nhau với độ mờ đục:</p>
+            <div class="trong1">rgb(225,0,0); opacity: 0.2; </div>
+            <div class="trong2">rgb(225,0,0); opacity: 0.4; </div>
+            <div class="trong3">rgb(225,0,0); opacity: 0.6; </div>
+            <div class="trong4">rgb(225,0,0); opacity: 0.8; </div>
+        </ul>
+        <h2><li>Từ khóa màu CSS</li></h2>
+        <ul>
+            <h3><li>Từ khóa màu CSS</li></h3>
+            <p>CSS có một số từ khóa màu được định nghĩa trước đặc biệt có thể được sử dụng với các thuộc tính như color, background-colorvà border-color</p>
+            <p>Các từ khóa đặc biệt là:</p>
+            <ul>
+                <li><b>Transparent</b></li>
+                <li><b>Currentcolor</b></li>
+                <li><b>Inherit</b></li>
+            </ul>
+            <h3><li>Từ khóa minh bạch</li></h3>
+            <p>Từ khóa này transparentđược sử dụng để làm cho một màu trở nên trong suốt. Nó thường được dùng để tạo màu nền trong suốt cho một phần tử.</p>
+            <div class="vidu1">
+                <h4>màu trong css</h4>
+                <p>màu trong css</p>
+            </div>
+            <h3><li>Từ khóa currentcolor</li></h3>
+            <p>Từ khóa này currentcolorgiống như một biến lưu giữ giá trị hiện tại của thuộc tính màu sắc của một phần tử.</p>
+            <p>Từ khóa này có thể hữu ích nếu bạn muốn một màu cụ thể được sử dụng nhất quán trong một phần tử hoặc một trang.</p>
+            <p><b>Ví dụ: </b></p>
+            <div class="vidu2">
+                <h4>màu trong css</h4>
+                <p>màu trong css</p>
+            </div>
+            <h3><li>Từ khóa kế thừa</li></h3>
+            <p>Từ khóa này inheritchỉ định rằng một thuộc tính sẽ kế thừa giá trị từ phần tử cha của nó.</p>
+            <p>Từ khóa này inheritcó thể được sử dụng cho bất kỳ thuộc tính CSS nào và trên bất kỳ phần tử HTML nào.</p>
+            <p><b>Ví dụ: </b></p>
+            <div class="vidu3">
+                <h4>màu trong css</h4>
+                <p>màu trong css</p>
+            </div>
+        </ul>
+        <h2><li>Hiệu ứng chuyển màu CSS</li></h2>
+        <ul>
+            <h3><li>Hiệu ứng chuyển màu CSS</li></h3>
+            <p>Các hàm chuyển màu trong CSS cho phép bạn hiển thị sự chuyển tiếp mượt mà giữa hai hoặc nhiều màu trong cùng một phần tử.</p>
+            <p>CSS định nghĩa ba loại gradient:</p>
+            <ul>
+                <li><b>Gradient tuyến tính</b> - Sự chuyển đổi màu sắc diễn ra theo hướng xuống, lên, trái, phải hoặc chéo.</li>
+                <li><b>Hiệu ứng chuyển màu xuyên tâm</b> - Sự chuyển đổi màu sắc diễn ra từ một điểm trung tâm ra ngoài.</li>
+                <li><b>Gradient hình nón</b> - Sự chuyển đổi màu sắc được xoay quanh một điểm trung tâm.</li>
+            </ul>
+            <p>Các hàm chuyển màu CSS được sử dụng bên trong thuộc tính này. background-image</p>
+            <h3><li>Hàm CSS linear-gradient()</li></h3>
+            <p>Hàm CSS này linear-gradient()tạo ra hiệu ứng chuyển màu tuyến tính.</p>
+            <p>Hiệu ứng chuyển màu tuyến tính xác định sự chuyển đổi màu sắc theo đường thẳng, có thể đi xuống, lên, sang trái, sang phải hoặc theo đường chéo.</p>
+            <p>Hiệu ứng chuyển màu tuyến tính yêu cầu ít nhất hai điểm dừng màu. Các điểm dừng màu là những màu bạn muốn tạo hiệu ứng chuyển tiếp mượt mà giữa chúng. Bạn cũng có thể thiết lập điểm bắt đầu và hướng (hoặc góc) cùng với hiệu ứng chuyển màu.</p>
+            <p><b>Cú pháp: </b></p>
+            <p>background-image: linear-gradient(direction, color-stop1, color-stop2, ...);</p>
+            <p>Hướng - Từ trên xuống dưới mặc định</p>
+            <p><b>Ví dụ: </b></p>
+            <div class="chuyen1"></div>
+            <p>Hướng - Từ dưới lên trên</p>
+            <p><b>Ví dụ: </b></p>
+            <div class="chuyen2"></div>
+            <p>Hướng - Từ trái sang phải</p>
+            <p><b>Ví dụ: </b></p>
+            <div class="chuyen3"></div>
+            <p>Hướng - Đường chéo</p>
+            <p><b>Ví dụ: </b></p>
+            <div class="chuyen4"></div>
+            <h3><li>Độ dốc tuyến tính - Sử dụng góc</li></h3>
+            <p>Nếu bạn muốn kiểm soát hướng của gradient tốt hơn, bạn có thể định nghĩa một angletham số thay vì các hướng được xác định trước (xuống dưới, lên trên, sang phải, sang trái, xuống dưới bên phải, v.v.).</p>
+            <li>Giá trị 0 độ tương đương với "ở vị trí cao nhất".</li>
+            <li>Giá trị 90 độ tương đương với "sang phải".</li>
+            <li>Giá trị 180 độ tương đương với "đến đáy".</li>
+            <li>Giá trị 270 độ tương đương với "sang trái".</li>
+            <p><b>Cú pháp: </b></p>
+            <p>background-image: linear-gradient(angle, color-stop1, color-stop2);</p>
+            <p><b>Ví dụ: </b></p>
+            <div class="do1">0 độ</div>
+            <p><b>Ví dụ: </b></p>
+            <div class="do2">90 độ</div>
+            <p><b>Ví dụ: </b></p>
+            <div class="do3">180 độ</div>
+            <p><b>Ví dụ: </b></p>
+            <div class="do4">270 độ</div>
+            <h3><li>Chuyển sắc tuyến tính - Nhiều điểm dừng màu</li></h3>
+            <p><b>Ví dụ: </b></p>
+            <div class="tuyentinh1">Chuyển màu sắc tuyến tính nhiều màu. </div><br>
+            <div class="tuyentinh2">Chuyển màu sắc tuyến tính nhiều màu. </div><br>
+            <div class="tuyentinh3">Chuyển màu sắc tuyến tính nhiều màu. </div><br>
+            <div class="tuyentinh4">Chuyển màu sắc tuyến tính nhiều màu. </div><br>
+            <div class="tuyentinh5">Chuyển màu sắc tuyến tính nhiều màu. </div><br>
+            <div class="tuyentinh6">Chuyển màu sắc tuyến tính nhiều màu. </div><br>
+        </ul>
+
+    </ol>
+</body>
+</html>

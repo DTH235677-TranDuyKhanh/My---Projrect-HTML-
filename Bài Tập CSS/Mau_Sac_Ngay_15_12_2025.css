@@ -1,0 +1,203 @@
+.mau1{
+    background-color: rgba(225, 0, 0,0.2);
+}
+.mau2{
+    background-color: rgba(225, 0, 0,0.4);
+}
+.mau3{
+    background-color: rgba(225, 0, 0,0.6);
+}
+.mau4{
+    background-color: rgba(225, 0, 0,0.8);
+}
+#mau1{
+    background-color: hsla(0, 100%, 30%, 0.3);
+}
+#mau2{
+    background-color: hsla(0, 100%, 50%, 0.3);
+}
+#mau3{
+    background-color: hsla(0, 100%, 70%, 0.3);
+}
+#mau4{
+    background-color: hsla(0, 100%, 90%, 0.3);
+}
+.trong1{
+    background-color: rgb(225,0,0);
+    opacity: 0.2;
+}
+.trong2{
+    background-color: rgb(225,0,0);
+    opacity: 0.4;
+}
+.trong3{
+    background-color: rgb(225,0,0);
+    opacity: 0.6;
+}
+.trong4{
+    background-color: rgb(225,0,0);
+    opacity: 0.8;
+}
+.vidu1{
+    width: 50%; 
+    height: 150px;
+    background-color: lightgray;
+}
+.vidu1 > h4{
+    padding: 10px;
+    text-align: center;
+    background-color: lightgreen;
+}
+.vidu1 > p{
+    background-color: transparent;
+    text-align: center;
+    border: 2px solid red;
+    padding: 10px;
+}
+.vidu2{
+    width: 50%;
+    height: 150px;
+    background-color: lightcyan;
+    color: blue;
+    border: 10px solid currentcolor;
+}
+.vidu2 > h4{
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    border:5px solid currentcolor;
+    box-shadow: 0px 0px 15px currentcolor;
+}
+.vidu2 > p{
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    border:5px solid currentcolor;
+    box-shadow: 5px 5px 15px currentcolor; 
+}
+.vidu3{
+    width: 50%;
+    height: 150px;
+    border: 5px solid green;
+    box-shadow: 0px 0px 20px yellow;
+}
+.vidu3 > h4{
+    text-align: center;
+    border: inherit;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: inherit;
+}
+.vidu3 > p{
+    text-align: center;
+    padding: 10px; 
+    margin: 10px;
+    border: inherit;
+    box-shadow: inherit;
+}
+.chuyen1{
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    background-color: red;
+    background-image: linear-gradient(to bottom, red, yellow)
+}
+.chuyen2{
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    background-color: red;
+    background-image: linear-gradient(to top, red, yellow)
+}
+.chuyen3{
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    background-color: red;
+    background-image: linear-gradient(to right, red, yellow)
+}
+.chuyen4{
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    background-color: red;
+    background-image: linear-gradient(to  bottom left, red, yellow)
+}
+.do1{
+    text-align: center;
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    background-color: red;
+    background-image: linear-gradient( 0deg , red, yellow)
+}
+.do2{
+    text-align: center;
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    background-color: red;
+    background-image: linear-gradient( 90deg , red, yellow)
+}
+.do3{
+    text-align: center;
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    background-color: red;
+    background-image: linear-gradient( 180deg , red, yellow)
+}
+.do4{
+    text-align: center;
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    background-color: red;
+    background-image: linear-gradient( 270deg , red, yellow)
+}
+.tuyentinh1{
+    text-align: center;
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    background-color: red;
+    background-image: linear-gradient(red, yellow, blue);
+}
+.tuyentinh2{
+    text-align: center;
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    background-color: red;
+    background-image: linear-gradient(red, yellow, blue, black, green, orange, violet);
+}
+.tuyentinh3{
+    text-align: center;
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    background-color: red;
+    background-image: linear-gradient(red 30%, yellow 40%, blue 70%);
+}
+.tuyentinh4{
+    text-align: center;
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    background-color: red;
+    background-image: linear-gradient(to right, red, yellow, blue, black, green, orange, violet);
+}
+.tuyentinh5{
+    text-align: center;
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    background-image: linear-gradient(to right, rgba(225,0,0,0.2), rgba(225,0,0,1));
+}
+.tuyentinh6{
+    text-align: center;
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    background-image: repeating-linear-gradient(red, yellow 10%, blue 20%);
+}
