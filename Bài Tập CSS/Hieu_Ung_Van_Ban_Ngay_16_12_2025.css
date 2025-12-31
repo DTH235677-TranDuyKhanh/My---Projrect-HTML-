@@ -1,0 +1,45 @@
+.test1{
+    width: 200px;
+    border:2px solid black;
+    overflow: hidden;
+    white-space: nowrap;/*Không cho xuống dòng toàn bộ nằm trên một hàng*/
+    text-overflow: clip;/*Phần tử vượt qua sẽ bị cắt thẳng không có ký hiệu gì thêm*/
+}
+.test2{
+    width: 200px;
+    border: 2px solid black;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;/*Phần tử vượt quá khung sẽ hiển thị dấu (...) ở cuối*/
+}
+/*Ví dụ sau đây minh họa cách bạn có thể hiển thị nội dung bị tràn khi di chuột qua phần tử:*/
+.test1:hover, .test2:hover{
+    overflow: visible;
+}
+.test3{
+    width: 200px;
+    border: 2px solid black;
+    padding: 8px;
+    word-wrap: break-word;
+}
+.test4{
+    width: 200px;
+    border: 2px solid black;
+    padding: 10px;
+    word-break: normal;
+}
+.test5{
+    width: 200px;
+    border: 2px solid black;
+    padding: 10px;
+    word-break: break-all;
+}
+.test6{
+    writing-mode: horizontal-tb;
+}
+span{
+    writing-mode: vertical-rl;
+}
+.test7{
+    writing-mode: vertical-lr;
+}

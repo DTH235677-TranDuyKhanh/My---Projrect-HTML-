@@ -128,7 +128,85 @@
             <div class="tuyentinh5">Chuyển màu sắc tuyến tính nhiều màu. </div><br>
             <div class="tuyentinh6">Chuyển màu sắc tuyến tính nhiều màu. </div><br>
         </ul>
-
+        <h2><li>Hiệu ứng chuyển sắc xuyên tâm CSS</li></h2>
+        <ul>
+            <h3><li>Hàm CSS radial-gradient()</li></h3>
+            <p>Hàm CSS này radial-gradient()tạo ra hiệu ứng chuyển màu xuyên tâm.</p>
+            <p>Hiệu ứng chuyển màu xuyên tâm xác định sự chuyển đổi màu sắc lan tỏa ra từ một điểm trung tâm.</p>
+            <p>Hiệu ứng chuyển màu xuyên tâm yêu cầu ít nhất hai điểm dừng màu. Các điểm dừng màu là những màu bạn muốn tạo ra sự chuyển tiếp mượt mà giữa chúng.</p>
+            <p><b>Cú pháp: </b></p>
+            <p>background-image: radial-gradient(shape size at position, start-color, ..., last-color);</p>
+            <p>Theo mặc định, shapelà hình elip, sizelà góc xa nhất, và positionlà tâm.</p>
+            <h3><li>Hiệu ứng chuyển màu xuyên tâm - Các điểm dừng màu cách đều nhau (đây là cài đặt mặc định)</li></h3>
+            <p><b>Ví dụ: </b></p>
+            <div class="tam1">Sau đây minh họa một gradient xuyên tâm với các điểm dừng màu được phân bố đều</div>
+            <h3><li>Hiệu ứng chuyển màu xuyên tâm - Các điểm dừng màu cách đều nhau</li></h3>
+            <p><b>Ví dụ: </b></p>
+            <div class="tam2">Sau đây minh họa một gradient xuyên tâm với các điểm dừng màu được bố trí cách nhau khác nhau</div>
+            <h3><li>Hiệu ứng chuyển màu xuyên tâm - Thiết lập hình dạng</li></h3>
+            <p>Tham số này shapexác định hình dạng của gradient. Nó có thể nhận một trong các giá trị sau:</p>
+            <ul>
+                <li>dấu ba chấm (mặc định)</li>
+                <li>vòng tròn</li>
+            </ul>
+            <p><b>Ví dụ: Circle </b></p>
+            <div class="tam3">Sau đây minh họa một gradient xuyên tâm có hình dạng vòng tròn: Circle</div>
+            <p><b>Ví dụ: Mặc định </b></p>
+            <div class="tam4">Sau đây minh họa một gradient xuyên tâm có hình dạng vòng tròn: Mặc định</div>
+            <h3><li>Độ dốc xuyên tâm - Tham số kích thước</li></h3>
+            <p>Tham số này sizexác định kích thước của hình dạng kết thúc của gradient. Nó có thể nhận một trong các giá trị sau:</p>
+            <ul>
+                <li>phía gần nhất</li>
+                <li>phía xa nhất</li>
+                <li>góc gần nhất</li>
+                <li>góc xa nhất (đây là mặc định)</li>
+            </ul>
+            <p><b>Ví dụ: Phía xa nhất. </b></p>
+            <div class="goc1"></div>
+            <p><b>Ví dụ: Phía gần nhất. </b></p>
+            <div class="goc2"></div>
+            <p><b>Ví dụ: Góc gần nhất. </b></p>
+            <div class="goc3"></div>
+            <p><b>Ví dụ: Góc gần nhất. </b></p>
+            <div class="goc4"></div>
+            <h3><li>Hàm CSS repeating-radial-gradient()</li></h3>
+            <p>Hàm CSS này được sử dụng để lặp lại hiệu ứng chuyển màu xuyên tâm: repeating-radial-gradient()</p>
+            <p><b>Ví dụ: Repeating. </b></p>
+            <div class="goc5"></div>
+        </ul>
+            <h2><li>Hiệu ứng chuyển màu hình nón CSS</li></h2>
+            <p>Hàm CSS này conic-gradient()tạo ra hiệu ứng chuyển màu hình nón.</p>
+            <p>Gradient hình nón là một loại gradient có sự chuyển đổi màu sắc xoay quanh một điểm trung tâm.</p>
+            <p>Để tạo hiệu ứng chuyển màu hình nón, bạn phải xác định ít nhất hai màu.</p>
+            <p><b>Cú pháp: background-image: conic-gradient([from angle] [at position,] color [degree], color [degree], ...);</b></p>
+            <p>background-image: conic-gradient([from angle] [at position,] color [degree], color [degree], ...);</p>
+            <p>Theo mặc định, anglelà 0 độ và positionlà tâm.</p>
+            <p>Nếu không degreeđược chỉ định, các màu sẽ được phân bố đều xung quanh điểm trung tâm.</p>
+            <ul>
+            <h3><li>Gradient hình nón: Ba màu</li></h3>
+            <p><b>Ví dụ:</b> sau đây minh họa một gradient hình nón với ba màu:</p>
+            <div class="non1"></div>
+            <h3><li>Gradient hình nón: Năm màu</li></h3>
+            <p><b>Ví dụ:</b> sau đây minh họa một gradient hình nón với năm màu:</p>
+            <div class="non2"></div>
+            <h3><li>Gradient hình nón: Ba màu và ba mức độ</li></h3>
+            <p><b>Ví dụ:</b> sau đây minh họa một gradient hình nón với ba màu và một độ cho mỗi màu:</p>
+            <div class="non3"></div>
+            <h3><li>Tạo biểu đồ hình tròn</li></h3>
+            <p>Chỉ cần thêm vào để làm cho hiệu ứng chuyển màu hình nón trông giống như một chiếc bánh: border-radius: 50%</p>
+            <div class="non4"></div>
+            <p>Đây là một biểu đồ hình tròn khác với các mức độ được xác định rõ ràng cho tất cả các màu:</p>
+            <div class="non5"></div>
+            <h3><li>Độ dốc hình nón với vị trí tâm được xác định</li></h3>
+            <p>[Tại vị trí ] chỉ định tâm của độ dốc hình nón.</p>
+            <p>Ví dụ sau đây minh họa một đường dốc hình nón với vị trí tâm là 60% 45%:</p>
+            <div class="non6"></div>
+            <h3><li>Hàm CSS repeating-conic-gradient()</li></h3>
+            <p>Hàm CSS được sử dụng để lặp lại các gradient hình nón: repeating-conic-gradient()</p>
+            <div class="non7"></div>
+            <p>Đây là một dải màu chuyển sắc hình nón lặp lại với điểm bắt đầu và kết thúc màu sắc được xác định rõ ràng:</p>
+            <div class="non8"></div>
+        </ul>
     </ol>
 </body>
 </html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow trong CSS</title>
+    <link rel="stylesheet" href="./CSS_Shadow_Ngay_16_12_2025.css">
+</head>
+<body>
+    <h1>CSS Shadow</h1>
+    <ol type="1">
+        <h2><li>Hiệu ứng đổ bóng CSS</li></h2>
+        <ul>
+            <h3>
+                <li>Hiệu ứng đổ bóng chữ CSS</li>
+            </h3>
+            <p>Thuộc tính CSS này text-shadowáp dụng hiệu ứng đổ bóng cho văn bản.</p>
+            <p>Ở dạng sử dụng đơn giản nhất, bạn chỉ cần xác định bóng đổ theo chiều ngang và chiều dọc.</p>
+            <p>Ngoài ra, bạn có thể thêm màu đổ bóng và hiệu ứng làm mờ.</p>
+            <ul>
+                <li><b>Ví dụ 1: Bóng đổ ngang và dọc:</b></li>
+                <p class="so1">Hiệu ứng đổ bóng chữ!</p>
+                <li><b> Ví dụ 2: Bóng đổ ngang và dọc, có màu sắc: </b></li>
+                <p class="so2">Hiệu ứng đổ bóng chữ!</p>
+                <li><b>Ví dụ 3: Bóng đổ theo chiều ngang và chiều dọc, kèm hiệu ứng màu sắc và làm mờ:</b></li>
+                <p class="so3">Hiệu ứng đổ bóng chữ!</p>
+                <li><b>Ví dụ 4: Hiệu ứng đổ bóng cho văn bản màu trắng:</b></li>
+                <p class="so4">Hiệu ứng đổ bóng chữ!</p>
+                <li><b>Ví dụ 5: Hiệu ứng đổ bóng chữ với ánh sáng neon đỏ:</b></li>
+                <p class="so5">Hiệu ứng đổ bóng chữ!</p>
+            </ul>
+            <h3>
+                <li>Nhiều bóng</li>
+            </h3>
+            <p>Để thêm nhiều hơn một bóng đổ cho văn bản, bạn có thể thêm một danh sách các bóng đổ được phân cách bằng dấu phẩy.</p>
+            <p>Ví dụ sau đây cho thấy bóng đổ phát sáng màu đỏ và xanh neon:</p>
+            <p class="bong1">Hiệu ứng bóng đổ bóng chữ!</p>
+            <p class="bong2">Hiệu ứng bóng đổ bóng chữ!</p>
+            <p class="bong3">Viền xung quanh văn bản!</p>
+        </ul>
+        <h2><li>CSS Box Shadow</li></h2>
+        <ul>
+            <h3>
+                <li>Thuộc tính CSS box-shadow</li>
+            </h3>
+            <p>Thuộc tính CSS này box-shadowđược sử dụng để áp dụng một hoặc nhiều hiệu ứng đổ bóng cho một phần tử.</p>
+            <p>Ở dạng sử dụng đơn giản nhất, bạn chỉ có thể xác định độ lệch ngang và độ lệch dọc của bóng.</p>
+            <p>Ngoài ra, bạn có thể thêm màu đổ bóng, bán kính lan tỏa, hiệu ứng làm mờ và thay đổi bóng từ bóng ngoài thành bóng trong (hình nhỏ).</p>
+            <h3>
+                <li>Bóng đổ ngang và dọc bằng CSS</li>
+            </h3>
+            <p>Ở dạng sử dụng đơn giản nhất, bạn chỉ cần xác định độ lệch ngang và độ lệch dọc của bóng.</p>
+            <p>Màu mặc định của bóng đổ là màu chữ hiện tại.</p>
+            <div class="box1">Một phần tử div có hiệu ứng đổ bóng</div>
+            <h3>
+                <li>Hãy chọn màu cho bóng đổ.</li>
+            </h3>
+            <p>Tham số này colorxác định màu sắc của bóng.</p>
+            <div class="box2">Một phần tử div với hiệu ứng đổ bóng màu xanh nhạt.</div>
+            <h3>
+                <li>Thêm hiệu ứng làm mờ cho bóng</li>
+            </h3>
+            <p>Tham số này blurxác định bán kính làm mờ của bóng. Số càng lớn, bóng càng bị làm mờ nhiều.</p>
+            <div class="box3">Một phần tử div với bóng đổ mờ màu xanh nhạt 5px.</div>
+            <h3>
+                <li>Đặt bán kính lan tỏa của bóng</li>
+            </h3>
+            <p>Tham số này spreadxác định bán kính lan rộng của bóng.</p>
+            <p>Giá trị dương làm tăng kích thước bóng, và giá trị âm làm giảm kích thước bóng.</p>
+            <div class="box4">Một phần tử div với hiệu ứng đổ bóng mờ màu xanh nhạt, có bán kính lan rộng 12px.</div>
+            <h3>
+                <li>Đặt tham số inset</li>
+            </h3>
+            <p>Tham số này insetthay đổi bóng đổ từ bóng đổ bên ngoài (outset) sang bóng đổ bên trong (bên trong khung của một phần tử).</p>
+            <div class="box5">Một phần tử div với hiệu ứng đổ bóng mờ, màu xanh nhạt, nằm bên trong.</div>
+            <h3>
+                <li>Thêm nhiều bóng đổ</li>
+            </h3>
+            <p>Một đối tượng cũng có thể có nhiều bóng đổ.</p>
+            <p>Để gắn nhiều hơn một bóng đổ cho một phần tử, hãy thêm một danh sách các bóng đổ được phân cách bằng dấu phẩy.</p>
+            <div class="box6">Một phần tử div với nhiều bóng đổ</div>
+            <h3>
+                <li>Tạo thẻ bóng</li>
+            </h3>
+            <b>Ví dụ: Lịch và Hình ảnh. </b>
+            <div class="tatca">
+            <div class="lich">
+                <div class="solich">16</div>
+                <div class="ngay">Ngày 16 tháng 12 năm 2025</div>
+            </div>
+            <div class="chung">
+                <div class="hinh">
+                    <img src="./images/Danh-lam-thang-canh.png" alt="Danh lam thắng cảnh" width="300px">
+                </div>
+                <div class="ten">
+                    Vịnh Hạ Long (Việt Nam)
+                </div>
+            </div>
+            </div>
+        </ul>
+    </ol>
+</body>
+</html>

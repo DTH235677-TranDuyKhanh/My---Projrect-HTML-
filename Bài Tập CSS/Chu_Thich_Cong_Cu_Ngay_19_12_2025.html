@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chứ thích công cụ trong CSS</title>
+    <link rel="stylesheet" href="./Chu_Thich_Cong_Cu_Ngay_19_12_2025.css">
+</head>
+<body>
+    <h1 title="Trần Duy Khánh">CHú thích công cụ trong CSS</h1>
+    <ol type="1">
+        <h2><li>Chú thích CSS</li></h2>
+        <p>Chú thích (tooltip) trong CSS được sử dụng để hiển thị thêm thông tin về một phần tử khi người dùng di chuyển con trỏ chuột qua phần tử đó:</p>
+
+        <h2><li>Tạo chú thích công cụ cơ bản bằng CSS</li></h2>
+        <div class="tooltip">Hover over me
+            <span class="tooltiptext">Some tooltip text</span>
+        </div>
+        <p>Ví dụ được giải thích</p>
+        <p><b>HTML:</b></p>
+        <ul>
+            <li>Sử dụng một phần tử chứa (như div) và thêm "tooltip"lớp vào đó. Khi người dùng di chuột qua div này, văn bản chú thích sẽ hiển thị.</li>
+            <li>Văn bản chú thích được đặt bên trong một phần tử nội tuyến (như span) với thuộc tính class="tooltiptext".</li>
+        </ul>
+        <p><b>CSS:</b></p>
+        <ul> 
+            <li>Lớp này tooltipsử dụng position:relative, cần thiết để định vị văn bản chú thích ( position:absolute). Mẹo: Xem các ví dụ bên dưới về cách định vị chú thích.</li>
+            <li>Lớp này tooltiptextchứa văn bản chú thích thực tế. Nó được ẩn theo mặc định và sẽ hiển thị khi di chuột qua.</li>
+            <li>Bộ chọn này :hoverđược sử dụng để hiển thị văn bản chú thích khi người dùng di chuyển chuột qua thẻ div có thuộc tính class="tooltip".</li>
+        </ul>
+
+        <h2><li>Định vị chú giải công cụ</li></h2>
+        <p>Bạn có thể đặt chú thích ở bất kỳ vị trí nào bạn muốn. Ở đây, chúng tôi sẽ hướng dẫn cách đặt chú thích ở bên trái, bên phải, phía trên và phía dưới.</p>
+        <h4><p>Chú thích công cụ căn phải và căn trái</p></h4>
+        <p>Trong ví dụ này, chú thích được đặt ở bên phải ( left:105%) của văn bản "có thể rê chuột" (div). Cũng cần lưu ý rằng top:-5pxđược sử dụng để đặt nó ở giữa phần tử chứa nó. Chúng ta sử dụng số 5 vì văn bản chú thích có khoảng đệm trên và dưới là 5px. Nếu bạn tăng khoảng đệm, hãy tăng giá trị của topthuộc tính để đảm bảo nó vẫn ở giữa (nếu bạn muốn điều đó). Điều tương tự cũng áp dụng nếu bạn muốn đặt chú thích ở bên trái.</p>
+        <div class="tooltipp">Hover over me
+            <span class="tooltiptextt">Some tooltip text</span>
+        </div>
+        <p>Chú thích công cụ căn lề trái: </p>
+        <div class="tooltippp">Hover over me
+            <span class="tooltiptexttt">Some tooltip text</span>
+        </div>
+        <h4><p>Chú thích công cụ được căn chỉnh trên và dưới</p></h4>
+        <p>Nếu bạn muốn chú thích xuất hiện ở trên hoặc dưới, hãy xem các ví dụ bên dưới. Lưu ý rằng chúng tôi sử dụng margin-leftthuộc tính với giá trị âm 65 pixel. Điều này nhằm mục đích căn giữa chú thích phía trên/phía dưới văn bản khi rê chuột. Nó được đặt bằng một nửa chiều rộng của chú thích (130/2 = 65).</p>
+        <div class="tooltipppp">Hover over me
+            <span class="tooltiptextttt">Some tooltip text</span>
+        </div>
+        <p>Chú thích công cụ được căn chỉnh ở phía dưới: </p>
+        <div class="tooltippppp">Hover over me
+            <span class="tooltiptexttttt">Some tooltip text</span>
+        </div>
+
+        <h2><li>Mũi tên chú thích</li></h2>
+        <p>Để tạo một mũi tên xuất hiện từ một phía cụ thể của chú thích, hãy thêm nội dung "trống" sau chú thích, với lớp giả phần tử ::aftercùng với content thuộc tính. Bản thân mũi tên được tạo bằng cách sử dụng đường viền. Điều này sẽ làm cho chú thích trông giống như một bong bóng thoại.</p>
+        <p>Ví dụ này minh họa cách thêm mũi tên vào cuối chú thích công cụ:</p>
+        <div class="tooltipppppp">Hover over me
+            <span class="tooltiptextttttt">Some tooltip text</span>
+        </div>
+        <p><b>Ví dụ được giải thích</b></p>
+        <p>Đặt mũi tên bên trong chú thích công cụ: top: 100%sẽ đặt mũi tên ở cuối chú thích công cụ. left: 50%sẽ căn giữa mũi tên.</p>
+        <p><b>Lưu ý:</b> Thuộc tính này border-widthquy định kích thước của mũi tên. Nếu bạn thay đổi kích thước này, hãy thay đổi giá margin-lefttrị tương ứng. Điều này sẽ giữ cho mũi tên luôn ở vị trí trung tâm.</p>
+        <p>Thuộc tính này border-colorđược sử dụng để chuyển đổi nội dung thành hình mũi tên. Chúng ta đặt viền trên cùng màu đen, và phần còn lại trong suốt. Nếu tất cả các cạnh đều màu đen, bạn sẽ có một hình vuông màu đen.</p>
+        <p>Ví dụ này minh họa cách thêm mũi tên vào đầu chú thích công cụ. Lưu ý rằng lần này chúng ta đã thiết lập màu viền dưới:</p>
+        <div class="tooltip1">Hover over me
+            <span class="tooltiptext1">Some tooltip text</span>
+        </div>
+        <p>Ví dụ này minh họa cách thêm mũi tên vào bên trái của chú thích công cụ:</p>
+        <div class="tooltip2">Hover over me 
+            <span class="tooltiptext2">Some tooltip text</span>
+        </div>
+        <p>Ví dụ này minh họa cách thêm mũi tên vào bên phải của chú thích công cụ:</p>
+        <div class="tooltip3">Hover over me
+            <span class="tooltiptext3">Some tooltip text</span>
+        </div>
+
+        <h2><li>Chú thích công cụ mờ dần</li></h2>
+        <p>Nếu bạn muốn một tooltip có hiệu ứng mờ dần, hãy sử dụng transitionthuộc tính CSS và opacity thuộc tính , và chuyển từ trạng thái hoàn toàn vô hình sang hiển thị 100% trong một số giây nhất định (2 giây trong ví dụ của chúng tôi):</p>
+        <div class="tooltip4">Hover over me
+            <span class="tooltiptext4">Some tooltip text</span>
+        </div>
+    </ol>
+</body>
+</html>

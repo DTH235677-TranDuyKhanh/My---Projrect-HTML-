@@ -1,0 +1,300 @@
+.vidu1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: myAnimation;
+    animation-duration: 4s;
+}
+@keyframes myAnimation{
+    form{
+        background-color: red;
+    }
+    to{
+        background-color: yellow;
+    }
+}
+.vidu2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: myanimation;
+    animation-duration: 4s;
+}
+@keyframes myanimation{
+    0%{background-color: red;}
+    25%{background-color: yellow;}
+    50%{background-color: green;}
+    75%{background-color: blue;}
+    100%{background-color: lightgreen;}
+}
+.vidu3{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: Myanimation;
+    animation-duration: 5s;
+}
+@keyframes Myanimation{
+    0%{background-color: red; left: 0px; top: 0px;}
+    25%{background-color: yellow; left: 200px; top: 0px;}
+    50%{background-color: green; left: 200px; top: 200px;}
+    75%{background-color: lightgray;left: 0px; top: 200px;}
+    100%{background-color: blue;left: 0px; top: 0px;}  
+}
+.vidu4{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: MYanimation;
+    animation-delay: 2s;
+    animation-duration: 5s;
+}
+@keyframes MYanimation{
+    0%{background-color: red; left: 0px; top: 0px;}
+    25%{background-color: yellow; left: 200px; top: 0px;}
+    50%{background-color: green; left: 200px; top: 200px;}
+    75%{background-color: lightgray;left: 0px; top: 200px;}
+    100%{background-color: blue;left: 0px; top: 0px;}  
+}
+.vidu5{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: MYAnimation;
+    animation-delay: -2s;
+    animation-duration: 5s;
+}
+@keyframes MYAnimation{
+    0%{background-color: red; left: 0px; top: 0px;}
+    25%{background-color: yellow; left: 200px; top: 0px;}
+    50%{background-color: green; left: 200px; top: 200px;}
+    75%{background-color: lightgray;left: 0px; top: 200px;}
+    100%{background-color: blue;left: 0px; top: 0px;}  
+}
+.vidu6{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: MYANimation;
+    animation-delay: -2s;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+
+}
+@keyframes MYANimation{
+    0%{background-color: red; left: 0px; top: 0px;}
+    25%{background-color: yellow; left: 200px; top: 0px;}
+    50%{background-color: green; left: 200px; top: 200px;}
+    75%{background-color: lightgray;left: 0px; top: 200px;}
+    100%{background-color: blue;left: 0px; top: 0px;}  
+}
+.vidu7{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: myAnimatioN;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes myAnimatioN{
+    0%{
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    50%{
+        background-color: yellow;
+        left: 500px;
+        top: 0px;
+    }
+    100%{
+        background-color: green;
+        left: 0px;
+        top: 0px;
+    }
+}
+.vidu8{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: MYANimation;
+    animation-duration: 5s;
+    animation-direction: reverse;
+}
+.vidu9{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red; 
+    animation-name: MYANimation;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}
+.vidu10{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red; 
+    animation-name: MYANimation;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+}
+#vidu11{
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation-name: myAnimation;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+#vidu11 {animation-timing-function: linear;}
+#vidu12{
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation-name: myAnimation;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+#vidu12 {animation-timing-function: ease;}
+#vidu13{
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation-name: myAnimation;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+#vidu13 {animation-timing-function: ease-in;}
+#vidu14{
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation-name: myAnimation;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+#vidu14 {animation-timing-function: ease-out;}
+#vidu15{
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation-name: myAnimation;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+#vidu15 {animation-timing-function: ease-in-out;}
+
+@keyframes myAnimation {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+.vidu17{
+    position: relative;
+    width: 100px;
+    height: 100px; 
+    background-color: red;
+    animation-name: khanh; 
+    animation-duration: 5s;
+    animation-timing-function: ease; 
+    animation-fill-mode: forwards;
+}
+@keyframes khanh{
+    0%{ top: 0px;}
+    100%{ top: 200px; background-color: yellow;}
+}
+.vidu18{
+    position: relative;
+    width: 100px;
+    height: 100px; 
+    background-color: red;
+    animation-name: khan; 
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-timing-function: ease; 
+    animation-fill-mode: backwards;
+}
+@keyframes khan{ 
+    0%{ top: 0px; left: 150px;}
+    100%{ top: 200px; left: 150px; background-color: yellow;}
+}
+.vidu19{
+    position: relative;
+    width: 100px;
+    height: 100px; 
+    background-color: red;
+    animation-name: kha; 
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-timing-function: ease; 
+    animation-fill-mode: both;
+}
+@keyframes kha{ 
+    0%{ top: 0px; left: 250px;}
+    100%{ top: 200px; left: 250px; background-color: yellow;}
+}
+.vidu20{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation: myAnimation 5s linear 2s infinite alternate;
+}
+
+@keyframes myAnimation {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+.btn {
+  padding: 12px 24px;
+  background: #1abc9c;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  /* Transition cho tương tác */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+  /* Animation khi load */
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.btn:hover {
+  background-color: #148f77;
+  transform: scale(2.2);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {   
+    opacity: 1;
+    transform: translateY(0);
+  }
+}       
+
+ 
+ 
+  

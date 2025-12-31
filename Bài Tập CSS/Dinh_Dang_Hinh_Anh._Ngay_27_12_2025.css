@@ -1,0 +1,289 @@
+#vidu1{
+    border-radius: 8px;
+}
+#vidu2{
+    border-radius: 50%;
+}
+#vidu3{
+    border: 2px solid black;
+    padding: 5px;
+    width: 150px;
+    border-radius: 10px;
+}
+#vidu4{
+    border: 2px solid #ddd;
+    padding: 5px;
+    width: 200px; 
+    border-radius: 10px;
+}
+#vidu4:hover{
+        box-shadow: 0px 0px 5px 1px rgb(131, 202, 226);
+}
+#vidu5{
+    max-width: 100%;
+    height: auto; 
+}
+.chung{
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-bottom: 40px;
+}
+.container{
+    text-align: center;
+    padding: 10px 20px;
+}
+/*=========Ví dụ 1========*/
+.tatca{
+    position: relative;
+    width: 50%;
+}
+.tatca>img{
+    width: 100%;
+    display: block;
+    height: auto;
+}
+.nen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #008CBA;
+}
+.tatca:hover .nen{
+    opacity:1;
+}
+.text{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+/*=========Ví dụ 2========*/
+.tatca1{
+    position: relative;
+    width: 50%;
+}
+.tatca1>img{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    /*Ẩn mặt sau của phần tử khi bị transform 3D (rotate, flip).
+        Giúp:
+        Tránh hiện ảnh bị nhấp nháy
+        Hiệu ứng mượt hơn khi dùng transform*/
+}
+.nen1{
+    transition: 0,5s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.tatca1:hover #anh{    
+    opacity: 0.3;
+}
+
+.tatca1:hover .nen1{    
+    opacity: 1;
+}
+.text1{
+    background-color: #4CAF50;
+    padding: 16px 22px;
+    font-size: 16px;
+    color: white;
+}
+/*=========Ví dụ 3=========*/
+.from{
+    position: relative;
+    width: 50%;
+}
+.from > img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.background{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+.from:hover .background{
+    bottom: 0;
+    height: 100%
+}
+.chu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    overflow: hidden;
+}
+/*=======Ví dụ 4========*/
+.form1{
+    position: relative;
+    width: 50%;
+}
+.form1 > img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.background1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+.form1:hover .background1{
+    top: 0;
+    height: 100%;
+}
+.chu1{
+    position: absolute;
+    white-space: nowrap;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: white;
+    overflow: hidden;
+}
+/*========Ví dụ 5========*/
+.form2{
+    position: relative;
+    width: 50%;
+}
+.form2 > img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.background2{
+    position: absolute;
+    right: 100%;
+    top: 0;
+    bottom: 0;
+    transition: 0.5s ease;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    background-color: #008CBA;
+}
+.form2:hover .background2{
+    width: 100%;
+    right: 0;
+}
+.chu2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    /*Cho chữ thành một hành khi kéo không bị nhảy dòng*/
+}
+/*========Ví dụ 6========*/
+.form3{
+    position: relative;
+    width: 50%;
+}
+.form3 > img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.background3{
+    position: absolute;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    transition: 0.5s ease;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    background-color: #008CBA;
+}
+.form3:hover .background3{
+    width: 100%;
+    left: 0;
+}
+.chu3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    /*Cho chữ thành một hành khi kéo không bị nhảy dòng*/
+}
+.lathinhanh > img:hover{
+    transform: scaleX(-1);
+}
+/*=======Ví dụ 7======*/
+*{
+    box-sizing: border-box;
+}
+.thuvienanh{
+    display: flex;
+    flex-wrap: wrap;/*Cho phép các phân tử tự động xuống dòng khi kích thước lớn hơn khung hình*/
+    justify-content: flex-start;
+}
+.anh1{
+    margin: 5px;
+    border: 1px solid #ddd;
+    width: calc(25% - 20px);
+}
+.anh1:hover{
+    border: 2px solid #777;
+}
+.anh1 > img{
+    width: 100%;
+    height: auto;
+}
+.anh1 > .tenanh1{
+    padding: 5px; 
+    text-align: center;
+}
+@media only screen and (max-width: 768px)
+{
+    .anh1{
+        width: calc(50% - 20px);
+    }
+}
+@media only screen and (max-width: 480px)
+{
+    .anh1{
+        width: calc(100% - 20px);
+    }
+}

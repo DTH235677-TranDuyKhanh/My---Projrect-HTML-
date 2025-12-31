@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiệu ứng văn bảng trong CSS</title>
+    <link rel="stylesheet" href="./Hieu_Ung_Van_Ban_Ngay_16_12_2025.css">
+</head>
+<body>
+    <h1>Hiệu ứng văn bảng trong CSS</h1>
+    <ol type="1">
+        <h2><li>Hiệu ứng văn bản CSS </li></h2>
+        <p>CSS có một số thuộc tính để xử lý tràn văn bản, xuống dòng tự động, quy tắc ngắt dòng và chế độ viết.</p>
+        <p>Trong chương này, bạn sẽ tìm hiểu về các thuộc tính sau:</p>
+        <ul>
+            <li>text-overflow- Chỉ định cách xử lý nội dung bị tràn</li>
+            <li>word-wrap- Cho phép ngắt các từ dài và xuống dòng.</li>
+            <li>word-break- Chỉ định các quy tắc xuống dòng</li>
+            <li>writing-mode- Chỉ định xem các dòng văn bản được bố trí theo chiều ngang hay chiều dọc.</li>
+        </ul>
+        <h2><li>Thuộc tính text-overflow của CSS</li></h2>
+        <p>Thuộc tính CSS này quy định cách thông báo cho người dùng về nội dung bị tràn ra ngoài mà không được hiển thị. Nội dung đó có thể bị cắt bớt hoặc được hiển thị kèm dấu ba chấm (...). text-overflow</p>
+        <p>Cả hai thuộc tính sau đây đều cần thiết để text-overflowcó hiệu lực:</p>
+        <ul>
+            <li>white-space: nowrap;</li>
+            <li>overflow: hidden;</li>
+        </ul>
+        <p><b>Ví dụ: hidden </b></p>
+        <p class="test1">Đây là một đoạn văn bản dài ví dụ cho hiệu ứng văn bản trong CSS. </p>
+        <p><b>Ví dụ: ellipsis </b></p>
+        <p class="test2">Đây là một đoạn văn bản dài ví dụ cho hiệu ứng văn bản trong CSS. </p>
+        <h2><li>Ví dụ sau đây minh họa cách bạn có thể hiển thị nội dung bị tràn khi di chuột qua phần tử:</li></h2>
+        <p>Thuộc tính CSS này word-wrapcho phép các từ dài được ngắt dòng và xuống dòng. </p>
+        <p>Nếu một từ quá dài không vừa với khu vực quy định, nó sẽ tự động mở rộng ra ngoài:</p>
+        <p>Thuộc tính này word-wrapcho phép bạn buộc văn bản xuống dòng - ngay cả khi điều đó có nghĩa là phải chia văn bản ở giữa một từ:</p>
+        <p>Mã CSS như sau:</p>
+        <p><b>Ví dụ: word-wrap. </b></p>
+        <p class="test3">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+        <h2><li>Thuộc tính ngắt dòng CSS</li></h2>
+        <p>Thuộc tính CSS này word-breakquy định cách xuống dòng khi các từ xuống cuối dòng.</p>
+        <p>Thuộc tính này có thể nhận một trong các giá trị sau:</p>
+        <ul>
+            <li>normal- Đây là cài đặt mặc định. Sử dụng các quy tắc xuống dòng mặc định của ngôn ngữ.</li>
+            <li>break-all- Cho phép ngắt từ tại bất kỳ ký tự nào để tránh tràn bộ nhớ</li>
+            <li>keep-all- Ngăn chặn sự ngắt quãng của từ</li>
+        </ul>
+        <p>Ở đây, chúng ta sử dụng normal:</p>
+        <p>Ở đây, chúng ta sử dụng break-all:</p>
+        <p>Mã CSS như sau:</p>
+        <p><b>Ví dụ: </b></p>
+        <p class="test4">Đoạn văn này chứa một số văn bản. Các dòng sẽ tự động xuống dòng tại bất kỳ ký tự nào.</p>
+        <p class="test5">Đoạn văn này chứa một số văn bản. Các dòng sẽ tự động xuống dòng tại bất kỳ ký tự nào.</p>
+        <h2><li>Thuộc tính writing-mode của CSS</li></h2>
+        <p>Thuộc tính CSS này writing-modequy định xem các dòng văn bản được bố trí theo chiều ngang hay chiều dọc.</p>
+        <p>Thuộc tính này có thể nhận một trong các giá trị sau:</p>
+        <ul>
+            <li>horizontal-tb- Mặc định. Văn bản hiển thị theo chiều ngang từ trái sang phải, theo chiều dọc từ trên xuống dưới.</li>
+            <li>vertical-rl- Văn bản được sắp xếp theo chiều dọc từ trên xuống dưới, theo chiều ngang từ phải sang trái.</li>
+            <li>vertical-lr- Văn bản được sắp xếp theo chiều dọc từ trên xuống dưới, theo chiều ngang từ trái sang phải.</li>
+        </ul>
+        <p>Đây là một đoạn văn bản có chứa phần tử span.dọc-rlchế độ viết.</p>
+        <p>Ví dụ sau đây minh họa một số chế độ viết khác nhau:</p>
+        <p class="test6">Some text with default writing-mode.</p>
+        <p>Some text with a span element with a <span>vertical-rl</span> writing-mode.</p>
+        <p class="test7">Some text with writing-mode: vertical-rl.</p>
+    </ol>
+</body>
+</html>

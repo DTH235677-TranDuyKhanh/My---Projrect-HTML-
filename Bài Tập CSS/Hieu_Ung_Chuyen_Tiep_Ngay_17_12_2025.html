@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiệu ứng chuyển tiếp trong CSS</title>
+    <link rel="stylesheet" href="./Hieu_Ung_Chuyen_Tiep_Ngay_17_12_2025.css">
+</head>
+<body>
+    <h1>Hiệu ứng chuyển tiếp trong CSS</h1>
+    <ol type="1">
+        <h2><li>Hiệu ứng chuyển tiếp CSS</li></h2>
+        <p>Hiệu ứng chuyển tiếp CSS cho phép bạn thay đổi giá trị thuộc tính một cách mượt mà, trong một khoảng thời gian nhất định.</p>
+        <p>Di chuột qua phần tử bên dưới để xem hiệu ứng chuyển tiếp CSS:</p>
+
+        <h2><li>Thuộc tính chuyển đổi CSS</li></h2>
+        <p>Để tạo hiệu ứng chuyển tiếp, bạn cần chỉ định thuộc tính CSS mà bạn muốn thêm hiệu ứng chuyển tiếp và thời lượng của hiệu ứng chuyển tiếp.</p>
+        <p>Thuộc tính CSS transition là thuộc tính viết tắt của:</p>
+        <ul>
+            <li>transition-property(Yêu cầu)</li>
+            <li>transition-duration(Yêu cầu)</li>
+            <li>transition-timing-function</li>
+            <li>transition-delay</li>
+        </ul>
+
+        <h2><li>Ví dụ về hiệu ứng chuyển tiếp CSS</li></h2>
+        <p>Ví dụ sau đây hiển thị một phần tử div có kích thước 100px * 100px. Phần tử div này đã chỉ định hiệu ứng chuyển tiếp cho thuộc tính chiều rộng, với thời lượng là 2 giây:</p>
+        <div class="vidu1"></div>
+        <p>Hãy lưu ý rằng khi con trỏ chuột di chuyển ra khỏi phần tử, nó sẽ dần dần trở lại kiểu dáng ban đầu.</p>
+        
+        <h2><li>Thay đổi nhiều giá trị thuộc tính</li></h2>
+        <p>Bạn có thể thay đổi nhiều thuộc tính bằng cách phân tách chúng bằng dấu phẩy.</p>
+        <p>Ví dụ sau đây thêm hiệu ứng chuyển tiếp cho các thuộc tính chiều rộng, chiều cao và màu nền, với thời lượng 2 giây cho chiều rộng, 4 giây cho chiều cao và 3 giây cho màu nền:</p>
+        <div class="vidu2"></div>
+        
+        <h2><li>Đường cong tốc độ chuyển đổi CSS</li></h2>
+        <p>Thuộc tính này xác định đường cong tốc độ của hiệu ứng chuyển tiếp. transition-timing-function</p>
+        <p>Thuộc tính này có thể có một trong các giá trị sau:</p>
+        <ul>
+            <li>ease- Quá trình chuyển đổi sẽ bắt đầu chậm, sau đó nhanh dần và kết thúc chậm lại (đây là cài đặt mặc định)</li>
+            <li>linear- Quá trình chuyển đổi sẽ duy trì tốc độ không đổi từ đầu đến cuối.</li>
+            <li>ease-in- Quá trình chuyển đổi sẽ diễn ra chậm rãi</li>
+            <li>ease-out- quá trình chuyển đổi sẽ kết thúc chậm</li>
+            <li>ease-in-out- Quá trình chuyển đổi sẽ diễn ra chậm rãi cả lúc bắt đầu và kết thúc.</li>
+            <li>cubic-bezier(n,n,n,n)- Cho phép bạn định nghĩa các giá trị riêng của mình trong hàm Bezier bậc ba.</li>
+        </ul>
+        <p>Ví dụ sau đây minh họa một số đường cong tốc độ khác nhau có thể được sử dụng:</p>
+        <div class="vidu3-1"></div><br>
+        <div class="vidu3-2"></div><br>
+        <div class="vidu3-3"></div><br>
+        <div class="vidu3-4"></div><br>
+        <div class="vidu3-5"></div><br>
+
+        <h2><li>Độ trễ chuyển đổi CSS</li></h2>
+        <p>Thuộc tính này transition-delayquy định độ trễ trước khi quá trình chuyển đổi bắt đầu.</p>
+        <p>Giá transition-delaytrị được xác định bằng giây (s) hoặc mili giây (ms).</p>
+        <p>Ví dụ sau đây có độ trễ 1 giây trước khi bắt đầu:</p>
+        <div class="vidu4"></div>
+
+        <h2><li>Chuyển đổi + Biến đổi</li></h2>
+        <p>Ví dụ sau đây kết hợp hiệu ứng chuyển tiếp và biến đổi cho một thẻ div:</p>
+        <div class="vidu5"></div>
+        <p>Ví dụ sau đây kết hợp hiệu ứng chuyển tiếp và biến đổi cho một nút bấm:</p>
+        <button>Clip Me! </button>
+
+        <h2><li>Thêm ví dụ về chuyển đổi</li></h2>
+        <p>Các thuộc tính chuyển đổi CSS có thể được chỉ định từng cái một, như sau:</p>
+        <div class="vidu6"></div>
+        <div class="vidu7"></div>
+    </ol>
+</body>
+</html>

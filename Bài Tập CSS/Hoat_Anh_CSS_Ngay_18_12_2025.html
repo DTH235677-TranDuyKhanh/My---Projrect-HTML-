@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoạt ảnh trong CSS</title>
+    <link rel="stylesheet" href="./Hoat_Anh_CSS_Ngay_18_12_2025.css">
+</head>
+<body>
+    <h1>Hoạt ảnh trong CSS</h1>
+    <ol type="1">
+        <h2><li>Hoạt ảnh CSS</li></h2>
+        <p>CSS cho phép tạo hiệu ứng động cho các phần tử HTML mà không cần sử dụng JavaScript!</p>
+
+        <h2><li>Hoạt ảnh CSS là gì?</li></h2>
+        <p>Hiệu ứng hoạt hình cho phép một phần tử thay đổi dần dần từ kiểu này sang kiểu khác.</p>
+        <p>Bạn có thể thay đổi bao nhiêu thuộc tính CSS tùy thích, bao nhiêu lần tùy thích.</p>   
+        <p>Để sử dụng hoạt ảnh CSS, bạn phải chỉ định một số keyframe cho hoạt ảnh.</p>
+        <p>eyframes lưu trữ các kiểu dáng mà phần tử sẽ có tại những thời điểm nhất định.</p>
+
+        <h2><li>Thuộc tính CSS animation-name và animation-duration</li></h2>
+        <p>Thuộc tính này animation-name chỉ định tên cho hoạt ảnh.</p>
+        <p>Thuộc tính này animation-duration xác định thời gian cần thiết để hoàn thành một hoạt ảnh. Nếu thuộc tính này không được chỉ định, sẽ không có hoạt ảnh nào diễn ra, vì giá trị mặc định là 0 giây.</p>
+        
+        <h2><li>Quy tắc CSS @keyframes</li></h2>
+        <p>Khi bạn chỉ định các kiểu CSS bên trong quy tắc, hiệu ứng chuyển động sẽ dần dần thay đổi từ kiểu hiện tại sang kiểu mới tại những thời điểm nhất định. @keyframes</p>
+        <p>Khi bạn chỉ định các kiểu CSS bên trong quy tắc, hiệu ứng chuyển động sẽ dần dần thay đổi từ kiểu hiện tại sang kiểu mới tại những thời điểm nhất định. @keyframes</p>
+        <p>Ví dụ sau đây liên kết hoạt ảnh "myAnimation" với phần tử div. Hoạt ảnh sẽ kéo dài 4 giây và sẽ dần dần thay đổi màu nền của phần tử div từ "đỏ" sang "vàng":</p>
+        <div class="vidu1"></div>
+        <p>Trong ví dụ trên, chúng ta đã sử dụng các từ khóa "from" và "to" trong @keyframes quy tắc, đại diện cho 0% (bắt đầu) và 100% (hoàn thành).</p>
+        <p>Bạn cũng có thể sử dụng phần trăm. Bằng cách sử dụng phần trăm, bạn có thể thêm bao nhiêu thay đổi kiểu dáng tùy thích.</p>
+        <p>Ví dụ sau sẽ thay đổi màu nền của phần tử div khi hoạt ảnh hoàn thành 25%, 50% và một lần nữa khi hoạt ảnh hoàn thành 100%:</p>
+        <div class="vidu2"></div>
+        <p>Ví dụ sau sẽ thay đổi cả màu nền và vị trí của phần tử div khi hoạt ảnh hoàn thành 25%, 50% và một lần nữa khi hoạt ảnh hoàn thành 100%:</p>
+        <div class="vidu3"></div>
+
+        <h2><li>Thuộc tính CSS animation-delay</li></h2>
+        <p>Thuộc tính này animation-delayquy định độ trễ cho việc bắt đầu hoạt ảnh.</p>
+        <p>Ví dụ sau đây có độ trễ 2 giây trước khi bắt đầu hoạt ảnh:</p>
+        <div class="vidu4"></div>
+        <p>Các giá trị âm cũng được cho phép. Nếu sử dụng giá trị âm, hoạt ảnh sẽ bắt đầu như thể nó đã phát được N giây.</p>
+        <p>Trong ví dụ sau, hoạt ảnh sẽ bắt đầu như thể nó đã phát được 2 giây:</p>
+        <div class="vidu5"></div>
+
+        <h2><li>Thuộc tính CSS animation-iteration-count</li></h2>
+        <p>Thuộc tính này chỉ định số lần hoạt ảnh nên được chạy. animation-iteration-count</p>
+        <p>Ví dụ sau sẽ chạy hoạt ảnh 3 lần trước khi dừng lại:</p>
+        <div class="vidu6"></div>
+        <p>Ví dụ sau sử dụng giá trị "vô hạn" để làm cho hoạt ảnh tiếp tục mãi mãi:</p>
+        <div class="vidu7"></div>
+    
+        <h2><li>Thuộc tính `animation-direction` của CSS</li></h2>
+        <p>Thuộc tính này quy định xem hoạt ảnh nên được phát xuôi, ngược hay theo chu kỳ xen kẽ. animation-direction</p>
+        <p>Thuộc tính animation-direction có thể có các giá trị sau:</p>
+        <ul>
+            <li>normal- Hoạt ảnh được phát bình thường (tiến về phía trước). Đây là cài đặt mặc định.</li>
+            <li>reverse- Hoạt hình được phát theo chiều ngược lại.</li>
+            <li>alternate - Hoạt hình được phát xuôi trước, sau đó phát ngược lại.</li>
+            <li>alternate-reverse- Hình ảnh động được phát ngược trước, sau đó mới phát xuôi.</li>
+        </ul>
+        <p>Ví dụ sau sẽ chạy hoạt ảnh theo hướng ngược lại:</p>
+        <div class="vidu8"></div>
+        <p>Ví dụ sau sử dụng giá trị "alternate" để làm cho hoạt ảnh chạy theo chiều tiến trước, sau đó chạy ngược lại:</p>
+        <div class="vidu9"></div>
+        <p>Ví dụ sau sử dụng giá trị "alternate-reverse" để làm cho hoạt ảnh chạy ngược trước, sau đó mới chạy xuôi:</p>
+        <div class="vidu10"></div>
+
+        <h2><li>Thuộc tính CSS animation-timing-function</li></h2>
+        <p>Thuộc tính này xác định đường cong tốc độ của hoạt ảnh. animation-timing-function</p>
+        <p>Thuộc tính animation-timing-function có thể có các giá trị sau:</p>
+        <ul>
+            <li>ease- Chỉ định một hoạt ảnh bắt đầu chậm, sau đó nhanh dần, rồi kết thúc chậm (đây là cài đặt mặc định)</li>
+            <li>linear- Chỉ định hoạt ảnh có tốc độ không đổi từ đầu đến cuối</li>
+            <li>ease-in- Chỉ định hoạt ảnh với khởi động chậm</li>
+            <li>ease-out- Chỉ định một hoạt ảnh có kết thúc chậm</li>
+            <li>ease-in-out- Chỉ định hoạt ảnh có khởi đầu và kết thúc chậm</li>
+            <li>cubic-bezier(n,n,n,n)- Cho phép bạn tự định nghĩa các giá trị của riêng mình trong hàm Bezier bậc ba.</li>
+        </ul>
+        <p>Ví dụ sau đây minh họa một số đường cong tốc độ khác nhau có thể được sử dụng:</p>
+       
+        <div id="vidu11">linear</div>
+        <div id="vidu12">ease</div>
+        <div id="vidu13">ease-in</div>
+        <div id="vidu14">ease-out</div>
+        <div id="vidu15">ease-in-out</div>
+
+        <h2><li>Thuộc tính CSS animation-fill-mode</li></h2>
+        <p>Các hiệu ứng hoạt ảnh CSS không tác động đến một phần tử trước khi khung hình chính đầu tiên được phát hoặc sau khi khung hình chính cuối cùng được phát. Thuộc tính `animation-fill-mode` có thể ghi đè lên hành vi này.</p>
+        <p>Thuộc tính này chỉ định kiểu dáng cho phần tử mục tiêu khi hoạt ảnh không diễn ra (trước khi bắt đầu, sau khi kết thúc hoặc cả hai). animation-fill-mode</p>
+        <p>Thuộc tính animation-fill-mode có thể có các giá trị sau:</p>
+        <ul>
+            <li>none- Giá trị mặc định. Hoạt ảnh sẽ không áp dụng bất kỳ kiểu dáng nào cho phần tử trước hoặc sau khi nó được thực thi.</li>
+            <li>forwards- Phần tử sẽ giữ lại các giá trị kiểu dáng được thiết lập bởi khung hình chính cuối cùng (phụ thuộc vào animation-direction và animation-iteration-count)</li>
+            <li>backwards- Phần tử sẽ nhận các giá trị kiểu được thiết lập bởi khung hình chính đầu tiên (tùy thuộc vào hướng hoạt ảnh) và giữ nguyên các giá trị này trong suốt thời gian trễ hoạt ảnh.</li>
+            <li>both- Hoạt ảnh sẽ tuân theo các quy tắc cho cả chuyển động tiến và lùi, mở rộng các thuộc tính hoạt ảnh theo cả hai hướng.</li>
+        </ul>
+        <p>Ví dụ sau cho phép phần tử div giữ lại các giá trị kiểu từ khung hình chính cuối cùng khi hoạt ảnh kết thúc:</p>
+        <div class="vidu17"></div>
+        <p>Ví dụ sau cho phép phần tử div nhận các giá trị kiểu được thiết lập bởi khung hình chính đầu tiên trước khi hoạt ảnh bắt đầu (trong khoảng thời gian trễ hoạt ảnh):</p>
+        <div class="vidu18"></div>
+        <p>Ví dụ sau cho phép phần tử div nhận các giá trị kiểu được thiết lập bởi khung hình chính đầu tiên trước khi hoạt ảnh bắt đầu, và giữ lại các giá trị kiểu từ khung hình chính cuối cùng khi hoạt ảnh kết thúc:</p>
+        <div class="vidu19"></div>
+        
+        <h2><li>Thuộc tính viết tắt hoạt ảnh CSS</li></h2>
+        <div class="vidu20"></div>
+
+        <button class="btn">Click me</button>
+
+    </ol>
+</body>
+</html>

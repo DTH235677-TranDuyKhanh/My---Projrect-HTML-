@@ -1,0 +1,85 @@
+.bien1{
+    width: 150px;
+    height: 100px;
+    background-color: yellow;
+    border: 2px solid black;
+    padding: 10px;
+    transform: translate(50px,10px);
+}
+.bien2{
+    width: 150px;
+    height: 100px;
+    background-color: yellow;
+    border: 2px solid black;
+    padding: 10px;
+    transform: rotate(20deg);
+}
+.bien3{
+    width: 150px;
+    height: 100px;
+    background-color: yellow;
+    border: 2px solid black;
+    padding: 10px;
+    transform: rotate(-20deg);
+}
+.bien4{
+    margin-top: 70px;
+    margin-left: 50px;
+    width: 50px;
+    height: 20px;
+    overflow: hidden;
+    background-color: yellow;
+    border: 2px solid black;
+    padding: 10px;
+    transform: scale(2,3);
+}
+.bien5{
+    width: 50px;
+    height: 20px;
+    overflow: hidden;
+    background-color: yellow;
+    border: 2px solid black;
+    padding: 10px;
+    transform: scaleX(2);
+}
+.bien6{
+    width: 50px;
+    height: 20px;
+    overflow: hidden;
+    background-color: yellow;
+    border: 2px solid black;
+    padding: 10px;
+    transform: scaleY(2);
+}
+.bien7{
+    width: 150px;
+    height: 100px;
+    background-color: yellow;
+    border: 2px solid black;
+    padding: 10px;
+    transform: skewX(20deg);
+}
+.bien8{
+    width: 150px;
+    height: 100px;
+    background-color: yellow;
+    border: 2px solid black;
+    padding: 10px;
+    transform: skewY(20deg);
+}
+.bien9{
+    width: 150px;
+    height: 100px;
+    background-color: yellow;
+    border: 2px solid black;
+    padding: 10px;
+    transform: skew(20deg, 20deg);
+}
+.bien10{
+    width: 150px;
+    height: 100px;
+    background-color: yellow;
+    border: 2px solid black;
+    padding: 10px;
+    transform: matrix(1, -0.2, -0.2, 1, 250, 10);
+}

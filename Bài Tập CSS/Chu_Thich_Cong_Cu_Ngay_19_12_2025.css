@@ -1,0 +1,294 @@
+.tooltip{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    cursor: pointer;
+}
+.tooltiptext{
+    visibility:hidden;
+    width: 130px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 3px;
+    position: absolute;
+    margin-left: 5px;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext{
+    visibility: visible;/*Phần tử được nhìn thấy và chiếm không gian trên trang.*/
+}
+.tooltipp{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    cursor: pointer;
+}
+.tooltiptextt{
+    visibility:hidden;
+    width: 130px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 3px;
+    position: absolute;
+    top: -5px;
+    left: 105%;
+    z-index: 1;
+}
+.tooltipp:hover .tooltiptextt{
+    visibility: visible;/*Phần tử được nhìn thấy và chiếm không gian trên trang.*/
+}
+.tooltippp{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    cursor: pointer;
+    margin-left: 250px;
+}
+.tooltiptexttt{
+    visibility:hidden;
+    width: 130px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 3px;
+    position: absolute;
+    top: -5px;
+    right: 105%;
+    z-index: 1;
+}
+.tooltippp:hover .tooltiptexttt{
+    visibility: visible;/*Phần tử được nhìn thấy và chiếm không gian trên trang.*/
+}
+.tooltipppp{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    cursor: pointer;
+    margin-left: 250px;
+}
+.tooltiptextttt{
+    visibility:hidden;
+    width: 130px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 3px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 65%;
+    margin-left: -85px;
+}
+.tooltipppp:hover .tooltiptextttt{
+    visibility: visible;/*Phần tử được nhìn thấy và chiếm không gian trên trang.*/
+}
+.tooltippppp{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    cursor: pointer;
+    margin-left: 250px;
+}
+.tooltiptexttttt{
+    visibility:hidden;
+    width: 130px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 3px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -65px;
+}
+.tooltippppp:hover .tooltiptexttttt{
+    visibility: visible;/*Phần tử được nhìn thấy và chiếm không gian trên trang.*/
+}
+.tooltipppppp{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    cursor: pointer;
+    margin-left: 250px;
+}
+.tooltiptextttttt{
+    visibility:hidden;
+    width: 130px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 3px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -65px;
+}
+.tooltipppppp:hover .tooltiptextttttt{
+    visibility: visible;/*Phần tử được nhìn thấy và chiếm không gian trên trang.*/
+}
+.tooltiptextttttt::after{
+    content: " ";
+    position: absolute;
+    top: 100%;
+    /*top: 100%;
+    Đặt mũi tên ngay bên dưới tooltip.
+    100% là chiều cao của tooltip.*/
+    left: 50%;
+    /*Đặt mũi tên tại giữa chiều ngang của tooltip.*/
+    margin-left: -5px;
+    /*Dịch mũi tên sang trái 5px để căn chính xác tâm.
+    Vì tam giác có đáy rộng 10px (border 5px mỗi bên).*/
+    border-width: 5px;
+    /*Tạo 4 cạnh viền, mỗi cạnh dày 5px.
+    Chính border này tạo ra tam giác.*/
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+    /*Đây là dòng quan trọng nhất: xác định chiều của tam giác bằng cách thay đổi các cạnh
+
+        Cạnh	Màu
+        Trên	black
+        Phải	transparent
+        Dưới	transparent
+        Trái	transparent*/
+}
+.tooltip1{
+    position: relative;
+    display: inline-block;
+    border-bottom: 2px dotted black;
+    cursor: pointer;
+    margin-left: 250px; 
+}
+.tooltiptext1{
+    visibility: hidden ;
+    width: 130px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    border-radius: 5px;
+    padding: 5px 3px;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -65px;
+}
+.tooltip1:hover .tooltiptext1{
+    visibility: visible;
+}
+.tooltiptext1::after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+.tooltip2{
+    position: relative;
+    display: inline-block;
+    border-bottom: 2px dotted black;
+    cursor: pointer;
+    margin-left: 250px; 
+}
+.tooltiptext2{
+    position: absolute;
+    visibility: hidden ;
+    width: 130px;
+    background-color: black;
+    color: #fff;
+    padding: 5px 3px;
+    text-align: center;
+    border-radius: 10px;
+    left:105%;
+    top: -5px;
+}
+.tooltip2:hover .tooltiptext2{
+    visibility: visible;
+}
+.tooltiptext2::after{
+    content: "";
+    position: absolute;
+    right: 100%;
+    top:50%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent ;
+
+}
+.tooltip3 {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  cursor: pointer;
+  margin-left: 250px;
+}
+
+.tooltiptext3 {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 110%;
+}
+
+.tooltiptext3::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+}
+.tooltip3:hover .tooltiptext3 {
+  visibility: visible;
+}
+.tooltip4 {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  cursor: pointer;  
+  margin-left: 250px;
+}
+
+.tooltiptext4 {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.tooltip4:hover .tooltiptext4 {
+  visibility: visible;
+  opacity: 1;
+}
