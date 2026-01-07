@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa sổ bật lên hình ảnh trong CSS</title>
+    <link rel="stylesheet" href="./Cua_So_Bat_Len_HInh_Anh_Ngay_31_12_2025.css">
+</head>
+<body>
+    <h1>Cửa sổ bật lên hình ảnh trong CSS. </h1>
+    <div class="hienthi">
+        <img src="./images/Chùa một cột.jpg" alt="Chùa một cột" class="anhhienthi"
+        onclick="openHienthi('hienthi1','Chùa một cột')" width="600" height="400">
+        <img src="./images/Danh-lam-thang-canh.png" alt="Vịnh hạ long" class="anhhienthi"
+        onclick="openHienthi('hienthi2','Vịnh hạ long')" width="600" height="400">
+        <img src="./images/Cầu rồng.jpg" alt="Cầu rồng" class="anhhienthi"
+        onclick="openHienthi('hienthi3','Cầu rồng')" width="600" height="400">
+        <img src="./images/channels4_profile.jpg" alt="Trần Duy Khánh" class="anhhienthi"
+        onclick="openHienthi('hienthi4','Trần Duy Khánh')" width="600" height="400">
+
+        <div class="hienthi11" id="hienthi1">
+            <span class="close" onclick="closeHienthi('hienthi1')">&times;</span>
+            <img src="./images/Chùa một cột.jpg" alt="Chùa một cột" class="hienthi-content" width="600" height="400">
+            <div class="caption"></div>
+        </div>
+        <div class="hienthi11" id="hienthi2">
+            <span class="close" onclick="closeHienthi('hienthi2')">&times;</span>
+            <img src="./images/Danh-lam-thang-canh.png" alt="Vịnh hạ long" class="hienthi-content" width="600" height="400">
+            <div class="caption"></div>
+        </div>
+        <div class="hienthi11" id="hienthi3">
+            <span class="close" onclick="closeHienthi('hienthi3')">&times;</span>
+            <img src="./images/Cầu rồng.jpg" alt="Cầu rồng" class="hienthi-content" width="600" height="400">
+            <div class="caption"></div>
+        </div>
+        <div class="hienthi11" id="hienthi4">
+            <span class="close" onclick="closeHienthi('hienthi4')">&times;</span>
+             <img src="./images/channels4_profile.jpg" alt="Trần Duy Khánh"class="hienthi-content" width="600" height="400">
+            <div class="caption"></div>
+        </div>
+    </div>
+    <script>
+        function openHienthi(hienthiId, caption)
+        {
+            let hienthi = document.getElementById(hienthiId);
+            hienthi.style.display = "flex";
+            hienthi.classList.add("show");
+            let message = hienthi.querySelector(".caption");
+            message.innerText = caption;
+        }
+        function closeHienthi (hienthiId)
+        {
+            let hienthi = document.getElementById(hienthiId);
+            hienthi.classList.remove("show");
+            setTimeout(function()
+            {
+                hienthi.style.display = "none";
+                hienthi.querySelector(".caption").innerText = "";
+            }, 300);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+.mask1 {
+    -webkit-mask-image: url(./images/logo_duykhanh.png);
+    mask-image: url(./images/logo_duykhanh.png);
+    mask-size: 200px;
+    mask-repeat: no-repeat;
+}
+.repeat{
+    -webkit-mask-image: url(./images/logo_duykhanh.png);
+    mask-image: url(./images/logo_duykhanh.png);
+    mask-size: 200px; 
+}
+.position{
+    -webkit-mask-image: url(./images/logo_duykhanh.png);
+    mask-image: url(./images/logo_duykhanh.png);
+    mask-size: 200px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+.tuyen1 > img{
+    -webkit-mask-image: linear-gradient(black ,transparent);
+    mask-image: linear-gradient(black, transparent );
+}
+.tuyen2{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    max-width: 600px;
+    height: 400px;
+    background: url(./images/anh_dep_png.png) no-repeat;
+    background-size: 600px 400px; 
+    -webkit-mask-image: linear-gradient(black, transparent); 
+    mask-image: linear-gradient(black, transparent);
+}
+.circle{
+    -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0,0,0,0.5) 50%);
+    mask-image: radial-gradient(circle, black 50%, rgba(0,0,0,0.5) 50%);
+}
+.ellipse{
+    -webkit-mask-image: radial-gradient(ellipse, black 50%, rgba(0,0,0,0.5) 50%);
+    mask-image: radial-gradient(ellipse, black 50%, rgba(0,0,0,0.5) 50%);
+}
+.conic{
+    -webkit-mask-image: conic-gradient(black 0deg, transparent 360deg);
+    mask-image: conic-gradient(black 0deg, transparent 360deg);
+}

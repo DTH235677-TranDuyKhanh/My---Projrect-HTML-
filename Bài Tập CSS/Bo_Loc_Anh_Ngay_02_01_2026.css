@@ -1,0 +1,78 @@
+.vidu1 > #img1{
+    filter: blur(2px);
+}
+.vidu1 > #img2{
+    filter: blur(6px);
+}
+.vidu2 > #img1{
+    filter: brightness(150%);
+}
+.vidu2 > #img2{
+    filter: brightness(50%);
+}
+.vidu3 > #img1{
+    filter: contrast(150%);
+}
+.vidu3 > #img2{
+    filter: contrast(50%);
+}
+.vidu4 > #img1{
+    filter: drop-shadow(8px 8px 10px  gray);
+}
+.vidu4 > #img2{
+    filter: drop-shadow(10px 10px 10px lightblue);
+}
+.vidu5 > #img1{
+    filter: grayscale(1);
+}
+.vidu5 > #img2{
+    filter: grayscale(60%);
+}
+.vidu5 > #img3{
+    filter: grayscale(0.4);
+}
+.vidu6 > #img1{
+    filter: hue-rotate(200deg);
+}
+.vidu6 > #img2{
+    filter: hue-rotate(90deg);
+}
+.vidu6 > #img3{
+    filter: hue-rotate(-90deg);
+}
+.vidu7 > #img1{
+    filter: invert(100%);
+}
+.vidu7 > #img2{
+    filter: invert(70%);
+}
+.vidu7 > #img3{
+    filter: invert(0.3);
+}
+.vidu8 > #img1{
+    filter: opacity(80%);
+}
+.vidu8 > #img2{
+    filter: opacity(50%);
+}
+.vidu8 > #img3{
+    filter: opacity(0.2);
+}
+.vidu9 > #img1{
+    filter: saturate(0);
+}
+.vidu9 > #img2{
+    filter: saturate(100%);
+}
+.vidu9 > #img3{
+    filter: saturate(200%);
+}
+.vidu10 > #img1{
+    filter: sepia(1);
+}
+.vidu10 > #img2{
+    filter: sepia(60%);
+}
+.vidu10 > #img3{
+    filter: sepia(0.4);
+}

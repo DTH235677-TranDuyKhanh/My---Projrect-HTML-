@@ -1,0 +1,33 @@
+#anh1{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+#anh2{
+    width: 50%;
+}
+.flex-ngang{
+    display: flex;
+    justify-content: center;
+}
+#anh3{
+    width: 50%;
+}
+.flex-doc{
+    width: 100%;
+    height: 400px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#anh4{
+    width: 50%;
+}
+.grid{
+    width: 100%;
+    height: 400px;
+    border: 2px solid black;
+    display: grid;
+    place-items: center;
+}

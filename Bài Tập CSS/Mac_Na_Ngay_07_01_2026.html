@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mặc nạ trong CSS</title>
+    <link rel="stylesheet" href="./Mac_Na_Ngay_07_01_2026.css">
+    <link rel="icon" type="image/x-icon" href="./images/ảnh avata nam.png">
+</head>
+<body>
+    <h1>Mặc nạ trong CSS</h1>
+    <ol type="1">
+        <h2><li>Che phủ - PNG</li></h2>
+        <ul>
+            <li>Thuộc tính mask-image của CSS</li>
+            <p>Kỹ thuật che mặt nạ CSS cho phép bạn tạo một lớp mặt nạ để đặt lên trên một phần tử nhằm che khuất một phần hoặc toàn bộ các phần của phần tử đó.</p>
+            <p>Thuộc tính CSS này mask-imagechỉ định hình ảnh lớp mặt nạ.</p>
+            <p>Hình ảnh lớp mặt nạ có thể là ảnh PNG, ảnh SVG, gradient CSS hoặc phần tử SVG mask .</p>
+            <li>Sử dụng ảnh PNG làm lớp mặt nạ.</li>
+            <p>Để sử dụng ảnh PNG làm lớp mặt nạ, hãy sử dụng giá trị url() để truyền vào ảnh lớp mặt nạ.</p>
+            <p>Hình ảnh mặt nạ cần có một vùng trong suốt hoặc bán trong suốt. Màu đen biểu thị vùng hoàn toàn trong suốt.</p>
+            <p>Đây là hình ảnh mặt nạ ("w3logo.png") mà chúng ta sẽ sử dụng:</p>
+            <p>Đây là hình ảnh từ Cinque Terre, ở Ý:</p>
+            <p><b>Ví dụ 1: mask-image: url(''); </b></p>
+            <li><p>Hình ảnh có lớp mặt nạ: </p></li>
+                <img src="./images/anh_dep_png.png" alt="" class="mask1" width="300" height="200">
+            <li><p>Hình ảnh gốc: </p></li>
+                <img src="./images/anh_dep_png.png" alt="" whidth="300", height="200">
+            <li><p>Lặp lại hình ảnh lớp mặt nạ</p></li>
+                <img src="./images/anh_dep_png.png" alt="" width="300" height="300" class="repeat">
+            <li><p>Định vị hình ảnh lớp mặt nạ</p></li>
+                <img src="./images/anh_dep_png.png" alt="" width="300" height="300" class="position">  
+        </ul>
+        <h2><li>Lớp mặt nạ chuyển sắc CSS</li></h2>
+        <ul>
+            <li>Lớp mặt nạ chuyển sắc CSS. </li>
+            <p>Các gradient CSS cũng có thể được sử dụng làm ảnh lớp mặt nạ.</p>
+            <li>Lớp mặt nạ chuyển sắc tuyến tính</li>
+            <p>Ở đây, chúng ta sử dụng một lớp mặt nạ gradient tuyến tính cho hình ảnh của mình. Gradient tuyến tính này đi từ trên xuống dưới (màu đen) (màu trong suốt):</p>
+            <div class="tuyen1">
+                <img src="./images/anh_dep_png.png" alt="" width="400" height="400">
+            </div>
+            <div class="tuyen2">
+                Vịnh Hạ Long là một vịnh nhỏ thuộc phần bờ tây vịnh Bắc Bộ tại khu vực biển Đông Bắc Việt Nam, bao gồm vùng biển đảo của thành phố Hạ Long thuộc tỉnh Quảng Ninh.
+                Là trung tâm của một khu vực rộng lớn có những yếu tố ít nhiều tương đồng về địa chất, địa mạo, cảnh quan, khí hậu và văn hóa, với vịnh Bái Tử Long phía Đông Bắc và quần đảo Cát Bà phía Tây Nam, vịnh Hạ Long giới hạn trong diện tích khoảng 1.553 km² bao gồm 1.969 hòn đảo lớn nhỏ, phần lớn là đảo đá vôi, trong đó vùng lõi của vịnh có diện tích 335 km² quần tụ dày đặc 775 hòn đảo. Lịch sử kiến tạo địa chất đá vôi của vịnh đã trải qua khoảng 500 triệu năm với những hoàn cảnh cổ địa lý rất khác nhau
+            </div>
+            <li>Lớp mặt nạ chuyển sắc xuyên tâm - Hình tròn</li>
+            <div class="circle">
+                <img src="./images/anh_dep_png.png" alt="" width="800" height="400">
+            </div>
+            <li>Lớp mặt nạ chuyển sắc xuyên tâm - Hình elip</li>
+            <div class="ellipse">
+                <img src="./images/anh_dep_png.png" alt="" width="800" height="400">
+            </div>
+            <li>Lớp mặt nạ chuyển sắc hình nón</li>
+            <div class="conic">
+                <img src="./images/anh_dep_png.png" alt="" width="800" height="400">
+            </div>
+        </ul>
+        <h2><li>Lớp mặt nạ SVG CSS</li></h2>
+        <ul>
+            <li>Lớp mặt nạ SVG CSS</li><hr style="opacity: 0.3">
+            <p>Phần tử SVG mask có thể được sử dụng để áp dụng mặt nạ cho hình ảnh.</p>
+            <p>Ở đây, chúng ta sử dụng  mask phần tử SVG để tạo các lớp mặt nạ khác nhau cho một hình ảnh.</p>
+            <hr style="opacity: 0.3">
+            <li>Lớp mặt nạ SVG - Hình tròn</li>
+            <svg width="600" height="400" >
+                <mask id="svgmask1">
+                    <circle r="150" cx="200" cy="200" fill="#ffffff" />
+                </mask>
+                <image href="./images/anh_dep_png.png" mask="url(#svgmask1)"></image>
+            </svg>
+            <li>Lớp mặt nạ SVG - Hình elip</li>
+            <svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+            <mask id="svgmask1">
+                <ellipse cx="220" cy="150" rx="200" ry="100" fill="#ffffff" />
+            </mask>
+            <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/anh_dep_png.png" mask="url(#svgmask1)"></image>
+            </svg>
+            
+
+        </ul>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,71 @@
+.vidu1 > .img1{
+    clip-path: circle(30%);
+}
+.vidu1 > .img2{
+    clip-path: circle(50%);
+}
+.vidu1 > .img3{
+    clip-path: circle(60%);
+}
+/*=====================================*/
+.vidu2 > .img1{
+    clip-path: circle(30% at right);
+}
+.vidu2 > .img2{
+    clip-path: circle(30% at left);
+}
+.vidu2 > .img3{
+    clip-path: circle(50% at top);
+}
+.vidu2 > .img4{
+    clip-path: circle(50% at bottom);
+}
+/*====================================*/
+.vidu3{
+    border: 2px solid black;
+    padding: 10px;
+}
+.vidu3 > img{
+    float: left;
+    clip-path: circle(30%);
+    shape-outside: circle(30%); /*Văn bản sẽ:
+                                    Uốn cong theo hình tròn quanh ảnh
+                                    Tạo hiệu ứng giống báo, tạp chí*/
+    margin-right: 20px;
+}
+/*======================================*/
+.vidu4 > .img1{
+    clip-path: ellipse(50% 50%)
+}
+.vidu4 > .img2{
+    clip-path: ellipse(50% 30%)
+}
+.vidu4 > .img3{
+    clip-path: ellipse(80% 30%)
+}
+/*=========================================*/
+.vidu5 > .img1{
+    clip-path: ellipse(50% 50% at right);
+}
+.vidu5 > .img2{
+    clip-path: ellipse(50% 30% at left);
+}
+.vidu5 > .img3{
+    clip-path: ellipse(80% 50% at top);
+}
+.vidu5 > .img4{
+    clip-path: ellipse(50% 100% at bottom);
+}
+/*==========================================*/
+.vidu6 > img{
+    float: left;
+    clip-path: ellipse(50% 50%);
+    shape-outside: ellipse(50% 50%); /*Văn bản sẽ:
+                                    Uốn cong theo hình tròn quanh ảnh
+                                    Tạo hiệu ứng giống báo, tạp chí*/
+    margin-right: 20px;
+}
+/*==========================================*/
+.vidu7{
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}

@@ -1,0 +1,143 @@
+.phantrang{
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    justify-content: center;
+}
+.phantrang li a{
+    display: block;
+    text-decoration: none;
+    padding: 8px 14px;
+    border: 1px solid gray;
+    color: black;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+.phantrang1{
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    justify-content: center;
+}
+.phantrang1 li a{
+    display: block;
+    text-decoration: none;
+    padding: 8px 14px;
+    border: 1px solid gray;
+    color: black;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+.phantrang1 li a.active{
+    background-color: green;
+    color: white;
+}
+.phantrang2{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0px;
+}
+.phantrang2 li a{
+    display: block;
+    text-decoration: none;
+    padding: 8px 14px;
+    border: 1px solid black;
+    color: black;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.phantrang2 li a.active{
+    background-color: green;
+    color: white;
+}
+.phantrang2 li a.diselad{
+    color: #dddddd;
+    cursor: not-allowed;/*Thay đổi hình dạng con trỏ chuột
+Khi rê chuột lên phần tử, con trỏ sẽ hiện biểu tượng 🚫 (vòng tròn cấm)*/
+    pointer-events: none;
+    /*Vô hiệu hóa toàn bộ sự kiện chuột trên phần tử:
+        click
+        hover
+        focus
+        drag
+        contextmenu*/
+}
+.phantrang3{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0px;
+}
+.phantrang3 li a{
+    display: block;
+    text-decoration: none;
+    padding: 8px 14px;
+    border: 1px solid black;
+    color: black;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.phantrang3 li a.active{
+    background-color: green;
+    color: white;
+}
+.phantrang3 li a:hover:not(.active){
+    background-color: lightslategray;
+}
+.phantrang4{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0px;
+}
+.phantrang4 li a{
+    display: block;
+    text-decoration: none;
+    padding: 8px 14px;
+    border: 1px solid black;
+    color: black;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+.phantrang4 li a.active{
+    background-color: green;
+    color: white;
+}
+.phantrang4 li a:hover:not(.active){
+    background-color: lightslategray;
+}
+ul.breadcrumb {
+  padding: 8px;
+  list-style: none;
+  background-color: #eee;
+}
+
+ul.breadcrumb li {display: inline;}
+ul.breadcrumb li a {color: green;}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+/*li + li
+    Chọn mọi <li> đứng sau một <li> khác
+    Tức là không áp dụng cho phần tử đầu tiên
+:before
+    Tạo nội dung giả (pseudo-element) trước mỗi <li> (trừ cái đầu)
+    content: "/\00a0";
+    / → dấu phân cách
+\00a0 → khoảng trắng không bị xuống dòng (non-breaking space)
+
+        ➡️ Kết quả hiển thị:
+        Home / Category / Page
+
+padding: 8px;
+    Tạo khoảng cách đều hai bên dấu /
+color: black;
+    Dấu / có màu đen*/

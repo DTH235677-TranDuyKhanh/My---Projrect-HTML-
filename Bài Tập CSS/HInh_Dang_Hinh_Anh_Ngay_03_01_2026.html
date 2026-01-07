@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hình dạng hình ảnh trong CSS</title>
+    <link rel="stylesheet" href="./HInh_Dang_Hinh_Anh_Ngay_03_01_2026.css">
+</head>
+<body>
+    <h1>Hình dạng hình ảnh trong CSS</h1>
+    <ol type="1">
+        <p>Với CSS, việc cắt xén hình ảnh thành hình tròn, hình elip và hình đa giác rất dễ dàng.</p>
+        <h2><li>Thuộc tính clip-path của CSS và hàm circle()</li></h2>
+        <p>Thuộc tính này clip-pathcho phép bạn cắt một phần tử theo hình dạng cơ bản.</p>
+        <p>Hàm này circle()định nghĩa một hình tròn với bán kính và vị trí.</p>
+        <p>Ở đây, chúng ta cắt một hình ảnh theo hình tròn có bán kính 50%:</p>
+        <p><b>Ví dụ 1: </b></p>
+        <div class="vidu1">
+            <img src="./images/Chùa một cột.jpg" alt="" class="img1">
+            <img src="./images/Chùa một cột.jpg" alt="" class="img2">
+            <img src="./images/Chùa một cột.jpg" alt="" class="img3">
+            <img src="./images/Chùa một cột.jpg" alt="" >
+        </div>
+        <p>Chúng ta cũng có thể chỉ định tâm của hình tròn. Tâm có thể là độ dài hoặc giá trị phần trăm. Nó cũng có thể là một giá trị như trái, phải, trên hoặc dưới. Giá trị mặc định là tâm.</p>
+        <p>Ở đây, chúng ta cắt một hình ảnh theo hình tròn có bán kính 50% và đặt tâm của hình tròn sang bên phải:</p>
+        <div class="vidu2">
+            <img src="./images/Chùa một cột.jpg" alt="" class="img1">
+            <img src="./images/Chùa một cột.jpg" alt="" class="img2">
+            <img src="./images/Chùa một cột.jpg" alt="" class="img3">
+            <img src="./images/Chùa một cột.jpg" alt="" class="img4">
+        </div>
+        <h2><li>CSS shape-outside và circle()</li></h2>
+        <p>Thuộc tính này shape-outsidecho phép bạn định nghĩa hình dạng cho phần bao bọc nội dung nội tuyến.</p>
+        <p>Hàm này circle()định nghĩa một hình tròn với bán kính và vị trí.</p>
+        <p>Ở đây, chúng ta cắt một hình ảnh thành một hình tròn có bán kính 40%, và đặt hình dạng bên ngoài thành một hình tròn có bán kính 45% (để tạo hình cho văn bản):</p>
+        <div class="vidu3">
+            <img src="./images/Chùa một cột.jpg" alt="">
+            <p>Chùa Một Cột có tên ban đầu là Liên Hoa Đài (蓮花臺)[1][2][3] tức là Đài Hoa Sen với lối kiến trúc độc đáo: một điện thờ đặt trên một cột trụ duy nhất. Liên Hoa Đài là công trình nổi tiếng nhất nằm trong quần thể kiến trúc Chùa Diên Hựu (延祐寺),[1][4] có nghĩa là ngôi chùa "Phúc lành dài lâu". Công trình Chùa Diên Hựu nguyên bản được xây vào thời vua Lý Thái Tông mùa đông năm 1049[5] và hoàn thiện vào năm 1105 thời vua Lý Nhân Tông[6] nay đã không còn. Công trình Liên Hoa Đài hiện tại nằm ở Hà Nội là một phiên bản được chỉnh sửa nhiều lần qua các thời kỳ, bị Pháp phá huỷ khi rút khỏi Hà Nội ngày 11/9/1954[7][8][9][10] và được dựng lại năm 1955 bởi kiến trúc sư Nguyễn Bá Lăng theo kiến trúc để lại từ thời Nguyễn. Đây là ngôi chùa có kiến trúc độc đáo ở Việt Nam.</p>
+        </div>
+        <h2><li>CSS clip-path và ellipse()</li></h2>
+        <p>Thuộc tính này clip-pathcho phép bạn cắt một phần tử theo hình dạng cơ bản.</p>
+        <p>Hàm này ellipse()định nghĩa một hình elip với hai bán kính x và y.</p>
+        <p>Ở đây, chúng ta cắt một hình ảnh thành một hình elip với bán kính trục x là 50% và bán kính trục y là 35%:</p>
+        <div class="vidu4">
+            <img src="./images/Chùa một cột.jpg" alt="" class="img1">
+            <img src="./images/Chùa một cột.jpg" alt="" class="img2">
+            <img src="./images/Chùa một cột.jpg" alt="" class="img3">
+            <img src="./images/Chùa một cột.jpg" alt="" >
+        </div>
+        <p>Chúng ta cũng có thể chỉ định tâm của hình elip. Tâm có thể là độ dài hoặc giá trị phần trăm. Nó cũng có thể là một giá trị như trái, phải, trên hoặc dưới. Giá trị mặc định là tâm.</p>
+        <p>Ở đây, chúng ta cắt một hình ảnh thành một hình elip có bán kính trục x là 50% và bán kính trục y là 35%, và đặt tâm của hình elip ở bên phải:</p>
+        <div class="vidu5">
+            <img src="./images/Chùa một cột.jpg" alt="" class="img1">
+            <img src="./images/Chùa một cột.jpg" alt="" class="img2">
+            <img src="./images/Chùa một cột.jpg" alt="" class="img3">
+            <img src="./images/Chùa một cột.jpg" alt="" class="img4">
+        </div>
+        <h2><li>CSS shape-outside và ellipse()</li></h2>
+        <p>Thuộc tính này shape-outsidecho phép bạn định nghĩa hình dạng cho phần bao bọc nội dung nội tuyến.</p>
+        <p>Hàm này circle()định nghĩa một hình tròn với bán kính và vị trí.</p>
+        <p>Ở đây, chúng ta cắt một hình ảnh thành một hình tròn có bán kính 40%, và đặt hình dạng bên ngoài thành một hình tròn có bán kính 45% (để tạo hình cho văn bản):</p>
+        <div class="vidu6">
+            <img src="./images/Chùa một cột.jpg" alt="">
+            <p>Chùa Một Cột có tên ban đầu là Liên Hoa Đài (蓮花臺)[1][2][3] tức là Đài Hoa Sen với lối kiến trúc độc đáo: một điện thờ đặt trên một cột trụ duy nhất. Liên Hoa Đài là công trình nổi tiếng nhất nằm trong quần thể kiến trúc Chùa Diên Hựu (延祐寺),[1][4] có nghĩa là ngôi chùa "Phúc lành dài lâu". Công trình Chùa Diên Hựu nguyên bản được xây vào thời vua Lý Thái Tông mùa đông năm 1049[5] và hoàn thiện vào năm 1105 thời vua Lý Nhân Tông[6] nay đã không còn. Công trình Liên Hoa Đài hiện tại nằm ở Hà Nội là một phiên bản được chỉnh sửa nhiều lần qua các thời kỳ, bị Pháp phá huỷ khi rút khỏi Hà Nội ngày 11/9/1954[7][8][9][10] và được dựng lại năm 1955 bởi kiến trúc sư Nguyễn Bá Lăng theo kiến trúc để lại từ thời Nguyễn. Đây là ngôi chùa có kiến trúc độc đáo ở Việt Nam.</p>
+        </div>
+        <h2><li>Hàm CSS polygon()</li></h2>
+        <p>Hàm này polygon()định nghĩa một đa giác.</p>
+        <p>Hàm này chứa các điểm xác định đa giác. Đây có thể là độ dài hoặc giá trị phần trăm. Mỗi điểm là một cặp tọa độ x và y. 0 xác định góc trên bên trái và 100% xác định góc dưới bên phải.</p>
+        <p>Hàm này polygon()được sử dụng bên trong clip-paththuộc tính và shape-outsidethuộc tính đó.</p>
+        <p>Ở đây, chúng ta cắt một hình ảnh theo hình đa giác: </p>
+        <img src="./images/Chùa một cột.jpg" alt="" class="vidu7">
+
+        
+
+    </ol>
+</body>
+</html>

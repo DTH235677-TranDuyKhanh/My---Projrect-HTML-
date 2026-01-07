@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object - Fit</title>
+    <link rel="stylesheet" href="./CSS_object_fit_Ngay_06_01_2026.css">
+    <link rel="icon" type="image/x-icon" href="/images/ảnh avata nam.png">
+</head>
+<body>
+    <h1>CSS Object - Fit trong CSS. </h1>
+    <ol type="1">
+        <h2><li>Thuộc tính CSS object-fit</li></h2>
+        <p>Thuộc tính CSS này object-fitđược sử dụng để chỉ định cách thay đổi kích thước của thẻ img hoặc video sao cho phù hợp với vùng chứa của nó.</p>
+        <p>Thuộc tính này có thể nhận một trong các giá trị sau:</p>
+        <ul>
+            <li>fill- Đây là chế độ mặc định. Chế độ này không giữ nguyên tỷ lệ khung hình. Hình ảnh sẽ được điều chỉnh kích thước để lấp đầy khung chứa (hình ảnh sẽ bị kéo giãn hoặc thu nhỏ để vừa vặn).</li>
+            <li>cover- Giữ nguyên tỷ lệ khung hình, và hình ảnh lấp đầy toàn bộ khung chứa. Cắt bỏ nội dung tràn ra ngoài nếu cần.</li>
+            <li>contain- Giữ nguyên tỷ lệ khung hình và điều chỉnh hình ảnh sao cho vừa khít với khung chứa mà không bị cắt xén - chừa khoảng trống nếu cần.</li>
+            <li>none- Hình ảnh không được thu nhỏ.</li>
+            <li>scale-down- Hình ảnh được thu nhỏ xuống phiên bản nhỏ nhất của nonehoặc contain.</li>
+        </ul>
+        <h2><li>Sử dụng thuộc tính object-fit: fill;</li></h2>
+        <p>Giá trị này object-fit: fill;không giữ nguyên tỷ lệ khung hình, và hình ảnh sẽ được thay đổi kích thước để lấp đầy khung chứa (hình ảnh sẽ bị kéo giãn hoặc thu nhỏ để vừa vặn):</p>
+        <p><b>Ví dụ 1: object-fit: fill; </b></p>
+        <div class="vidu1">
+            <img src="./images/Chùa một cột.jpg" alt="Chùa Một Cột">
+        </div>
+        <div class="vidu1">
+            <img src="./images/Danh-lam-thang-canh.png" alt="Vịnh Hạ Long">
+        </div>
+        <h2><li>Sử dụng object-fit: cover;</li></h2>
+        <p>Giá trị này object-fit: cover;giữ nguyên tỷ lệ khung hình, và hình ảnh sẽ lấp đầy khung chứa. Hình ảnh sẽ được cắt xén cho vừa với khung:</p>
+        <p><b>Ví dụ 2: object-fit: cover; </b></p>
+        <div class="vidu2">
+            <img src="./images/Chùa một cột.jpg" alt="Chùa Một Cột">
+        </div>
+        <div class="vidu2">
+            <img src="./images/Danh-lam-thang-canh.png" alt="Vịnh Hạ Long">
+        </div>
+        <h2><li>Sử dụng object-fit: contain;</li></h2>
+        <p>Giá trị này object-fit: contain;giữ nguyên tỷ lệ khung hình và điều chỉnh hình ảnh sao cho vừa khít với vùng chứa mà không cắt xén - sẽ chừa lại khoảng trống nếu cần:</p>
+        <p><b>Ví dụ 3: object-fit: contain; </b></p>
+        <div class="vidu3">
+            <img src="./images/Chùa một cột.jpg" alt="Chùa Một Cột">
+        </div>
+        <div class="vidu3">
+            <img src="./images/Danh-lam-thang-canh.png" alt="Vịnh Hạ Long">
+        </div>
+        <h2><li>Sử dụng thuộc tính object-fit: none;</li></h2>
+        <p>Giá trị này object-fit: none;không thay đổi kích thước hoặc tỷ lệ của hình ảnh:</p>
+        <p><b>Ví dụ 4: object-fit: none;</b></p>
+        <div class="vidu4">
+            <img src="./images/Chùa một cột.jpg" alt="Chùa Một Cột">
+        </div>
+        <div class="vidu4">
+            <img src="./images/Danh-lam-thang-canh.png" alt="Vịnh Hạ Long">
+        </div>
+        <h2><li>Sử dụng object-fit: scale-down;</li></h2>
+        <p>Giá trị này object-fit: scale-down;thu nhỏ hình ảnh xuống phiên bản nhỏ nhất của nonehoặc contain:</p>
+        <p><b>Ví dụ 5: object-fit: scale-down; </b></p>
+        <div class="vidu5">
+            <img src="./images/Chùa một cột.jpg" alt="Chùa Một Cột">
+        </div>
+        <div class="vidu5">
+            <img src="./images/Danh-lam-thang-canh.png" alt="Vịnh Hạ Long">
+        </div>
+        <h2><li>Một ví dụ khác</li></h2>
+        <p>Ở đây chúng ta có hai hình ảnh và chúng ta muốn chúng chiếm 50% chiều rộng của cửa sổ trình duyệt và 100% chiều cao của vùng chứa.</p>
+        <p>Trong ví dụ sau, chúng ta KHÔNG sử dụng object-fit, vì vậy khi chúng ta thay đổi kích thước cửa sổ trình duyệt, tỷ lệ khung hình của các hình ảnh sẽ bị phá vỡ:</p>
+        <p><b>Ví dụ thức tế: Không sử dụng object-fit. </b></p>
+        <div class="thucte">
+            <img src="./images/Danh-lam-thang-canh.png" alt="">
+            <img src="./images/Noimage4.jpg" alt="">
+        </div>
+        <p><b>Ví dụ thức tế: Có sử dụng object-fit. </b></p>
+        <div class="thuctee">
+            <img src="./images/Danh-lam-thang-canh.png" alt="">
+            <img src="./images/Noimage4.jpg" alt="">
+        </div>
+        <h2><li>Thuộc tính object-position của CSS</li></h2>
+        <p>Thuộc tính object-position của CSS</p>
+        <p>Thuộc tính CSS này object-positionđược sử dụng cùng với thuộc tính để chỉ định cách định vị một thẻ img hoặc video bằng tọa độ x/y bên trong vùng chứa của nó. object-fit</p>
+        <p>Giá trị đầu tiên điều khiển trục x và giá trị thứ hai điều khiển trục y. Giá trị có thể là một chuỗi ký tự (trái, giữa hoặc phải) hoặc một số (tính bằng pixel hoặc %). Giá trị âm cũng được cho phép.</p>
+        <p>Sử dụng thuộc tính vị trí đối tượng</p>
+        <p>Giả sử phần hình ảnh được hiển thị không phải là phần chúng ta muốn. Để định vị lại hình ảnh, chúng ta sẽ sử dụng object-positionthuộc tính.</p>
+        <p>Ở đây, chúng ta đặt hình ảnh sao cho tòa nhà cổ kính vĩ đại nằm ở trung tâm:</p>
+        <div class="doituong">
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300" height="300">
+        </div>
+        <div class="doituong1">
+            <img src="./images/Danh-lam-thang-canh.png" alt="" whith="500" height="500">
+        </div>
+    
+    
+    
+    
+    </ol>
+</body>
+</html>

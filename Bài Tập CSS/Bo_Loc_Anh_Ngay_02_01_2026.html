@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bộ lọc ảnh trong CSS</title>
+    <link rel="stylesheet" href="./Bo_Loc_Anh_Ngay_02_01_2026.css">
+</head>
+<body>
+    <h1>Bộ lọc ảnh trong CSS</h1>
+    <ol type="1">
+        <h2><li>Bộ lọc CSS</li></h2>
+        <p>Thuộc tính CSS này filterđược sử dụng để thêm các hiệu ứng hình ảnh (như làm mờ và độ bão hòa) cho các phần tử.</p>
+        <p>Trong thuộc tính filter, bạn có thể sử dụng các hàm CSS sau:</p>
+        <ul>
+            <li>blur()</li>
+            <li>brightnes()</li>
+            <li>contract()</li>
+            <li>drop-shadow()</li>
+            <li>grayscale()</li>
+            <li>hue-rotate()</li>
+            <li>invert()</li>
+            <li>opacity()</li>
+            <li>saturate()</li>
+            <li>sepia()</li>
+        </ul>
+        <h2><li>Hàm blur() trong CSS</li></h2>
+        <p>Chức blur()năng lọc áp dụng hiệu ứng làm mờ cho một phần tử. Giá trị càng lớn thì hiệu ứng làm mờ càng mạnh.
+        Nếu không chỉ định giá trị nào, giá trị 0 sẽ được sử dụng (không có tác dụng).</p>
+        <div class="vidu1">
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" id="img1"><br>
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" id="img2"><br>
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" >
+        </div>
+        <h2><li>Hàm brightness() của CSS</li></h2>
+        <p>Chức brightness()năng lọc điều chỉnh độ sáng của một phần tử.</p>
+        <ul>
+            <li>100% là giá trị mặc định, thể hiện độ sáng ban đầu.</li>
+            <li>Các giá trị trên 100% sẽ cho kết quả tốt hơn.</li>
+            <li>Các giá trị dưới 100% sẽ cho kết quả tối hơn.</li>
+            <li>0% sẽ làm cho hình ảnh hoàn toàn đen.</li>
+        </ul>
+        <div class="vidu2">
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" id="img1"><br>
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" id="img2"><br>
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" >
+        </div>
+        <h2><li>Hàm contrast() của CSS</li></h2>
+        <p>Chức contrast()năng lọc điều chỉnh độ tương phản của một phần tử.</p>
+        <ul>
+            <li>100% là giá trị mặc định, thể hiện độ tương phản gốc.</li>
+            <li>Giá trị trên 100% làm tăng độ tương phản.</li>
+            <li>Các giá trị dưới 100% làm giảm độ tương phản.</li>
+            <li>0% sẽ làm cho hình ảnh hoàn toàn xám.</li>
+        </ul>
+        <div class="vidu3">
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" id="img1"><br>
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" id="img2"><br>
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" >
+        </div>
+        <h2><li>Hàm CSS drop-shadow()</li></h2>
+        <p>Chức drop-shadow()năng lọc áp dụng hiệu ứng đổ bóng cho hình ảnh.</p>
+        <div class="vidu4">
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" id="img1"><br>
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" id="img2"><br>
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" >
+        </div>
+        <h2><li>Hàm CSS grayscale()</li></h2>
+        <p>Chức grayscale()năng lọc chuyển đổi hình ảnh sang ảnh xám.</p>
+        <ul>
+            <li>100% (hoặc 1) sẽ biến hình ảnh thành ảnh xám hoàn toàn.</li>
+            <li>0% (hoặc 0) sẽ không có tác dụng.</li>
+        </ul>
+        <div class="vidu5">
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" id="img1"><br>
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" id="img2"><br>
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" id="img3"><br>
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" >
+        </div>
+        <h2><li>Hàm CSS hue-rotate()</li></h2>
+        <p>Chức hue-rotate()năng lọc áp dụng phép xoay màu cho một phần tử.</p>
+        <p>Chức năng này áp dụng phép xoay màu sắc lên hình ảnh. Giá trị xác định số độ xoay quanh vòng tròn màu mà hình ảnh sẽ được điều chỉnh. Phép xoay màu sắc dương làm tăng giá trị màu sắc, trong khi phép xoay âm làm giảm giá trị màu sắc. 0 độ biểu thị hình ảnh gốc.</p>
+        <div class="vidu6">
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" id="img1"><br>
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" id="img2"><br>
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" id="img3"><br>
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" >
+        </div>
+        <h2><li>Hàm invert() của CSS</li></h2>
+        <p>Chức invert()năng lọc đảo ngược màu sắc của hình ảnh.</p>
+        <ul>
+            <li>100% (hoặc 1) sẽ đảo ngược hoàn toàn màu sắc.</li>
+            <li>0% (hoặc 0) sẽ không có tác dụng.</li>
+        </ul>
+        <div class="vidu7">
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" id="img1"><br>
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" id="img2"><br>
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" id="img3"><br>
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" >
+        </div>
+        <h2><li>Hàm CSS opacity()</li></h2>
+        <p>Chức opacity()năng lọc áp dụng hiệu ứng độ mờ cho một phần tử.</p>
+        <ul>
+            <li>100% (hoặc 1) sẽ không có tác dụng</li>
+            <li>50% (hoặc 0,5) sẽ làm cho phần tử có độ trong suốt 50%.</li>
+            <li>0% (hoặc 0) sẽ làm cho phần tử hoàn toàn trong suốt.</li>
+        </ul>
+        <div class="vidu8">
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" id="img1"><br>
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" id="img2"><br>
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" id="img3"><br>
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" >
+        </div>
+        <h2><li>Hàm CSS saturate()</li></h2>
+        <p>Chức saturate()năng lọc điều chỉnh độ bão hòa (cường độ màu) của một thành phần.</p>
+        <ul>
+            <li>100% (hoặc 1) sẽ không có tác dụng</li>
+            <li>0% (hoặc 0) sẽ làm cho nguyên tố hoàn toàn không bão hòa</li>
+            <li>200% (hoặc 2) sẽ làm cho nguyên tố bão hòa quá mức</li>
+        </ul>
+        <div class="vidu9">
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" id="img1"><br>
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" id="img2"><br>
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" id="img3"><br>
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" >
+        </div>
+        <h2><li>Hàm CSS sepia()</li></h2>
+        <p>Chức sepia()năng lọc chuyển đổi hình ảnh sang tông màu nâu đỏ (màu ấm hơn, hơi ngả nâu/vàng).</p>
+        <ul>
+            <li>0% (hoặc 0) sẽ không có tác dụng.</li>
+            <li>100% (hoặc 1) áp dụng hiệu ứng sepia đầy đủ</li>
+        </ul>
+        <div class="vidu10">
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" id="img1"><br>
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" id="img2"><br>
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" id="img3"><br>
+            <img src="./images/Danh-lam-thang-canh.png" alt="" width="300px" >
+        </div>
+    </ol>
+</body>
+</html>

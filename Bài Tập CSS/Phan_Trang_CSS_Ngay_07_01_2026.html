@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phân trang trong CSS</title> 
+    <link rel="stylesheet" href="./Phan_Trang_CSS_Ngay_07_01_2026.CSS">
+    <link rel="icon" type="image/x-icon" href="./images/logo_conen.jpg">
+</head>
+<body>
+    <h1>Phân trang trong CSS. </h1>
+    <ol type="1">
+        <h2><li>Phân trang CSS</li></h2>
+        <p>Hãy tìm hiểu cách tạo phân trang tương thích với nhiều thiết bị bằng CSS.</p>
+        <p>Nếu trang web của bạn có nhiều trang, bạn có thể muốn thêm chức năng phân trang cho mỗi trang.</p>
+        <p>Phân trang thường là một chuỗi các liên kết, được bao bọc trong một danh sách không có thứ tự ( ul). Mỗi liên kết đại diện cho một số trang riêng biệt. Ngoài ra còn có các nút điều khiển "trước" và "tiếp theo":</p>
+        <ul class="phantrang">
+            <li><a href="#">&laquo;</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+        </ul>
+        
+        <h2><li>Phân trang với một lớp đang hoạt động</li></h2>
+        <ul class="phantrang1">
+            <li><a href="#">&laquo;</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a class="active" href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+        </ul>
+        <h2><li>Phân trang với lớp bị vô hiệu hóa</li></h2>
+        <ul class="phantrang2">
+            <li><a href="#">&laquo;</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a class="active" href="#">5</a></li>
+            <li><a href="#" class="diselad">&raquo;</a></li>
+        </ul>
+        <h2><li>Phân trang với hiệu ứng di chuột</li></h2>
+        <ul class="phantrang3">
+            <li><a href="#">&laquo;</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a class="active" href="#">5</a></li>
+            <li><a href="#" class="diselad">&raquo;</a></li>
+        </ul>
+        <h2><li>Hiệu ứng chuyển tiếp khi di chuột</li></h2>
+        <ul class="phantrang4">
+            <li><a href="#">&laquo;</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a class="active" href="#">5</a></li>
+            <li><a href="#" class="diselad">&raquo;</a></li>
+        </ul>
+        <h2><li>Phân trang theo đường dẫn</li></h2>
+        <ul class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pictures</a></li>
+            <li><a href="#">Summer 25</a></li>
+            <li>Italy</li>
+        </ul>
+    </ol>
+</body>
+</html>
