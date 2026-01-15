@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biến và JavaScript </title>
+    <link rel="stylesheet" href="./Bien_Va_JavaSrirpt_Ngay_15_01_2026.css">
+    <link rel="icon" type="image/x-icon"  href="./images/logo_conen.jpg">
+</head>
+<body>
+    <!--Code nội dung-->
+    <h1>Biến và JavaScript trong CSS</h1>
+    <h2>Thay đổi biến bằng JavaScript</h2>
+    <p>Các biến CSS có quyền truy cập vào DOM, điều đó có nghĩa là bạn có thể thay đổi chúng bằng JavaScript.</p>
+    <p>Dưới đây là một ví dụ về cách bạn có thể tạo một đoạn mã để hiển thị và thay đổi biến --primary-bg-color từ ví dụ đã sử dụng ở các trang trước. Hiện tại, đừng lo lắng nếu bạn chưa quen với JavaScript. Bạn có thể tìm hiểu thêm về JavaScript trong Hướng dẫn JavaScript của chúng tôi :</p>
+    <hr>
+    <div class="container">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+        <p class="note">This is a note!</p>
+    </div>
+    <br>
+    <!--Code nút button-->
+    <div class="button">
+        <button type="button" onclick="myFunction_get()">Get Variable Width JavaScript</button>
+        <button type="button" onclick="myFunction_set()">Change Variable Width JavaScript</button>
+    </div>
+    <!--Code JavaScript-->
+    <script>
+        // Get the root element
+        var r = document.querySelector(':root');
+
+        // Create a function for getting a variable value
+        function myFunction_get() {
+        // Get the styles (properties and values) for the root
+        var rs = getComputedStyle(r);
+        // Alert the value of the --primary-bg-color variable
+        alert("The value of --bg-color is: " + rs.getPropertyValue('--bg-color'));
+        }
+        // Create a function for setting a variable value
+        function myFunction_set() {
+        // Set the value of variable --primary-bg-color to another value (in this case "green")
+        r.style.setProperty('--bg-color', 'green');
+        }
+
+    </script>
+
+
+
+</body>
+</html>

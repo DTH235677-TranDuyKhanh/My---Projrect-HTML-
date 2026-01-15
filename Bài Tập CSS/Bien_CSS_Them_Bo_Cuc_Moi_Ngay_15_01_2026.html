@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghi đè lên các biến trong CSS. </title>
+    <link rel="stylesheet" href="./Bien_CSS_Them_Bo_Cuc_Moi_Ngay_15_01_2026.css">
+    <link rel="icon" type="image/x-icon" href="./images/logo_conen.jpg">
+</head>
+<body>
+    <h1>Ghi đè lên các biến trong CSS</h1>
+    <h2>Ghi đè biến toàn cục bằng biến cục bộ</h2>
+    <p>Từ trang trước, chúng ta đã biết rằng các biến toàn cục có thể được truy cập trong toàn bộ tài liệu, trong khi các biến cục bộ chỉ có thể được sử dụng bên trong bộ chọn nơi chúng được khai báo.</p>
+    <p>Đôi khi chúng ta muốn các biến chỉ thay đổi trong một phần cụ thể của trang.</p>
+    <p>Giả sử chúng ta muốn có màu viền khác cho các phần tử `p class="note"`. Khi đó, chúng ta có thể khai báo lại biến `--primary-bg-color` bên trong bộ chọn `.note`. Khi sử dụng `var(--primary-bg-color)` bên trong bộ chọn này, nó sẽ sử dụng giá trị của biến `--primary-bg-color` cục bộ được khai báo ở đây.</p>
+    <p>Chúng ta thấy rằng biến cục bộ --primary-bg-color sẽ ghi đè lên biến toàn cục --primary-bg-color đối với bộ chọn .note:</p>
+
+    <div class="container">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+        <p class="note">This is a note!</p>
+    </div>
+</body>
+</html>

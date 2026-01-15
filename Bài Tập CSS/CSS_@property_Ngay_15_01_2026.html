@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quy tắc @property trong CSS</title>
+    <link rel="stylesheet" href="./CSS_@property_Ngay_15_01_2026.css">
+    <link rel="icon" type="image/x-icon" href="./images/logo_conen.jpg">
+</head>
+<body>
+    <h1>Quy tắc @property trong CSS</h1>
+    <ol type="1">
+        <h2><li>Quy tắc @property của CSS</li></h2>
+        <p>Quy tắc này @propertyđược sử dụng để định nghĩa các thuộc tính CSS tùy chỉnh (biến CSS) trực tiếp trong bảng định kiểu mà không cần chạy bất kỳ mã JavaScript nào.</p>
+        <p>Quy tắc này @propertykiểm tra và ràng buộc kiểu dữ liệu, thiết lập giá trị mặc định và chỉ định hành vi kế thừa.</p>
+        <p>Định nghĩa bên dưới tạo một thuộc tính tùy chỉnh có tên là --myColor, định nghĩa nó là một thuộc tính màu sắc, chỉ định rằng nó sẽ kế thừa các giá trị từ các phần tử cha của nó, và giá trị mặc định của nó là màu xám nhạt.</p>
+        <p><b><u><i>Cú pháp của @property</i></u></b></p>
+        <p>@property --myColor { <br>
+            syntax: "color"; <br>
+            inherits: true; <br>
+            initial-value: lightgray; <br>
+            }
+        </p>
+        <p><u><b><i>Sử dụng thuộc tính tùy chỉnh</i></b></u></p>
+        <p>Hàm CSS được sử dụng để chèn thuộc tính tùy chỉnh vào CSS: var()</p>
+        <p>
+            body { <br>
+            background-color: var(--myColor); <br>
+            }
+        </p>
+        <hr>
+        <h2><li>Lợi ích của việc sử dụng @property</li></h2>
+        <p>Lợi ích của việc sử dụng là: @property</p>
+        <ul>
+            <li><b>Kiểm tra kiểu dữ liệu</b>: Bạn phải chỉ định kiểu dữ liệu của thuộc tính tùy chỉnh, chẳng hạn như <số>, <màu>, <độ dài>, v.v. Điều này giúp ngăn ngừa lỗi và đảm bảo rằng các thuộc tính tùy chỉnh được sử dụng chính xác.</li>
+            <li><b>Đặt giá trị mặc định</b>: Bạn phải đặt giá trị mặc định cho thuộc tính tùy chỉnh. Điều này đảm bảo rằng nếu sau này gán một giá trị không hợp lệ, trình duyệt sẽ sử dụng giá trị mặc định làm phương án dự phòng.</li>
+            <li><b>Thiết lập hành vi kế thừa</b>: Bạn phải chỉ định xem thuộc tính tùy chỉnh có kế thừa giá trị từ các phần tử cha của nó hay không. Điều này đảm bảo bạn sẽ có toàn quyền kiểm soát quá trình kế thừa.</li>
+        </ul>
+        <hr>
+        <h2><li>Ví dụ về thuộc tính CSS @property</li></h2>
+        <p>Ví dụ sau đây định nghĩa hai thuộc tính tùy chỉnh: my-bg-color và my-txt-color.</p>
+        <p>Sau đó, thẻ div sử dụng các thuộc tính tùy chỉnh trong thuộc tính và : background-color color</p>
+        <p><b>Vi du 1: </b></p>
+        <div class="vd1">
+            <h2>Lorem ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+        </div>
+        <hr>
+        <h2><li>Một ví dụ khác về @property</li></h2>
+        <p>Trong ví dụ sau, chúng ta sử dụng thuộc tính tùy chỉnh mặc định trên phần tử div. Sau đó, chúng ta ghi đè thuộc tính tùy chỉnh trong lớp .fresh và lớp .nature (bằng cách thiết lập một số màu khác), và nó hoạt động hoàn hảo:</p>
+        <p><b>Vi du 2: </b></p>
+        <div class="chungvd2">
+            <div class="vd2-1">DIV1</div>
+            <div class="vd2-2">DIV2</div>
+            <div class="vd2-3">DIV3</div>
+        </div>
+        <hr>
+        <h2><li>Tránh lỗi bằng cách kiểm tra kiểu dữ liệu và sử dụng giá trị dự phòng.</li></h2>
+        <p>Trong ví dụ sau, chúng ta đặt thuộc tính tùy chỉnh trong lớp .nature thành một số nguyên. Điều này không hợp lệ, và trình duyệt sẽ sử dụng màu dự phòng, được định nghĩa trong thuộc tính initial-value (lightgray):</p>
+        <p><b>Ví dụ 3: </b></p>
+        <div class="chungvd2">
+            <div class="vd3-1">DIV1</div>
+            <div class="vd3-2">DIV2</div>
+            <div class="vd3-3">DIV3</div>
+        </div>
+        <hr>
+        <h2><li>Sử dụng giá trị kế thừa</li></h2>
+        <p>Trong ví dụ sau, chúng ta sẽ đặt giá trị inherits thành false. Điều này có nghĩa là thuộc tính tùy chỉnh SẼ KHÔNG kế thừa giá trị từ các phần tử cha của nó. Hãy xem kết quả:</p>
+        <p><b>Ví dụ 4: </b></p>
+        <div class="chungvd4">
+            <div class="vd4-1">DIV1</div>
+            <div class="vd4-2">DIV2 <div class="inner">Inner DIV</div> </div>
+        </div>
+        <br><br><br><br><br>
+        <hr>
+        <p>Ví dụ tiếp theo đặt giá trị inherits thành true. Điều này có nghĩa là thuộc tính tùy chỉnh SẼ kế thừa giá trị từ các phần tử cha của nó. Hãy xem kết quả:</p>
+        <p><b>Ví dụ 5: </b></p>
+        <div class="chungvd5">
+            <div class="vd4-1">DIV1</div>
+            <div class="vd4-2">DIV2 <div class="inner">Inner DIV</div> </div>
+        </div>
+        <br><br><br><br><br>
+        <hr>
+        <h2><li>Tạo hiệu ứng chuyển động mượt mà với @property</li></h2>
+        <p>Một cơ hội hoàn toàn mới mà bạn có thể đạt được với quy tắc này là tạo hiệu ứng động cho những thứ trước đây không thể tạo hiệu ứng động: Hiệu ứng chuyển màu (Gradient). Hãy xem ví dụ sau: @property</p>
+        <div id="grad1" class="ex1"></div>
+    </ol>
+</body>
+</html>

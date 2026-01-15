@@ -1,0 +1,42 @@
+/*:root{
+    --vd1-bg-color: #1e90ff;
+    --vd1-color: #ffffff;
+}
+.vidu1{
+    background-color: var(--vd1-bg-color);
+    height: 500px;
+    padding: 20px;
+}
+.containe{
+    background-color: var(--vd1-color);
+    color: var(--vd1-bg-color); 
+    padding: 15px;
+}
+.containe > h2{
+    border-bottom: 3px solid var(--vd1-bg-color);
+}
+.containe > .not{
+    border: 1px solid var(--vd1-bg-color);
+    padding: 10px;
+}*/
+:root{
+    --vd1-bg-color: #8FBC8F;
+    --vd1-color: #FFFAF0;
+}
+.vidu2{
+    background-color: var(--vd1-bg-color);
+    height: 500px;
+    padding: 20px;
+}
+.container{
+    background-color: var(--vd1-color);
+    color: var(--vd1-bg-color); 
+    padding: 15px;
+}
+.container > h2{
+    border-bottom: 3px solid var(--vd1-bg-color);
+}
+.container > .note{
+    border: 1px solid var(--vd1-bg-color);
+    padding: 10px;
+}

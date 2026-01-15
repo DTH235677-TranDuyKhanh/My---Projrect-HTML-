@@ -1,0 +1,38 @@
+.horizontal{
+    border: 2px solid black;
+    padding: 20px;
+    width: 300px;
+    overflow: auto;
+    resize: horizontal;
+}
+.vertical{
+    border: 2px solid black;
+    padding: 20px;
+    width: 300px;
+    overflow: auto;
+    resize: vertical;
+}
+.both{
+    border: 2px solid black;
+    padding: 20px;
+    width: 300px;
+    overflow: auto;
+    resize: both;
+}
+.none{
+    resize: none;
+} 
+.ex1{
+    border: 5px solid black;
+    margin: 20px;
+    padding: 10px;
+    outline: 5px dotted red;
+    outline-offset: 15px;
+}
+.ex2{
+    border: 5px dotted black;
+    margin: 20px;
+    padding: 10px;
+    outline: 5px solid green;
+    outline-offset: 5px;
+}

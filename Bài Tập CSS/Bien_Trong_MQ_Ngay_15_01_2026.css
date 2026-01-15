@@ -1,0 +1,27 @@
+ :root{
+    --bg-color: #1e90ff;
+    --color: #ffffff;
+ }
+ body{
+    background-color: var(--bg-color);
+ }
+ .container{
+    --fontsize: 20px;
+    font-size: var(--fontsize);
+    background-color: var(--color);
+    color: var(--bg-color);
+    padding: 20px;
+ }
+ .container > h2{
+    text-align: center;
+    border-bottom: 2px solid var(--bg-color);
+ }
+ @media screen and (min-width: 600px)
+{
+    .container{
+        --fontsize: 40px;
+    }
+    :root{
+        --bg-color: lightblue;
+    }
+}

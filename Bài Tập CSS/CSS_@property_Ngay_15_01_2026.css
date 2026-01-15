@@ -1,0 +1,102 @@
+@property --my-bg-color {
+    syntax: "<color>" ;
+    inherits: true;
+    initial-value: lightgray;
+}
+@property --my-txt-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: darkblue;
+}
+.vd1{
+    width: 300px;
+    padding: 20px;
+    background-color: var(--my-bg-color);
+    color: var(--my-txt-color);
+}
+@property --my-vd2-bg-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: lightgray;
+}
+
+.chungvd2 div{
+    width: 300px;
+    height: 150px;
+    padding: 15px;
+    background-color: var(--my-vd2-bg-color);
+}
+.vd2-2{
+    --my-vd2-bg-color: #ff6347;
+}
+.vd2-3{
+    --my-vd2-bg-color: rgb(120, 180, 30);
+}
+.vd3-2 {
+    --my-vd2-bg-color: #ff6347;
+}
+
+.vd3-3 {
+    --my-vd2-bg-color: 2;
+}
+@property --my-vd4-bg-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: lightgray;
+}
+
+.chungvd4 div{
+  width: 300px;
+  height: 150px;
+  padding: 15px;
+  background-color: var(--my-vd4-bg-color);
+}
+.vd4-2{
+    --my-vd4-bg-color: #ff6347;
+}
+@property --my-vd5-bg-color {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: lightgray;
+}
+
+.chungvd5 div{
+  width: 300px;
+  height: 150px;
+  padding: 15px;
+  background-color: var(--my-vd5-bg-color);
+}
+.vd4-2{
+    --my-vd5-bg-color: #ff6347;
+}
+@property --startColor {
+  syntax: "<color>";
+  initial-value: #EADEDB;
+  inherits: false;
+}
+
+@property --endColor {
+  syntax: "<color>";
+  initial-value: #BC70A4;
+  inherits: false;
+}
+
+.ex1 {
+  background: linear-gradient(var(--startColor), var(--endColor));
+  animation: gradient 3s linear infinite;
+}
+
+@keyframes gradient {
+  0%,
+  100% {
+    --startColor: #EADEDB;
+    --endColor: #BC70A4;
+  }
+  50% {
+    --startColor: #BC70A4;
+    --endColor: #BFD641;
+  }
+}
+#grad1 {
+  height: 200px;
+}

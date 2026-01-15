@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biến trong CSS</title>
+    <link rel="stylesheet" href="./Bien_CSS_Ngay_15_01_2026.css">
+    <link rel="icon" type="image/x-icon" href="./images/logo_conen.jpg">
+</head>
+<body>
+    <h1>Niến trong CSS</h1>
+    <ol type="1">
+        <h2><li>Biến CSS - Hàm var()</li></h2>
+        <p>Hàm này var()được sử dụng để chèn giá trị của một biến CSS.</p>
+        <p>Biến CSS có quyền truy cập vào DOM, điều này có nghĩa là bạn có thể tạo biến với phạm vi cục bộ hoặc toàn cục, thay đổi biến bằng JavaScript và thay đổi biến dựa trên các truy vấn phương tiện (media queries).</p>
+        <p>Một cách hay để sử dụng biến CSS là khi bạn muốn quản lý màu sắc trong thiết kế. Thay vì sao chép và dán cùng một màu sắc nhiều lần, bạn có thể sử dụng chúng trong các biến.</p>
+        <hr>
+        <h2><li>Khai báo biến trong CSS</li></h2>
+        <p>Biến CSS có thể có phạm vi toàn cục hoặc cục bộ.</p>
+        <p>Biến toàn cục có thể được truy cập trong toàn bộ tài liệu, trong khi biến cục bộ chỉ có thể được sử dụng bên trong bộ chọn nơi nó được khai báo.</p>
+        <p>Để tạo một biến toàn cục, hãy khai báo nó bên trong :root bộ chọn. :rootBộ chọn sẽ khớp với phần tử gốc của tài liệu.</p>
+        <p>Để tạo một biến cục bộ, hãy khai báo nó bên trong bộ chọn sẽ sử dụng nó.</p>
+        <p>Tên biến CSS phải bắt đầu bằng hai dấu gạch ngang (--) và phân biệt chữ hoa chữ thường!</p>
+        <p><b><u><i>Cú pháp</i></u></b></p>
+        <p>
+            :root {<br>
+                --primary-bg-color: green; /* global scope */ <br>
+                } <br>
+            .note { <br>
+                --note-bg: yellow; /* local scope */ <br>
+            }
+        </p>
+        <hr>
+        <h2><li>Hàm CSS var()</li></h2>
+        <p>Hàm này var()được sử dụng để chèn giá trị của một biến CSS đã được khai báo.</p>
+        <p><b><u><i>Cú pháp</i></u></b></p>
+        <p>var(--name, value)</p>
+        <p>Ưu điểm của việc sử dụng var()là:</p>
+        <ul>
+            <li>Giúp mã nguồn dễ bảo trì hơn (đơn giản hóa việc cập nhật)</li>
+            <li>Giúp mã nguồn dễ đọc hơn (dễ hiểu hơn)</li>
+            <li>Giúp việc thay đổi giá trị màu sắc cho toàn bộ trang trở nên dễ dàng hơn.</li>
+        </ul>
+        <hr>
+        <h2><li>Ví dụ về biến CSS</li></h2>
+        <p>Ở đây, chúng ta khai báo hai biến toàn cục (--primary-bg-color và --primary-color).</p>
+        <p>Tiếp theo, chúng ta sử dụng var()hàm này để chèn giá trị của các biến vào sau trong bảng định kiểu:</p>
+        <p><b>Ví dụ 1: </b></p>
+        <div class="vidu1">
+            <h1>Using the var() Function</h1>
+
+            <div class="containe">
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+            <p class="not">This is a note!</p>
+            </div>
+
+        </div>
+        <hr>
+        <p><b>Ví dụ 2: </b></p>
+        <div class="vidu2">
+            <h1>Using the var() Function</h1>
+
+            <div class="container">
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+            <p class="note">This is a note!</p>
+            </div>
+
+        </div>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao diện người dùng trong CSS</title>
+    <link rel="stylesheet" href="./Giao_Dien_Nguoi_Dung_CSS_Ngay_14_01_2026.css">
+    <link rel="icon" type="image/x-icon" href="./images/logo_conen.jpg">
+</head>
+<body>
+    <h1>Giao diện người dùng trong CSS</h1>
+    <ol type="1">
+        <h2><li>Giao diện người dùng CSS</li></h2>
+        <p>Trong chương này, bạn sẽ tìm hiểu về các thuộc tính giao diện người dùng CSS sau:</p>
+        <ul>
+            <li>resize</li>
+            <li>outline-offset</li>
+        </ul>
+        <hr>
+        <h2><li>Thay đổi kích thước bằng CSS</li></h2>
+        <p>Thuộc tính này resizequy định liệu người dùng có thể thay đổi kích thước một phần tử hay không (và bằng cách nào).</p>
+        <p>Thuộc tính này có thể có một trong các giá trị sau:</p>
+        <ul>
+            <li>horizontal- Người dùng có thể thay đổi kích thước phần tử theo chiều ngang (chiều rộng)</li>
+            <li>vertical- Người dùng có thể thay đổi kích thước phần tử theo chiều dọc (chiều cao)</li>
+            <li>both- Người dùng có thể thay đổi kích thước phần tử theo chiều dọc và chiều ngang.</li>
+            <li>none- Người dùng không thể thay đổi kích thước phần tử</li>
+        </ul>
+        <hr>
+        <h2><li>CSS Resize - Chỉ thay đổi chiều rộng</li></h2>
+        <p>Ví dụ sau cho phép người dùng chỉ thay đổi kích thước chiều rộng của phần tử div:</p>
+        <div class="horizontal">
+            <p>Let the user resize only the width of this div element.</p>
+            <p>To resize: Click and drag the bottom right corner of this div element.</p>
+        </div>
+        <hr>
+        <h2><li>CSS Resize - Chỉ thay đổi chiều cao</li></h2>
+        <p>Ví dụ sau cho phép người dùng chỉ thay đổi chiều cao của phần tử div:</p>
+        <div class="vertical">
+            <p>Let the user resize only the width of this div element.</p>
+            <p>To resize: Click and drag the bottom right corner of this div element.</p>
+        </div>
+        <hr>
+        <h2><li>CSS Resize - Cả chiều rộng và chiều cao</li></h2>
+        <p>Ví dụ sau cho phép người dùng thay đổi cả chiều rộng và chiều cao của phần tử div:</p>
+        <div class="both">
+            <p>Let the user resize only the width of this div element.</p>
+            <p>To resize: Click and drag the bottom right corner of this div element.</p>
+        </div>
+        <hr>
+        <h2><li>Vô hiệu hóa chức năng thay đổi kích thước trong Textarea bằng CSS</li></h2>
+        <p>Thẻ textarea thường có thể thay đổi kích thước theo mặc định.</p>
+        <p>Ở đây, chúng ta đã sử dụng resizethuộc tính này để vô hiệu hóa khả năng thay đổi kích thước trong thẻ textarea:</p>
+        <textarea  class="none">Trần Duy Khánh</textarea> <br>
+        <textarea>Trần Duy Khánh</textarea>
+        <hr>
+        <h2><li>CSS Outline Offset</li></h2>
+        <p>Thuộc tính này outline-offsetthêm một khoảng trống giữa đường viền và cạnh/đường bao của một phần tử. Khoảng trống giữa phần tử và đường viền của nó là trong suốt</p>
+        <p>Ví dụ sau đây chỉ định một đường viền nằm cách mép ngoài 15px:</p>
+        <div class="ex1">This div has a 4 pixels solid red outline 15 pixels outside the border edge.</div>
+        <br>
+        <div class="ex2">This div has a 5 pixels dashed blue outline 5 pixels outside the border edge.</div>
+    </ol>
+</body>
+</html>
