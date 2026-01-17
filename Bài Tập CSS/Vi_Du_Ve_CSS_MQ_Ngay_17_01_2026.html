@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví dụ về truy vắn phương tiện CSS</title>
+    <link rel="stylesheet" href="./Vi_Du_Ve_CSS_MQ_Ngay_17_01_2026.css">
+    <link rel="icon" type="image/x-icon" href="./images/logo_conen.jpg">
+</head>
+<body>
+    <h1>Ví dụ về truy vấn phương tiện trong CSS</h1>
+    <ol type="1">
+        <h2><li>Ví dụ về truy vấn phương tiện CSS</li></h2>
+        <p>Truy vấn phương tiện (Media queries) là một kỹ thuật phổ biến để cung cấp bảng định kiểu tùy chỉnh cho các thiết bị khác nhau.</p>
+        <p>Để minh họa bằng một ví dụ đơn giản, chúng ta có thể thay đổi màu nền cho các thiết bị khác nhau:</p>
+        <p><b>Ví dụ 1: </b></p>
+        <div class="vd1">
+            <p>Hãy thay đổi kích thước cửa sổ trình duyệt để thấy hiệu ứng! </p>
+        </div>
+        <hr>
+        <h2><li>Truy vấn phương tiện cho các cột</li></h2>
+        <p>Một công dụng phổ biến của media queries là tạo bố cục linh hoạt. Trong ví dụ này, chúng ta tạo một bố cục có thể thay đổi giữa bốn cột, hai cột và toàn chiều rộng, tùy thuộc vào kích thước màn hình khác nhau:</p>
+        <div class="container">
+            <div class="column" style="background-color: #aaa">
+                <h2>Column 1</h2>
+                <p>Some text ...</p>
+            </div>
+            <div class="column" style="background-color: #bbb">
+                <h2>Column 2</h2>
+                <p>Some text ...</p>
+            </div>
+            <div class="column" style="background-color: #ccc">
+                <h2>Column 3</h2>
+                <p>Some text ...</p>
+            </div>
+            <div class="column" style="background-color: #ddd">
+                <h2>Column 4</h2>
+                <p>Some text ...</p>
+            </div>
+        </div>
+        <hr>
+        <h2><li>Truy vấn phương tiện truyền thông cho thực đơn</li></h2>
+        <p>Ở đây, chúng ta sử dụng media queries để tạo một menu điều hướng thích ứng, có thiết kế khác nhau tùy thuộc vào kích thước màn hình.</p>
+        <div class="chung">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#new">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+        <hr>
+        <h2><li>Ẩn các phần tử bằng Media Queries</li></h2>
+        <p>Ở đây, chúng ta sử dụng media queries để ẩn một phần tử trên màn hình nhỏ:</p>
+        <div id="div1">
+            Some text ...
+        </div>
+        <hr>
+        <h2><li>Thay đổi kích thước phông chữ bằng Media Queries</li></h2>
+        <p>Ở đây, chúng ta sử dụng media queries để thay đổi kích thước phông chữ của một phần tử trên các chiều rộng khung nhìn khác nhau:</p>
+        <div id="div2">
+            This is some text ...
+        </div>
+        <hr>
+        <h2><li>Truy vấn phương tiện cho hướng màn hình</li></h2>
+        <p>Các truy vấn phương tiện cũng có thể được sử dụng để thay đổi bố cục của trang tùy thuộc vào hướng màn hình.</p>
+        <p>Ở đây, chúng ta thay đổi màu nền của phần thân nếu màn hình đang ở chế độ ngang:</p>
+        <div id="div3">
+            <p>
+                @media only screen and (orientation: landscape) { <br>
+                    body { <br>
+                        background-color: lightblue; <br>
+                    } <br>
+                } <br>
+            </p>
+        </div>
+        <hr>
+        <h2><li>Truy vấn phương tiện cho tùy chọn người dùng</li></h2>
+        <p>Một số người dùng nhạy cảm với chuyển động và thích các trang web có ít hiệu ứng động hơn.</p>
+        <p>Tính prefers-reduced-motion năng đa phương tiện cho phép bạn kiểm tra xem người dùng có yêu cầu giảm chuyển động, chẳng hạn như hoạt ảnh hoặc hiệu ứng chuyển tiếp hay không. Sử dụng tính năng này để tắt hoạt ảnh và hiệu ứng chuyển tiếp cho những người dùng đã kích hoạt cài đặt này trên máy tính của họ:</p>
+        <div id="div4"></div>
+    </ol>
+</body>
+</html>

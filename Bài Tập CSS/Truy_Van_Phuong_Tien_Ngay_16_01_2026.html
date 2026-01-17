@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truy vắn phuoingw tiện trong CSS</title>
+    <link rel="stylesheet" href="./Truy_Van_Phuong_Tien_Ngay_16_01_2026.css">
+    <link rel="icon" type="image/x-icon" href="./images/logo_conen.jpg">
+</head>
+<body> 
+    <h1>Truy vấn phương tiện trong CSS</h1>
+    <ol type="1">
+        <h2><li>Truy vấn phương tiện CSS</li></h2>
+        <p>Các truy vấn phương tiện CSS cho phép bạn áp dụng kiểu dáng dựa trên đặc điểm của thiết bị hoặc môi trường hiển thị trang web.</p>
+        <p>Các truy vấn phương tiện CSS rất cần thiết để tạo ra các trang web có khả năng thích ứng với nhiều thiết bị.</p>
+        <p>Quy tắc CSS này @mediađược sử dụng để thêm các truy vấn phương tiện (media queries) vào bảng định kiểu của bạn.</p>
+        <h2><li>Cú pháp truy vấn phương tiện</li></h2>
+        <p>Một truy vấn phương tiện bao gồm một loại phương tiện tùy chọn và một hoặc nhiều thuộc tính phương tiện, trả về giá trị true hoặc false.</p>
+        <p>@media [not] media-type and (media-feature: value) and (media-feature: value) { <br>
+        /* CSS rules to apply */ <br>
+        }</p>
+        <p>Loại phương tiện là tùy chọn. Tuy nhiên, nếu bạn không sử dụng tùy chọn này , bạn cũng phải chỉ định loại phương tiện.</p>
+        <p>Kết quả của truy vấn phương tiện là đúng nếu loại phương tiện được chỉ định khớp với loại thiết bị và tất cả các tính năng phương tiện đều đúng. Khi truy vấn phương tiện là đúng, các quy tắc kiểu tương ứng sẽ được áp dụng, theo các quy tắc xếp tầng thông thường.</p>
+        <p>Ý nghĩa của các từ khóa "not" và "and " :</p>
+        <p>not: Từ khóa tùy chọn này đảo ngược ý nghĩa của toàn bộ truy vấn phương tiện.</p>
+        <p>và: Từ khóa này kết hợp một loại phương tiện và một hoặc nhiều tính năng phương tiện.</p>
+        <h2><li>Các loại phương tiện CSS</li></h2>
+        <P>Loại phương tiện tùy chọn chỉ định loại phương tiện mà các kiểu định dạng áp dụng. Nếu loại phương tiện bị bỏ qua, nó sẽ được đặt thành "tất cả".</P>
+            <div class="hangtong">
+                <div class="hang1">
+                    <b><P>Value</P></b>
+                    <P>all</P>
+                    <P>print</P>
+                    <p>screen</p>
+                </div>
+                <div class="hang2">
+                    <b><p>Description</p></b>
+                    <p>Used for all media type devices</p>
+                    <p>Used for print preview mode</p>
+                    <p>Used for computer screens, tablets, and smart-phones</p>
+                </div>
+            </div>
+        <h2><li>Tính năng đa phương tiện CSS</li></h2>
+        <p>Tính năng đa phương tiện chỉ định một đặc điểm cụ thể của thiết bị.</p>
+        <p>Dưới đây là một số tính năng truyền thông thường được sử dụng:</p>
+        <table>
+            <tr>
+                <th>Value</th>
+                <th>	Description</th>
+            </tr>
+            <tr>
+                <td>max-height</td>
+                <td>Maximum height of the viewport</td>
+            </tr>
+            <tr>
+                <td>min-height</td>
+                <td>Minimum height of the viewport</td>
+            </tr>
+            <tr>
+                <td>height</td>
+                <td>Height of the viewport (including scrollbar)</td>
+            </tr>
+            <tr>
+                <td>max-width</td>
+                <td>Maximum width of the viewport</td>
+            </tr>
+            <tr>
+                <td>min-width</td>
+                <td>Minimum width of the viewport</td>
+            </tr>
+            <tr>
+                <td>width</td>
+                <td>Width of the viewport (including scrollbar)</td>
+            </tr>
+            <tr>
+                <td>orientation</td>
+                <td>Orientation of the viewport (landscape or portrait)</td>
+            </tr>
+            <tr>
+                <td>resolution</td>
+                <td>Screen resolution</td>
+            </tr>
+            <tr>
+                <td>prefers-color-scheme</td>
+                <td>User's preferred color scheme (light or dark)</td>
+            </tr>
+        </table>
+        <hr>
+        <h2><li>Ví dụ về truy vấn phương tiện</li></h2>
+        <p>Ở đây, chúng ta sử dụng media query để thay đổi màu nền của phần thân thành màu xanh lá nhạt nếu chiều rộng của khung nhìn là 480px trở lên:</p>
+        <div class="body1">
+            <p>The media query is applied if the media type is screen, and the viewport width is 900px or more.</p>
+        </div>
+        <p>Ở đây, chúng ta sử dụng media query để thay đổi màu nền của phần thân thành màu xanh nhạt nếu chiều rộng của khung nhìn nằm trong khoảng từ 480px đến 768px:</p>
+        <div class="body2">
+            <p>The media query is applied if the media type is screen, and the viewport width is 900px or more.</p>
+        </div>
+    </ol>
+</body>
+</html>

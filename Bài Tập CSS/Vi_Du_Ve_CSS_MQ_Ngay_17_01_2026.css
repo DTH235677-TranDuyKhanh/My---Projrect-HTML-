@@ -1,0 +1,163 @@
+.vd1{
+    width: 100%;
+    height: 300px;
+    background-color: olive;
+    color: white;
+    padding: 20px;
+}
+@media screen and (min-width: 768px)
+{
+    .vd1{
+        background-color: blue;
+        color: white;
+    }
+}
+@media screen and (min-width: 992px)
+{
+    .vd1{
+        background-color: tan;
+        color: black;
+    }
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.column{
+    width: 25%;
+    padding: 20px;
+}
+@media screen and (max-width: 992px)
+{
+    .column{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .column{
+        width: 100%;
+    }
+}
+.chung{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #333333;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 14px 16px;
+    display: block;
+}
+ul li a:hover{
+    background-color: #111111;
+}
+@media screen and (max-width: 600px)
+{
+    ul{
+        flex-direction: column;
+    }
+}
+#div1{
+    background-color: yellow;
+    padding: 10px;
+}
+@media screen and (max-width: 600px)
+{
+    #div1{
+        display: none;
+    }
+}
+#div2{
+    width: 100%;
+    height: 200px;
+    background-color: green;
+    color: white;
+    font-size: 80px;
+    text-align: center; 
+}
+@media screen and (max-width: 600px)
+{
+    #div2{
+        font-size: 30px;
+    }
+}
+#div3{
+    width: 100%;
+    height: 300px;
+    background-color: lightgreen;
+    padding: 20px;
+}
+@media only screen and (orientation: landscape)
+{
+    #div3{
+        background-color: lightgray; 
+    }
+}
+/*
+----------------------------------------------------------------------------
+    screen: áp dụng cho thiết bị có màn hình (máy tính, điện thoại, tablet)
+    only: dùng để bỏ qua các trình duyệt cũ không hỗ trợ media query
+----------------------------------------------------------------------------
+    (orientation: landscape) là gì?
+    orientation xác định hướng màn hình
+    landscape = màn hình ngang (chiều rộng > chiều cao)
+----------------------------------------------------------------------------
+    So sánh:
+        Giá trị	        Ý nghĩa
+        landscape	    Màn hình ngang
+        portrait	    Màn hình dọc
+----------------------------------------------------------------------------
+*/
+
+#div4{
+    width: 100px;
+    height: 100px;
+    background-color: red; 
+    position: relative;
+    animation-name: chuyendong;
+    animation-duration: 4s;
+}
+@keyframes chuyendong{
+    0% {background-color: red; top: 0; left: 0;}
+    25% {background-color: yellow; top: 0; left: 200px;}
+    50% {background-color: green; top: 200px; left: 200px;}
+    75% {background-color: blue; top: 200px; left: 0px;}
+    100% {background-color: olive; top: 0; left: 0}
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/*
+-----------------------------------------------------------------------------------------------------------
+    prefers-reduced-motion là gì?
+        Đây là một media feature cho biết:
+            Người dùng đã bật tùy chọn “Giảm chuyển động” trong hệ điều hành (Windows, macOS, iOS, Android)
+        Thường dành cho người:
+            Dễ chóng mặt
+            Nhạy cảm với hiệu ứng động
+            Cần giao diện tĩnh, dễ theo dõi
+------------------------------------------------------------------------------------------------------------
+    Giá trị:
+        Giá trị	                                 Ý nghĩa
+        reduce	                    Người dùng muốn giảm hoặc tắt chuyển động
+        no-preference	            Không có yêu cầu đặc biệt
+------------------------------------------------------------------------------------------------------------
+        @media (prefers-reduced-motion: reduce)
+    ➡️ CSS bên trong chỉ chạy khi người dùng đã bật “Reduce motion” trong hệ điều hành.
+------------------------------------------------------------------------------------------------------------
+
+*/
