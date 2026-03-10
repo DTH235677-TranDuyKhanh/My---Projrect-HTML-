@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript form thông tin ứng viên</title>
+</head>
+
+<body>
+
+    <form name="f" action="#">
+
+        <table border="1" width="498" align="center" cellpadding="5" cellspacing="0">
+
+            <tr>
+                <td colspan="2" align="center">THÔNG TIN ỨNG VIÊN</td>
+            </tr>
+            <tr>
+                <td>Họ tên</td>
+                <td>
+                    <input type="text" name="txtHoTen">
+                </td>
+            </tr>
+            <tr>
+                <td>Năm sinh</td>
+                <td>
+                    <select name="optNamSinh">
+                        <script>
+                            var d = new Date();
+                            for (var i = d.getFullYear(); i >= 1950; i--) {
+                                document.write('<option value="' + i + '">' + i + '</option>');
+                            }
+                        </script>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Giới tính</td>
+                <td>
+                    <input type="radio" name="radGioiTinh" value="Nam" checked> Nam
+                    <input type="radio" name="radGioiTinh" value="Nu"> Nữ
+                </td>
+            </tr>
+
+            <tr>
+                <td>Mức lương đề nghị</td>
+                <td>
+                    <input type="text" name="txtMucLuong">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Hình thức làm việc</td>
+                <td>
+                    <input type="checkbox" name="chkHinhThucToanTG" value="Toàn thời gian"> Toàn thời gian
+                    <input type="checkbox" name="chkHinhThucBanTG" value="Bán thời gian"> Bán thời gian
+                </td>
+            </tr>
+
+            <tr>
+                <td>Thông tin khác</td>
+                <td>
+                    <textarea name="txtThongTin" cols="25" rows="4"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Gửi">
+                    <input type="reset" value="Xóa">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+    <script src="/Bài Tập JavaScript/Form_Thong_Tin_Ung_Vien.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox </title>
+    <link rel="stylesheet" href="./CSS_Flexbox_Ngay_19_01_2026..css">
+    <link rel="icon" type="images/x-icon" href="./images/logo_conen.jpg">
+</head>
+<body>
+    <h1>CSS Flexbox</h1>
+    <ol type="1">
+        <h2><li>Giới thiệu về Flexbox</li></h2>
+        <ul>
+            <h3><li>CSS Flexbox (Bố cục hộp linh hoạt)</li></h3>
+            <p>CSS Flexbox là viết tắt của mô-đun CSS Flexible Box Layout.</p>
+            <p>Flexbox là một mô hình bố cục dùng để sắp xếp các mục (theo chiều ngang hoặc chiều dọc) bên trong một vùng chứa, theo cách linh hoạt và đáp ứng tốt.</p>
+            <p>Flexbox giúp dễ dàng thiết kế bố cục linh hoạt và đáp ứng, mà không cần sử dụng hoặc định vị. float</p>
+            <div class="container1">
+                <div>Items 1</div>
+                <div>Items 2</div>
+                <div>Items 3</div>
+                <div>Items 4</div>
+                <div>Items 5</div>
+            </div>
+            <h3><li>Các thành phần CSS Flexbox</li></h3>
+            <p>Một flexbox luôn bao gồm:</p>
+            <ul>
+                <li>Flex Container - Phần tử cha (container), nơi thuộc displaytính được đặt thành flexhoặcinline-flex</li>
+                <li>Một hoặc nhiều mục Flex - Các phần tử con trực tiếp của vùng chứa flex tự động trở thành các mục flex.</li>
+            </ul>
+            <h3><li>Một hộp đựng Flex với ba vật dụng Flex bên trong.</li></h3>
+            <p>Phần tử bên dưới thể hiện một vùng chứa linh hoạt (vùng màu xanh) với ba phần tử linh hoạt .</p>
+            <div class="container1">
+                <div>Items 1</div>
+                <div>Items 2</div>
+                <div>Items 3</div>
+            </div>
+        </ul>
+        <h2><li>Thùng chứa linh hoạt</li></h2>
+        <ul>
+            <h3><li>Thuộc tính CSS Flex Container</li></h3>
+            <p>Phần tử chứa linh hoạt (flex container) có thể có các thuộc tính sau:</p>
+            <ul>
+                <li>display- Phải được đặt thành flexhoặcinline-flex</li>
+                <li>flex-direction- Thiết lập hướng hiển thị của các phần tử flex</li>
+                <li>flex-wrap- Chỉ định xem các phần tử flex có nên xuống dòng hay không</li>
+                <li>flex-flow- Thuộc tính viết tắt cho flex-directionvàflex-wrap</li>
+                <li>justify-content- Căn chỉnh các phần tử flex khi chúng không sử dụng hết không gian có sẵn trên trục chính (theo chiều ngang).</li>
+                <li>align-items- Căn chỉnh các phần tử flex khi chúng không sử dụng hết không gian có sẵn trên trục ngang (theo chiều dọc).</li>
+                <li>align-content- Tự động căn chỉnh các đường linh hoạt khi có khoảng trống thừa trên trục ngang và các mục linh hoạt xuống dòng.</li>
+            </ul>
+            <h3><li>Thuộc tính CSS flex-direction </li></h3>
+            <p>Thuộc tính này flex-directionchỉ định hướng hiển thị của các phần tử flex trong vùng chứa flex.</p>
+            <p>Thuộc tính này có thể có một trong các giá trị sau:</p>
+            <ul>
+                <li>row(mặc định)</li>
+                <li>column</li>
+                <li>row-reverse</li>
+                <li>column-reverse</li>
+            </ul>
+            <p>Giá trị này rowlà giá trị mặc định, và nó hiển thị các phần tử flex theo chiều ngang (từ trái sang phải):</p>
+            <div class="container2">
+                <div>Items 1</div>
+                <div>Items 2</div>
+                <div>Items 3</div>
+            </div>
+            <p>Giá trị này columnhiển thị các phần tử flex theo chiều dọc (từ trên xuống dưới):</p>
+            <div class="container3">
+                <div>Items 1</div>
+                <div>Items 2</div>
+                <div>Items 3</div>
+            </div>
+            <p>Giá trị này row-reversehiển thị các phần tử flex theo chiều ngang (nhưng từ phải sang trái):</p>
+            <div class="container4">
+                <div>Items 1</div>
+                <div>Items 2</div>
+                <div>Items 3</div>
+            </div>
+            <p>Giá trị này column-reversehiển thị các phần tử flex theo chiều dọc (nhưng từ dưới lên trên):</p>
+            <div class="container5">
+                <div>Items 1</div>
+                <div>Items 2</div>
+                <div>Items 3</div>
+            </div>
+            <h3><li>Thuộc tính flex-wrap của CSS</li></h3>
+            <p>Thuộc tính này flex-wrapquy định xem các phần tử flex có nên xuống dòng hay không nếu không đủ chỗ cho chúng trên một dòng flex.</p>
+            <p>Thuộc tính này có thể có một trong các giá trị sau:</p>
+            <ul>
+                <li>nowrap(mặc định)</li>
+                <li>wrap</li>
+                <li>wrap-reverse</li>
+            </ul>
+            <p>Giá trị này nowrapchỉ định rằng các phần tử flex sẽ không xuống dòng (đây là giá trị mặc định):</p>
+            <div class="container6">
+                <div>Items1</div>
+                <div>Items2</div>
+                <div>Items3</div>
+                <div>Items4</div>
+                <div>Items5</div>
+                <div>Items6</div>
+                <div>Items7</div>
+                <div>Items8</div>
+                <div>Items9</div>
+            </div>
+            <p>Giá trị này wrapchỉ định rằng các phần tử flex sẽ tự động xuống dòng nếu cần thiết:</p>
+            <div class="container7">
+                <div>Items1</div>
+                <div>Items2</div>
+                <div>Items3</div>
+                <div>Items4</div>
+                <div>Items5</div>
+                <div>Items6</div>
+                <div>Items7</div>
+                <div>Items8</div>
+                <div>Items9</div>
+            </div>
+            <p>Giá trị này wrap-reversechỉ định rằng các phần tử flex sẽ tự động xuống dòng nếu cần thiết, theo thứ tự ngược lại:</p>
+            <div class="container8">
+                <div>Items1</div>
+                <div>Items2</div>
+                <div>Items3</div>
+                <div>Items4</div>
+                <div>Items5</div>
+                <div>Items6</div>
+                <div>Items7</div>
+                <div>Items8</div>
+                <div>Items9</div>
+            </div>
+            <h3><li>Thuộc tính CSS flex-flow</li></h3>
+            <p>Thuộc tính này flex-flowlà một thuộc tính viết tắt để thiết lập cả hai thuộc tính và . flex-directionflex-wrap</p>
+            <div class="container9">
+                <div>Items1</div>
+                <div>Items2</div>
+                <div>Items3</div>
+                <div>Items4</div>
+                <div>Items5</div>
+                <div>Items6</div>
+                <div>Items7</div>
+                <div>Items8</div>
+                <div>Items9</div>
+            </div>
+            <h3><li>Thuộc tính CSS justify-content</li></h3>
+            <p>Thuộc tính này justify-contentđược sử dụng để căn chỉnh các phần tử flex khi chúng không sử dụng hết không gian có sẵn trên trục chính (theo chiều ngang).</p>
+            <p>Thuộc tính này có thể có một trong các giá trị sau:</p>
+            <ul>
+                <li>canter</li>
+                <li>flex-start (Mặt định)</li>
+                <li>flex-end</li>
+                <li>space-around</li>
+                <li>space-between</li>
+                <li>space-evenly</li>
+            </ul>
+            <p>Giá trị này centercăn chỉnh các phần tử flex vào giữa vùng chứa:</p>
+            <div class="container10">
+                <div>Items 1</div>
+                <div>Items 2</div>
+                <div>Items 3</div>
+            </div>
+            <p>Giá trị này flex-startcăn chỉnh các phần tử flex về đầu vùng chứa (đây là giá trị mặc định):</p>
+            <div class="container11">
+                <div>Items 1</div>
+                <div>Items 2</div>
+                <div>Items 3</div>
+            </div>
+            <p>Giá trị này flex-endcăn chỉnh các phần tử flex ở cuối vùng chứa:</p>
+            <div class="container12">
+                <div>Items 1</div>
+                <div>Items 2</div>
+                <div>Items 3</div>
+            </div>
+            <p>Giá trị này space-aroundhiển thị các phần tử flex với khoảng trống xung quanh chúng:</p>
+            <div class="container13">
+                <div>Items 1</div>
+                <div>Items 2</div>
+                <div>Items 3</div>
+            </div>
+            <p>Giá trị này space-betweenhiển thị các phần tử flex với khoảng cách giữa chúng:</p>
+            <div class="container14">
+                <div>Items 1</div>
+                <div>Items 2</div>
+                <div>Items 3</div>
+            </div>
+            <p>Giá trị này space-evenlyhiển thị các phần tử flex với khoảng cách bằng nhau xung quanh chúng:</p>
+            <div class="container15">
+                <div>Items 1</div>
+                <div>Items 2</div>
+                <div>Items 3</div>
+            </div>
+            <h3><li>Thuộc tính CSS align-items</li></h3>
+            <p>Thuộc tính này align-itemsđược sử dụng để căn chỉnh các phần tử flex khi chúng không sử dụng hết không gian có sẵn trên trục ngang (theo chiều dọc).</p>
+            <p>Thuộc tính này có thể có một trong các giá trị sau:</p>
+            <ul>
+                <li>cebter</li>
+                <li>flex-start</li>
+                <li>flex-end</li>
+                <li>stretch</li>
+                <li>baseline</li>
+                <li>normal (Mặc định)</li>
+            </ul>
+            <p>Trong các ví dụ sau, chúng ta sẽ sử dụng một vùng chứa có chiều cao 200 pixel để minh họa rõ hơn align-itemsthuộc tính này.</p>
+            <div class="container16">
+                <div>Items 1</div>
+                <div>Items 2</div>
+                <div>Items 3</div>
+            </div>
+            <p>Giá trị này flex-startcăn chỉnh các phần tử flex lên đầu vùng chứa:</p>
+            <div class="container17">
+                <div>Items 1</div>
+                <div>Items 2</div>
+                <div>Items 3</div>
+            </div>
+            <p>Giá trị này flex-endcăn chỉnh các phần tử flex ở phía dưới cùng của vùng chứa:</p>
+            <div class="container18">
+                <div>Items 1</div>
+                <div>Items 2</div>
+                <div>Items 3</div>
+            </div>
+            <p>Giá trị này stretchkéo giãn các phần tử flex để lấp đầy vùng chứa (tương đương với "normal", là giá trị mặc định):</p>
+            <div class="container19">
+                <div>Items 1</div>
+                <div>Items 2</div>
+                <div>Items 3</div>
+            </div>
+            <p>Giá trị này baselinecăn chỉnh các phần tử flex theo đường cơ sở của vùng chứa:</p>
+            <div class="container20">
+                <div><h2>Items 1</h2></div>
+                <div><h3>Items 2</h3></div>
+                <div><h4>Items 3</h4></div>
+            </div>
+            <h3><li>Thuộc tính CSS align-content</li></h3>
+            <p>Thuộc tính này align-contenttương tự như align-items, nhưng thay vì căn chỉnh các phần tử flex, nó căn chỉnh các dòng flex.</p>
+            <p>Thuộc tính này có thể có một trong các giá trị sau:</p>
+            <ul>
+                <li>center</li>
+                <li>stretch (Mặc định)</li>
+                <li>flex-start</li>
+                <li>flex-end</li>
+                <li>space-around</li>
+                <li>space-between</li>
+                <li>space-evenly</li>
+            </ul>
+            <p>Trong các ví dụ sau, chúng ta sử dụng một vùng chứa cao 400 pixel, với thuộc tính được đặt thành , để minh họa rõ hơn thuộc tính này. flex-wrapwrap align-content</p>
+            <p>Với cách bố trí này center, các dây chuyền sản xuất được xếp dồn về phía trung tâm của thùng chứa:</p>
+            <div class="container21">
+                <div>Items1</div>
+                <div>Items2</div>
+                <div>Items3</div>
+                <div>Items4</div>
+                <div>Items5</div>
+                <div>Items6</div>
+                <div>Items7</div>
+                <div>Items8</div>
+                <div>Items9</div>
+            </div>
+            <p>Với thuộc tính này stretch, các đường kẻ linh hoạt sẽ kéo dài để lấp đầy phần không gian còn lại của vùng chứa (đây là cài đặt mặc định):</p>
+            <div class="container22">
+                <div>Items1</div>
+                <div>Items2</div>
+                <div>Items3</div>
+                <div>Items4</div>
+                <div>Items5</div>
+                <div>Items6</div>
+                <div>Items7</div>
+                <div>Items8</div>
+                <div>Items9</div>
+            </div>
+            <p>Với cách bố trí này flex-start, các dây chuyền sản xuất linh hoạt được đóng gói ở phần đầu của thùng chứa:</p>
+            <div class="container23">
+                <div>Items1</div>
+                <div>Items2</div>
+                <div>Items3</div>
+                <div>Items4</div>
+                <div>Items5</div>
+                <div>Items6</div>
+                <div>Items7</div>
+                <div>Items8</div>
+                <div>Items9</div>
+            </div>
+            <p>Với cách bố trí này flex-end, các dây chuyền sản xuất được đóng gói gọn gàng về phía cuối thùng chứa: </p>
+            <div class="container24">
+                <div>Items1</div>
+                <div>Items2</div>
+                <div>Items3</div>
+                <div>Items4</div>
+                <div>Items5</div>
+                <div>Items6</div>
+                <div>Items7</div>
+                <div>Items8</div>
+                <div>Items9</div>
+            </div>
+            <p>Với kiểu bố space-betweencục này, khoảng cách giữa các đường kẻ linh hoạt là bằng nhau, nhưng mục đầu tiên nằm sát mép bắt đầu của vùng chứa, và mục cuối cùng nằm sát mép kết thúc của vùng chứa:</p>
+            <div class="container25">
+                <div>Items1</div>
+                <div>Items2</div>
+                <div>Items3</div>
+                <div>Items4</div>
+                <div>Items5</div>
+                <div>Items6</div>
+                <div>Items7</div>
+                <div>Items8</div>
+                <div>Items9</div>
+            </div>
+            <p>Với tùy chọn này space-around, khoảng cách giữa các dòng linh hoạt bằng nhau, nhưng khoảng cách trước mục đầu tiên và sau mục cuối cùng được đặt bằng một nửa khoảng cách giữa các dòng linh hoạt:</p>
+            <div class="container26">
+                <div>Items1</div>
+                <div>Items2</div>
+                <div>Items3</div>
+                <div>Items4</div>
+                <div>Items5</div>
+                <div>Items6</div>
+                <div>Items7</div>
+                <div>Items8</div>
+                <div>Items9</div>
+            </div>
+            <p>Với thiết kế này space-evenly, các đường kẻ linh hoạt được phân bố đều trong bao bì linh hoạt, với khoảng cách bằng nhau ở phía trên, phía dưới và ở giữa:</p>
+            <div class="container27">
+                <div>Items1</div>
+                <div>Items2</div>
+                <div>Items3</div>
+                <div>Items4</div>
+                <div>Items5</div>
+                <div>Items6</div>
+                <div>Items7</div>
+                <div>Items8</div>
+                <div>Items9</div>
+            </div>
+            <h3><li>Định tâm chính xác</li></h3>
+            <p>Ví dụ sau đây minh họa cách giải quyết một vấn đề thường gặp về kiểu dáng: căn giữa chính xác.</p>
+            <p>Để đạt được sự căn giữa hoàn hảo, hãy đặt cả hai thuộc tính `div justify-content` và `div` align-itemsthành `true` centercho vùng chứa flex, và phần tử flex sẽ được căn giữa hoàn hảo cả theo chiều ngang và chiều dọc:</p>
+            <div class="class1">
+                <div>1</div>
+            </div>
+        </ul>
+        <h2><li>Các mặt hàng linh hoạt</li></h2>
+        <ul>
+            <h3><li>Các mục CSS Flex</li></h3>
+            <p>Các phần tử con trực tiếp của một vùng chứa flex sẽ tự động trở thành các phần tử flex.</p>
+            <p>Các phần tử linh hoạt (Flex items) có thể có các thuộc tính sau:</p>
+            <ul>
+                <li>order- Chỉ định thứ tự hiển thị của các phần tử flex bên trong vùng chứa flex.</li>
+                <li>flex-grow- Chỉ định mức độ mở rộng của một phần tử flex so với các phần tử flex khác.</li>
+                <li>flex-shrink- Chỉ định mức độ thu nhỏ của một phần tử flex so với các phần tử flex còn lại.</li>
+                <li>flex-basis- Chỉ định chiều dài ban đầu của một phần tử flex</li>
+                <li>flex- Thuộc tính viết tắt cho flex-grow, flex-shrink, và flex-basis</li>
+                <li>align-self- Chỉ định căn chỉnh cho phần tử flex bên trong vùng chứa flex</li>
+            </ul>
+            <h3><li>Thuộc tính thứ tự CSS</li></h3>
+            <p>Thuộc tính này orderquy định thứ tự hiển thị của các phần tử flex bên trong vùng chứa flex.</p>
+            <p>Phần tử flex đầu tiên trong mã nguồn không nhất thiết phải xuất hiện ở vị trí đầu tiên trong bố cục.</p>
+            <p>Giá trị đơn hàng phải là một số, và giá trị mặc định là 0.</p>
+            <p>Giá trị này orderchỉ định thứ tự hiển thị của các phần tử flex:</p>
+            <div class="container28">
+                <div style="order: 3">1</div>
+                <div style="order: 1">2</div>
+                <div style="order: 4">3</div>
+                <div style="order: 2">4</div>
+            </div>
+            <h3><li>Thuộc tính CSS flex-grow</li></h3>
+            <p>Thuộc tính này flex-growquy định mức độ mở rộng của một phần tử flex so với các phần tử flex khác.</p>
+            <p>Giá trị phải là một số, và giá trị mặc định là 0.</p>
+            <p>Hãy làm cho mục linh hoạt thứ ba tăng trưởng nhanh gấp bốn lần so với các mục linh hoạt khác:</p>
+            <div class="container29">
+                <div>1</div>
+                <div>2</div>
+                <div style="flex-grow: 4">3</div>
+            </div>
+            <h3><li>Thuộc tính CSS flex-shrink</li></h3>
+            <li>Thuộc tính này flex-shrinkquy định mức độ thu nhỏ của một phần tử flex so với các phần tử flex còn lại.</li>
+            <li>Giá trị phải là một số, và giá trị mặc định là 1.</li>
+            <li>Hãy cho phép phần tử flex thứ ba thu nhỏ gấp đôi so với các phần tử flex khác:</li>
+            <div class="container29">
+                <div>1</div>
+                <div>2</div>
+                <div style="flex-shrink: 4">3</div>
+                <div>4</div>
+                <div>5</div>
+            </div>
+            <h3><li>Thuộc tính flex-basis của CSS</li></h3>
+            <p>Thuộc tính này flex-basischỉ định chiều dài ban đầu của một phần tử flex.</p>
+            <p>Đặt chiều dài ban đầu của phần tử flex thứ ba là 250 pixel:</p>
+            <div class="container29">
+                <div>1</div>
+                <div>2</div>
+                <div style="flex-basis:250px">3</div>
+                <div>4</div>
+            </div>
+            <h3><li>Thuộc tính flex của CSS</li></h3>
+            <p>Thuộc tính này flexlà thuộc tính viết tắt cho các thuộc tính , , và . flex-grow flex-shrink flex-basis</p>
+            <p>Làm cho phần tử flex thứ ba có thể mở rộng (5), không thể thu nhỏ (4) và có chiều dài ban đầu là 150 pixel:</p>
+            <div class="container29">
+                <div>1</div>
+                <div>2</div>
+                <div style="flex: 5 4 150px">3</div>
+                <div>4</div>
+            </div> 
+            <h3><li>Thuộc tính CSS align-self</li></h3>
+            <p>Thuộc tính này align-selfquy định hướng căn chỉnh cho mục được chọn bên trong vùng chứa linh hoạt.</p>
+            <p>Thuộc tính này ghi đè lên thiết lập căn chỉnh mặc định do align-itemsthuộc tính của vùng chứa đặt ra.</p>
+            <p>Trong các ví dụ này, chúng tôi sử dụng một vùng chứa có chiều cao 200 pixel để minh họa rõ hơn thuộc tính này: align-selfCăn chỉnh phần tử flex thứ ba vào giữa vùng chứa:</p>
+            <p>Căn chỉnh phần tử flex thứ ba vào giữa vùng chứa:</p>
+            <div class="container30">
+                <div>1</div>
+                <div>2</div>
+                <div style="align-self: center">3</div>
+                <div>4</div>
+            </div> 
+            <p>Căn chỉnh phần tử flex thứ hai ở phía trên cùng của vùng chứa và phần tử flex thứ ba ở phía dưới cùng của vùng chứa:</p>
+            <div class="container30">
+                <div style="align-self: center">1</div>
+                <div style="align-self:  flex-end">2</div>
+                <div style="align-self: flex-start">3</div>
+                <div>4</div>
+            </div> 
+        </ul>
+        <h2><li>Flex Responsive</li></h2>
+        <ul>
+            <h3><li>Flexbox đáp ứng</li></h3>
+            <p>Như bạn đã học trong chương về Truy vấn đa phương tiện CSS , bạn có thể sử dụng truy vấn đa phương tiện để tạo ra các bố cục khác nhau cho các kích thước màn hình và thiết bị khác nhau</p>
+            <p>Ví dụ, nếu bạn muốn tạo bố cục ba cột cho màn hình lớn và bố cục một cột cho màn hình nhỏ (như điện thoại), bạn có thể thay đổi từ flex-directionthành rowtại column một điểm ngắt cụ thể (600px trong ví dụ bên dưới):</p>
+            <p>Thay đổi kích thước cửa sổ trình duyệt để thấy hiệu ứng.</p>
+            <div class="flex-container">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+            <p>Một cách khác là thay đổi tỷ lệ phần trăm thuộc tính của các phần tử flex để tạo ra các bố cục khác nhau cho các kích thước màn hình khác nhau. Lưu ý rằng chúng ta cũng phải bao gồm thuộc tính `flex-container` trên vùng chứa flex để ví dụ này hoạt động: flexflex-wrap: wrap;</p>
+            <div class="wrap-container">
+                <div class="div">1</div>
+                <div class="div">2</div>
+                <div class="div">3</div>
+            </div>
+        </ul>
+    </ol>
+</body>
+</html>

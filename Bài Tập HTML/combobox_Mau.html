@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combobox màu javascript</title>
+</head>
+<body>
+   <form name="f">
+    Hãy nhập màu nền bạn muốn thay đổi:
+
+    <select name="optMauNen" onchange="document.bgColor=f.optMauNen.value">
+
+        <script>
+            var mau = new Array('white','green','yellow','red','blue');
+
+            for(var i in mau){
+                document.write('<option value="'+mau[i]+'">'+mau[i]+'</option>');
+            }
+        </script>
+
+    </select>
+</form>
+
+</body>
+</html>

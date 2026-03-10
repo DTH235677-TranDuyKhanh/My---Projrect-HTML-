@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hộp toại prompt trong javascript</title>
+</head>
+<body>
+    <script language = "javascript">
+        var ten, tuoi;
+        ten = prompt("Hãy nhập tên của bạn: ", "");
+        do{
+            tuoi = prompt("Hãy nhập tuổi của bạn", 20);
+        }while(tuoi < 0)
+        document.write("Chào bạn : <b>"+ ten + "</b>");
+        document.write("<br>");
+        document.write("Tuổi của bạn là : <u>"+ tuoi + "</u>");
+    </script>
+</body>
+</html>
